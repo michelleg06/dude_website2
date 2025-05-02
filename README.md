@@ -1,2 +1,4 @@
-# dude_website
+# DUDE Website
 Dutch Development Economics Network
+
+**Getting Started**
