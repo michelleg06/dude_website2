@@ -8,10 +8,10 @@ website:
   title: "DUDE: Dutch Development Economics Network"
   description: "A website to to facilitate knowledge exchange and connections among development economists based in the Netherlands."
   open-graph:
-    image: dude_banner.png
+    image: images/dude_banner.png
     image-alt: "Explaining an economic game to farmers in Masaka, Uganda."
   twitter-card:
-    image: dude_banner.png
+    image: images/dude_banner.png
     image-alt: "Explaining an economic game to farmers in Masaka, Uganda."
     card-style: summary_large_image
   site-url: https://www.m-gonzalezamador.com
@@ -37,7 +37,7 @@ website:
       - href: members/index.qmd
         text: "Members"
       - href: events/index.qmd
-        text: "Eooks"
+        text: "Events"
       - href: gallery/index.qmd
         text: "Gallery"
       - href: https://github.com/michelleg06/dude_website
@@ -58,7 +58,9 @@ format:
     toc: true
     code-overflow: scroll
     linkcolor: "#B8573E"
-    include-before-body: _fathom.html
+    includes:
+      before-body: hero-image.html
+    #include-before-body: _fathom.html # this is an analytics/tracker, a good alternative to Google Analytics
 
 freeze: true
 
