@@ -27,7 +27,7 @@ Our mission is to facilitate knowledge exchange and connections among developmen
 :::{.column-screen-inset}
 :::{.home-column-image .col-right}
 <a href=" ">
-![](images/circle_lens_dude.png.png){.home-img-lens}
+![](images/circle_lens_dude.png){.home-img-lens}
 </a>
 
 :::
@@ -55,7 +55,7 @@ Our mission is to facilitate knowledge exchange and connections among developmen
 :::{.home-column-image .col-left}
 
 
-![](images/homepage/dataviz.png.png){.home-img}
+![](images/homepage/dataviz.png){.home-img}
 
 
 :::
