@@ -3,10 +3,11 @@ toc: false
 format: 
   html: 
     include-in-header: hero-image.html
-    #include-after-body: _footer.html
+    include-after-body: _footer.html
     sidebar: false
     anchor-sections: false
     css: [theme.css, index.css]
+
 ---
 
 ```{r}
@@ -20,6 +21,7 @@ source("R/functions.R", local = TRUE)
   text-align: justify !important
 }
 ```
+
 
 ::: {.justify}
 # Welcome to the Dutch Development Economics Network (DUDE)

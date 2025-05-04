@@ -21,7 +21,7 @@ website:
     foreground: "#FFFFFF"
     title: ""
     search: true
-    logo: images/logos/dude_logo_transparent.png
+    logo: images/logos/dude_logo_m2.png
     right:
       - href: index.qmd
         icon: house-door-fill
@@ -61,7 +61,7 @@ format:
     includes:
       before-body: hero-image.html
     #include-before-body: _fathom.html # this is an analytics/tracker, a good alternative to Google Analytics
-    include-after-body: _footer.html
+      after-body: _footer.html
 
 freeze: true
 
