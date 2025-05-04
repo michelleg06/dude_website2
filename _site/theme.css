@@ -42,8 +42,8 @@
 }
 
 .navbar {
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 a.nav-link,
@@ -64,7 +64,7 @@ a.nav-link {
     color: var(--primary-orange) !important;
 }
 
-.navbar-title {
+/*.navbar-title {
   display: inline-block;
   padding: 0;
   content: url("./images/logos/DUDE_white_logo.png");
@@ -78,7 +78,7 @@ a.nav-link {
 .navbar-title:hover {
   opacity:50;
   content: url("./images/logos/DUDE_logo_orange.png");
-}
+}*/
 
 @media screen and (max-width: 952px){
   /*--    --*/
@@ -644,3 +644,21 @@ img.rounded {
     padding: 4px 8px;
   }
 }
+
+/* Footer */
+
+.clean-footer {
+  width: 100%;
+  border-top: 1px solid #ccc;   /* thin gray line */
+  background-color: white;
+  padding: 12px 0;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.clean-footer p {
+  margin: 0;
+  color: #a7abb4;  /* soft gray text */
+  font-size: 0.85rem;
+}
+

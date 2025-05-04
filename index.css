@@ -268,9 +268,31 @@ img.lens-logo {
     margin-left: auto;
     margin-right: auto;
   }
+
+
+  img.home-img2 {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 40px;
+    margin-right: auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  img.home-img2-lens {
+    width: 100%;
+    margin-left: auto;
+  }
+  
+    img.home-img2-transparent {
+    width: 100%;
+    margin-left: auto;
+  }
 }
 
-@media screen and (max-width: 952px) {
+@media screen and (max-width: 952px) {  /* This guy is for tablets or phone screens */
   .home-column-image {
     width: 100%;
     display: block;
@@ -311,12 +333,24 @@ img.lens-logo {
   }
 
   img.home-img2 {
-    max-width: 200px;
+    max-width: 300px;
     width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  img.home-img2-lens {
+    width: 100%;
+    margin-left: auto;
+  }
+  
+    img.home-img2-transparent {
+    width: 100%;
+    margin-left: auto;
   }
 
 }
@@ -365,4 +399,70 @@ img {
     max-width: 100%;
 }
 
+/* image carousel: dude events */
 
+.image-carousel {
+  border: 6px solid #B8573E;
+  box-shadow: 0 0 25px rgba(184, 87, 62, 0.2);
+}
+
+.image-carousel {
+  position: relative;
+  width: 300px; /* or whatever size fits the layout */
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.carousel-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;   /* or 300px to match container */
+  height: 100%;  /* or 300px to match container */
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 50%;
+}
+
+.carousel-img.active {
+  opacity: 1;
+}
+
+.carousel-controls {
+  text-align: center;
+  margin-top: 10px;
+  transform: translateX(10px);
+}
+
+.carousel-controls button {
+  background: transparent;   /* Removes gray background */
+  border: none;              /* Removes black square/border */
+  font-size: 2rem;           /* Makes the emoji icon larger */
+  cursor: pointer;
+  padding: 0;
+  margin: 0 10px;
+  line-height: 1;
+}
+
+.carousel-controls button:focus {
+  outline: none;
+}
+
+/*.carousel-controls button {
+  background-color: #B8573E;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  margin: 0 6px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+} 
+
+.carousel-controls button:hover {
+  background-color: #9c432e;
+} */

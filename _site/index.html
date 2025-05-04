@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>DUDE: Dutch Development Economics Network</title>
+<title>quarto-inputd5504dd759c6c661</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,14 +66,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<meta property="og:title" content="DUDE: Dutch Development Economics Network">
+<meta property="og:title" content="">
 <meta property="og:description" content="A website to to facilitate knowledge exchange and connections among development economists based in the Netherlands.">
 <meta property="og:image" content="https://www.m-gonzalezamador.com/images/dude_banner.png">
-<meta property="og:site_name" content="DUDE: Dutch Development Economics Network">
+<meta property="og:site_name" content=" ">
 <meta property="og:image:alt" content="Explaining an economic game to farmers in Masaka, Uganda.">
 <meta property="og:image:height" content="563">
 <meta property="og:image:width" content="1500">
-<meta name="twitter:title" content="DUDE: Dutch Development Economics Network">
+<meta name="twitter:title" content="">
 <meta name="twitter:description" content="A website to to facilitate knowledge exchange and connections among development economists based in the Netherlands.">
 <meta name="twitter:image" content="https://www.m-gonzalezamador.com/images/dude_banner.png">
 <meta name="twitter:image:alt" content="Explaining an economic game to farmers in Masaka, Uganda.">
@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="./images/logos/dude_logo_transparent.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">DUDE: Dutch Development Economics Network</span>
+    <span class="navbar-title"></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -184,21 +184,84 @@ Posts
 
 
 
-<section id="welcome-to-the-dutch-development-economics-network-dude" class="level1 page-columns page-full">
+<div class="cell">
+<style type="text/css">
+.justify {
+  text-align: justify !important
+}
+</style>
+</div>
+<section id="welcome-to-the-dutch-development-economics-network-dude" class="level1 justify">
 <h1>Welcome to the Dutch Development Economics Network (DUDE)</h1>
-<p>Our mission is to facilitate knowledge exchange and connections among development economists based in the Netherlands. Our Members are researchers at the seven participating universities. We organize two annual Events: a general workshop and a workshop dedicated to PhD students. We are also affiliated to the European Development Economics Group.</p>
+<p>Our mission is to facilitate knowledge exchange and connections among development economists based in the Netherlands. Our members are researchers from seven participating universities: Groningen, Nijmegen, Tilburg, UNU-MERIT, Utrecht, VU Amsterdam, and Wageningen. We organize two annual Events: a general workshop and a workshop dedicated to PhD students. We are also affiliated to the <a href="https://www.ede-group.org/">European Development Economics Group</a>.</p>
+</section>
 <p><br></p>
 <hr>
 <div class="column-screen page-columns page-full">
 <div class="column-screen-inset">
 <div class="home-column-image col-right">
-<p><a href=" "> <img src="images/Circle lens dude.png" class="home-img-lens img-fluid"> </a></p>
+<div class="image-carousel">
+<p><img class="carousel-img" src="images/homepage/img1.png"> <img class="carousel-img" src="images/homepage/img2.png"> <img class="carousel-img" src="images/homepage/img3.jpeg"> <img class="carousel-img" src="images/homepage/img4.jpg"> <img class="carousel-img" src="images/homepage/img5.jpg"></p>
+</div>
+<div class="carousel-controls">
+<p><button id="pause">⏯️</button> <button id="play" style="display: none;">⏯️</button></p>
+</div>
+<!-- JS code for carousel / photo slider -->
+<script>
+
+let index = 0;
+const images = document.querySelectorAll('.carousel-img');
+const pauseBtn = document.getElementById('pause');
+const playBtn = document.getElementById('play');
+let interval;
+
+function showSlide(i) {
+  images.forEach(img => img.classList.remove('active'));
+  images[i].classList.add('active');
+}
+
+function startCarousel() {
+  interval = setInterval(() => {
+    index = (index + 1) % images.length;
+    showSlide(index);
+  }, 3000);
+}
+
+pauseBtn.addEventListener('click', () => {
+  clearInterval(interval);
+  pauseBtn.style.display = 'none';
+  playBtn.style.display = 'inline-block';
+});
+
+playBtn.addEventListener('click', () => {
+  startCarousel();
+  playBtn.style.display = 'none';
+  pauseBtn.style.display = 'inline-block';
+});
+
+showSlide(index);
+startCarousel();
+
+</script>
+<br>
+<div>
+<center>
+<p style="font-size: 0.7rem; color: #a7abb4;">
+Images are all publicly shared from past events.
+</p>
+</center>
+</div>
+<p><br></p>
 </div>
 <div class="home-column-text col-left">
+<div class="justify">
 <div style="max-width: 650px; margin: 0 auto;">
 <p>
-Connect with researchers in the Netherlands working on Development Economics. Seven participating universities in the Netherlands take turns hosting engaging events where we share knowledge and new ideas in the field of Development Economics.
-</p>
+</p><h3>
+Join us!
+</h3>
+<br> Connect with researchers in the Netherlands working on Development Economics. Seven participating universities in the Netherlands take turns hosting engaging events where we share knowledge and new ideas in the field of Development Economics.
+<p></p>
 <p>
 <strong>Upcoming events</strong>
 </p>
@@ -222,21 +285,14 @@ Connect with researchers in the Netherlands working on Development Economics. Se
 </li>
 </ul>
 </div>
-<br>
-<div>
-<p style="font-size: 0.7rem; color: #a7abb4;">
-Images are all publicly shared from past events.
-</p>
-</div>
+<p><br></p>
 </div>
 </div>
 </div>
 <div class="column-screen page-columns page-full" style="background-color:#B8573E;">
 <div class="column-screen-inset">
 <div class="home-column-image col-left">
-<div style="max-width: 400px; margin: 0 auto;">
-<p><img src="images/homepage/dataviz.png" class="img-fluid"></p>
-</div>
+<p><img src="images/homepage/dataviz.png" class="home-img2 img-fluid"></p>
 </div>
 <div class="home-column-text col-right">
 <center>
@@ -250,7 +306,7 @@ Images are all publicly shared from past events.
 <a href="posts/index.html#category=Blog Posts">
 <img href="posts/index.html#category=Blog Posts" src="images/vectors/book.svg" style="color:#fff !important;" class="category-image honey-white">
 </a>
-<h4 style="text-align:center;" data-anchor-id="welcome-to-the-dutch-development-economics-network-dude">
+<h4 style="text-align:center;">
 <a class="white" href="posts/index.html#category=Blog posts">Blog posts</a>
 </h4>
 </div>
@@ -278,9 +334,12 @@ Images are all publicly shared from past events.
 </div>
 
 
-</section>
+</div>
 
 </main> <!-- /main -->
+<footer class="clean-footer">
+    <p>© 2025 Dutch Development Economics Network (DUDE) 🌍</p>
+</footer>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

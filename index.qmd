@@ -15,9 +15,17 @@ library(htmltools)
 source("R/functions.R", local = TRUE)
 ```
 
+```{css, echo = FALSE}
+.justify {
+  text-align: justify !important
+}
+```
+
+::: {.justify}
 # Welcome to the Dutch Development Economics Network (DUDE)
 
-Our mission is to facilitate knowledge exchange and connections among development economists based in the Netherlands. Our Members are researchers at the seven participating universities. We organize two annual Events: a general workshop and a workshop dedicated to PhD students. We are also affiliated to the European Development Economics Group.
+Our mission is to facilitate knowledge exchange and connections among development economists based in the Netherlands. Our members are researchers from seven participating universities: Groningen, Nijmegen, Tilburg, UNU-MERIT, Utrecht, VU Amsterdam, and Wageningen. We organize two annual Events: a general workshop and a workshop dedicated to PhD students. We are also affiliated to the [European Development Economics Group](https://www.ede-group.org/).
+:::
 
 <br>
 
@@ -26,18 +34,76 @@ Our mission is to facilitate knowledge exchange and connections among developmen
 :::{.column-screen}
 :::{.column-screen-inset}
 :::{.home-column-image .col-right}
-<a href=" ">
-![](images/Circle%20lens%20dude.png){.home-img-lens}
-</a>
 
+<div class="image-carousel">
+  <img class="carousel-img" src="images/homepage/img1.png" />
+  <img class="carousel-img" src="images/homepage/img2.png" />
+  <img class="carousel-img" src="images/homepage/img3.jpeg" />
+  <img class="carousel-img" src="images/homepage/img4.jpg" />
+  <img class="carousel-img" src="images/homepage/img5.jpg" />
+</div>
+
+<div class="carousel-controls">
+  <button id="pause">⏯️</button>
+  <button id="play" style="display: none;">⏯️</button>
+</div>
+
+<!-- JS code for carousel / photo slider -->
+
+<script>
+
+let index = 0;
+const images = document.querySelectorAll('.carousel-img');
+const pauseBtn = document.getElementById('pause');
+const playBtn = document.getElementById('play');
+let interval;
+
+function showSlide(i) {
+  images.forEach(img => img.classList.remove('active'));
+  images[i].classList.add('active');
+}
+
+function startCarousel() {
+  interval = setInterval(() => {
+    index = (index + 1) % images.length;
+    showSlide(index);
+  }, 3000);
+}
+
+pauseBtn.addEventListener('click', () => {
+  clearInterval(interval);
+  pauseBtn.style.display = 'none';
+  playBtn.style.display = 'inline-block';
+});
+
+playBtn.addEventListener('click', () => {
+  startCarousel();
+  playBtn.style.display = 'none';
+  pauseBtn.style.display = 'inline-block';
+});
+
+showSlide(index);
+startCarousel();
+
+</script>
+<br>
+<div>
+  <center>
+    <p style="font-size: 0.7rem; color: #a7abb4;">
+      Images are all publicly shared from past events.
+    </p>
+  </center>
+</div>
+<br>
 :::
 
 :::{.home-column-text .col-left}
-
+::: {.justify}
 <div style="max-width: 650px; margin: 0 auto;">
-  <p>
+  <p> <h3>Join us!</h3><br>
     Connect with researchers in the Netherlands working on Development Economics. Seven participating universities in the Netherlands take turns hosting engaging events where we share knowledge and new ideas in the field of Development Economics.
   </p>
+
 
   <p><strong>Upcoming events</strong></p>
   <ul>
@@ -52,26 +118,16 @@ Our mission is to facilitate knowledge exchange and connections among developmen
   </ul>
 </div>
 <br>
-<div>
-  <p style="font-size: 0.7rem; color: #a7abb4;">
-    Images are all publicly shared from past events.
-  </p>
-</div>
 
 :::
 :::
 :::
-
 
 :::{.column-screen style="background-color:#B8573E;"}
 :::{.column-screen-inset}
 :::{.home-column-image .col-left}
 
-
-<div style="max-width: 400px; margin: 0 auto;">
-![](images/homepage/dataviz.png)
-</div>
-
+![](images/homepage/dataviz.png){.home-img2}
 
 :::
 
