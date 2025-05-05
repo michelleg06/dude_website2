@@ -23,7 +23,7 @@ library(htmltools)
 <!-- Title Row -->
 :::{.full-title}
 ::: {.profile-title-box}
-### Tilburg University
+### Tilburg University Coordinator
 :::
 :::
 
