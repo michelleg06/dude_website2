@@ -26,20 +26,22 @@ website:
       - href: index.qmd
         icon: house-door-fill
         text: " "
-      - href: about/index.qmd
-        text: "About"
-      - href: posts/index.qmd
-        text: "Posts"
-      - text: "Research"
+      - text: "Posts"
         menu:
-        - href: research/highlights/index.qmd
-          text: "Highlights"
-      - href: members/index.qmd
-        text: "Members"
+        - href: posts/blog/index.qmd
+          text: "Blog"
+        - href: posts/research/index.qmd
+          text: "Research"
+      - text: "Members"
+        menu:
+        - href: members/universities/index.qmd
+          text: "Affiliated Universities"
+        - href: members/members/index.qmd
+          text: "Members"
       - href: events/index.qmd
         text: "Events"
-      - href: gallery/index.qmd
-        text: "Gallery"
+      - href: contact/index.qmd
+        text: "Contact"
       - href: https://github.com/michelleg06/dude_website
         icon: github
   announcement:
