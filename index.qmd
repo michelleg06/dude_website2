@@ -24,7 +24,7 @@ source("R/functions.R", local = TRUE)
 
 
 ::: {.justify}
-# Welcome to the Dutch Development Economics Network (DUDE)
+# Welcome to the Dutch Development Economics Network (DuDE)
 
 Our mission is to facilitate knowledge exchange and connections among development economists based in the Netherlands. Our members are researchers from seven participating universities: Groningen, Nijmegen, Tilburg, UNU-MERIT, Utrecht, VU Amsterdam, and Wageningen. We organize two annual Events: a general workshop and a workshop dedicated to PhD students. We are also affiliated to the [European Development Economics Group](https://www.ede-group.org/).
 :::

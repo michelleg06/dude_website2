@@ -752,3 +752,77 @@ img.rounded {
 .profile-title-box h3 {
   margin: 0.3rem 0;
 }
+
+/* Events section */
+
+/* poster thumbnails */
+
+/* Thumbnail styling */
+
+/*.img-thumbnail {
+  width: 200px;           
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto 0.75em auto; 
+} */
+
+.img-thumbnail {
+  width: 400px;              /* Fixed width */
+  height: 260px;             /* Fixed height */
+  object-fit: cover;         /* Zooms and crops to fill */
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Card container */
+.card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;  /* image | spacer | text */
+  text-align: center;
+  padding: 0.5em 0;
+  max-width: 270px;
+  height: 250px;           /* slightly taller than tallest card */
+  margin: 0 0.5em 1.5em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  width: 210px;
+  height: auto;
+  max-height: 350px;   /* keeps thumbnails under control */
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: auto;  /* let it resize naturally on small screens */
+  }
+}
+
+/* Text below image */
+.card strong {
+  display: block;
+  font-size: 0.6rem;         /* author name size */
+  margin-top: 0.5em;
+}
+
+.card em {
+  display: block;
+  font-size: 0.5rem;       /* affiliation slightly smaller */
+  color: #555;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem; /* space between cards */
+  align-items: start;
+  justify-content: center;
+}
