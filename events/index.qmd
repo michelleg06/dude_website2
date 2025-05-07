@@ -1,6 +1,6 @@
 ---
 title: "Events"
-subtitle: "Current and Past Events Held by the Dutch Development Economics Network"
+subtitle: "Current and past events organized by the Dutch Development Economics Network (DuDE)"
 listing:
   sort-ui: true
   sort: 

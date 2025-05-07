@@ -664,7 +664,7 @@ img.rounded {
 
 /* Affiliated Universities */
 
-.grid-layout {
+/*.grid-layout {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
@@ -672,34 +672,17 @@ img.rounded {
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
-}
-
-/*.full-title {
-  grid-column: 1 / span 2;
-  text-align: center;
-  margin-bottom: 0.2rem;
 }*/
 
-.left-img-uni img {
-  width: 180px;
-  height: auto;
-  object-fit: contain;
-  background-color: transparent;
-  padding: 0;
-  margin: 0 auto;
-  display: block;
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-items: center;
 }
 
-.right-img-uni img {
-  border-radius: 50%;
-  object-fit: cover;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border: 2px solid #eee;
-}
+
 
 .full-text {
   grid-column: 1 / span 2;
@@ -728,30 +711,64 @@ img.rounded {
 }
 
 .full-title {
-  grid-column: 1 / span 2;
   text-align: center;
 }
-
-/*.full-title {
-  grid-column: 1 / span 2;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}*/
 
 .profile-title-box {
   border: 1px solid #ccc;
-  padding: 0.4rem 1rem;
+  padding: 0.2rem 0.6rem;     
   border-radius: 6px;
   display: inline-block;
-  margin: 0 auto 1.2rem;
+  margin: 0 auto 1rem;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.1rem;        
   text-align: center;
 }
 
-.profile-title-box h3 {
-  margin: 0.3rem 0;
+.profile-title-box h4 {
+  margin: 0.2rem 0;
 }
+
+.card-uni {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-uni-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.card-uni-imgs img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.card-uni-imgs .profile-img {
+  border-radius: 50%; 
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #eee;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+
+
+
 
 /* Events section */
 

@@ -14,7 +14,7 @@ website:
     image: images/dude_banner.png
     image-alt: "Explaining an economic game to farmers in Masaka, Uganda."
     card-style: summary_large_image
-  site-url: https://www.m-gonzalezamador.com
+  site-url: https://dev-econ-nl.weebly.com/
   favicon: images/favicon.ico
   navbar:
     background: "#472605"
