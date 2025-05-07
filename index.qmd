@@ -144,9 +144,9 @@ tags$div(class = "category-row",
          
   tags$div( 
     class = "category-column",
-    tags$a(href = "posts/index.html#category=Posts",
+    tags$a(href = "posts/blog/index.html#category=Posts",
       tags$img(
-        href = "posts/index.html#category=Posts",
+        href = "posts/blog/index.html#category=Posts",
         src = "images/vectors/book.svg",
         style = "color:#fff !important;",
         class = "category-image honey-white"
@@ -154,7 +154,7 @@ tags$div(class = "category-row",
   tags$h4(style = "text-align:center;",
       tags$a(
         class = "white",
-        href = "posts/index.html#category=^osts", "Posts"))),
+        href = "posts/blog/index.html#category=^osts", "Posts"))),
   
   tags$div( 
     class = "category-column",
@@ -172,9 +172,9 @@ tags$div(class = "category-row",
   
   tags$div( 
     class = "category-column",
-    tags$a(href = "posts/index.html#category:Events",
+    tags$a(href = "events/index.html#category:Events",
       tags$img(
-        href = "posts/index.html#category=Events",
+        href = "events/index.html#category=Events",
         src = "images/vectors/events.svg",
         style = "color:#fff !important;",
         class = "category-image honey-white"
@@ -182,12 +182,8 @@ tags$div(class = "category-row",
   tags$h4(style = "text-align:center",
       tags$a(
         class = "white",
-        href = "posts/index.html#category=Events", "Events")))
+        href = "events/index.html#category=Events", "Events")))
   
   )
 ```
-
-:::
-:::
-:::
 
