@@ -1,13 +1,13 @@
 [
   {
+    "listing": "/posts/research/index.html",
+    "items": []
+  },
+  {
     "listing": "/events/index.html",
     "items": [
       "/events/2025_workshop_tinbergen/index.html"
     ]
-  },
-  {
-    "listing": "/posts/research/index.html",
-    "items": []
   },
   {
     "listing": "/posts/blog/index.html",

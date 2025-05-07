@@ -1,40 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.m-gonzalezamador.com/members/universities/index.html</loc>
-    <lastmod>2025-05-07T15:54:36.157Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.m-gonzalezamador.com/index.html</loc>
-    <lastmod>2025-05-07T07:41:55.186Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.m-gonzalezamador.com/events/index.html</loc>
-    <lastmod>2025-05-07T15:57:34.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.m-gonzalezamador.com/events/2025_workshop_tinbergen/index.html</loc>
-    <lastmod>2025-05-06T20:51:35.616Z</lastmod>
-  </url>
-  <url>
     <loc>https://dev-econ-nl.weebly.com/posts/research/index.html</loc>
     <lastmod>2025-05-07T16:14:49.527Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dev-econ-nl.weebly.com/posts/blog/index.html</loc>
-    <lastmod>2025-05-07T16:14:09.151Z</lastmod>
   </url>
   <url>
     <loc>https://dev-econ-nl.weebly.com/members/universities/index.html</loc>
     <lastmod>2025-05-07T15:54:36.157Z</lastmod>
   </url>
   <url>
-    <loc>https://dev-econ-nl.weebly.com/members/members/index.html</loc>
-    <lastmod>2025-05-07T16:17:35.201Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dev-econ-nl.weebly.com/events/index.html</loc>
-    <lastmod>2025-05-07T15:57:34.318Z</lastmod>
+    <loc>https://dev-econ-nl.weebly.com/index.html</loc>
+    <lastmod>2025-05-07T17:38:46.762Z</lastmod>
   </url>
   <url>
     <loc>https://dev-econ-nl.weebly.com/events/2025_workshop_tinbergen/index.html</loc>
@@ -45,7 +21,15 @@
     <lastmod>2025-05-07T17:39:50.302Z</lastmod>
   </url>
   <url>
-    <loc>https://dev-econ-nl.weebly.com/index.html</loc>
-    <lastmod>2025-05-07T17:38:46.762Z</lastmod>
+    <loc>https://dev-econ-nl.weebly.com/events/index.html</loc>
+    <lastmod>2025-05-07T15:57:34.318Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dev-econ-nl.weebly.com/members/members/index.html</loc>
+    <lastmod>2025-05-07T16:17:35.201Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dev-econ-nl.weebly.com/posts/blog/index.html</loc>
+    <lastmod>2025-05-07T16:14:09.151Z</lastmod>
   </url>
 </urlset>
