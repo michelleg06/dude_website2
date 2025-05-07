@@ -1,0 +1,56 @@
+---
+title: "Affiliated Universities"
+subtitle: "Participating Universities and Node Coordinators"
+title-block-banner: "#B8573E"
+title-block-banner-color: body
+page-layout: full
+format:
+  html:
+    include-after-body: _footer.html
+    grid:
+      sidebar-width: 250px
+      body-width: 1000px
+      margin-width: 200px
+    anchor-sections: false
+---
+```{r}
+#| include: false
+library(htmltools)
+```
+
+::: {.grid-layout}
+
+<!-- Title Row -->
+:::{.full-title}
+::: {.profile-title-box}
+### Tilburg University Coordinator
+:::
+:::
+
+<!-- Images Row -->
+<div class="left-img-uni">
+  <img src="images/tilburg.svg" alt="Tilburg, NL." />
+</div>
+<div class="right-img-uni">
+  <img src="images/patricio_dalton.jpg" alt="Tilburg DUDE Coordinator" />
+</div>
+
+<!-- Description Row -->
+<div class="full-text">
+  <p><strong>Patricio Dalton</strong>, Associate Professor of Economics.</p>
+</div>
+
+<!-- Links Row -->
+<div class="full-icons">
+  <a href="https://x.com" target="_blank" title="X">
+    <img src="images/icons/x.svg" alt="X" class="icon-link" />
+  </a>
+  <a href="mailto:p.s.dalton@uvt.nl" title="Email">
+    <img src="images/icons/email.svg" alt="Email" class="icon-link" />
+  </a>
+  <a href="https://sites.google.com/site/psdalton/home" target="_blank" title="Website">
+    <img src="images/icons/website.svg" alt="Website" class="icon-link" />
+  </a>
+</div>
+
+:::
