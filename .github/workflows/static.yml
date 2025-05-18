@@ -1,46 +1,59 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# ✅ GitHub Actions workflow to render and deploy a Quarto site to GitHub Pages
+name: Quarto Render and Deploy
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes to main branch
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows manual trigger from Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: ✅ Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: ✅ Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: ✅ (Optional) Install Pandoc (if needed for rendering)
+        uses: r-lib/actions/setup-pandoc@v2
+
+      # Optional: add setup for R/Python if needed
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+
+      # - name: Setup Python
+      #   uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.10'
+
+      - name: ✅ Render Quarto site
+        run: quarto render
+
+      - name: ✅ Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: ✅ Upload site artifact (_site/)
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload rendered site from _site (now created on GitHub Actions)
           path: _site
 
-      - name: Deploy to GitHub Pages
+      - name: ✅ Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
