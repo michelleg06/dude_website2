@@ -239,7 +239,7 @@ library(htmltools)
 <!-- Images Row -->
 <div class="card-uni-imgs">
   <img src="images/map_amsterdam.svg" alt="Amsterdam, NL." />
-  <img src="images/Witte_Marc.png" alt="Amsterdam DuDE Coordinator" class="profile-img"/>
+  <img src="images/Witte_Marc.jpg" alt="Amsterdam DuDE Coordinator" class="profile-img"/>
 </div>
 
 <!-- Description Row -->

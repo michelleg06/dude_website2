@@ -6,7 +6,7 @@ project:
 
 website:
   site-url: "https://michelleg06.github.io/dude_website2"
-  title: " "
+  title: "Dutch Development Economics Network"
   description: "A website to to facilitate knowledge exchange and connections among development economists based in the Netherlands."
   open-graph:
     image: images/dude_banner.png
