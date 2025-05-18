@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload rendered site from _site (now created on GitHub Actions)
-          path: '_site'
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
