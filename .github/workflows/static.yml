@@ -32,14 +32,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 👉 NEW: Set up Quarto so we can render the site on GitHub
-      - name: Setup Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      # 👉 NEW: Render the site on GitHub (instead of relying on local _site)
-      - name: Render site
-        run: quarto render
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
