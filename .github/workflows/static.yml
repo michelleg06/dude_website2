@@ -31,13 +31,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      # 👉 NEW: Set up Quarto so we can render the site on GitHub
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # 👉 NEW: Render the site on GitHub (instead of relying on local _site)
+      - name: Render site
+        run: quarto render
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          # Upload rendered site from _site (now created on GitHub Actions)
           path: '_site'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
