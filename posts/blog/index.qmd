@@ -1,0 +1,17 @@
+---
+title: "Blog"
+subtitle: "A blog by the Dutch Development Economics Network (DuDE)"
+title-block-banner: "#B8573E"
+title-block-banner-color: body
+page-layout: full
+format:
+  html:
+    include-after-body: _footer.html
+    grid:
+      sidebar-width: 250px
+      body-width: 1000px
+      margin-width: 200px
+    anchor-sections: false
+---
+
+
