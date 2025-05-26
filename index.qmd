@@ -24,7 +24,7 @@ Our mission is to facilitate knowledge exchange and connections among developmen
 :::
 
 <br>
-
+<hr>
 
 ::::: {.column-screen}
 :::: {.column-screen-inset}
@@ -174,7 +174,7 @@ tags$div(class = "category-row",
 
   # Events
   tags$div(class = "category-column",
-    tags$a(href = "events/index.html#category=Events",
+    tags$a(href = "events/index.html",
       tags$img(
         src = "images/vectors/events.svg",
         style = "color:#fff !important;",
@@ -184,7 +184,7 @@ tags$div(class = "category-row",
     tags$h4(style = "text-align:center;",
       tags$a(
         class = "white",
-        href = "events/index.html#category=Events",
+        href = "events/index.html",
         "Events"
       )
     )
