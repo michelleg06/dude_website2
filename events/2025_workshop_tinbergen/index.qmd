@@ -3,10 +3,11 @@ title: "2025: 14th Dutch Development Economics Network (DuDE) Workshop"
 title-block-banner: "#B8573E"
 title-block-banner-color: body
 page-layout: article
-freeze: true
 include-after-body: _footer.html
-image: thumbnail.png
-type: grid 
+image: thumbnail.jpg
+listing-date: 2025-03-27
+categories: ["Workshop"]
+description: "DuDE 14th annual workshop hosted by the Tinbergen Institute in Amsterdam."
 ---
 
 <!-- Side panel -->

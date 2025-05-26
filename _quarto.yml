@@ -1,9 +1,9 @@
 project:
   type: website
   render:
-    - "*.qmd"
+    - "**/*.qmd"
     - "!archive/"
-
+    
 website:
   site-url: "https://michelleg06.github.io/dude_website2"
   title: "Dutch Development Economics Network"
@@ -62,10 +62,4 @@ format:
     linkcolor: "#B8573E"
     includes:
       before-body: hero-image.html
-    #include-before-body: _fathom.html # this is an analytics/tracker, a good alternative to Google Analytics
       after-body: _footer.html
-
-freeze: true
-
-
-
