@@ -18,6 +18,12 @@ main.content,
   max-height: 66vh;
 }
 
+/* anchor the photo credit to the visible container, not the (possibly
+   cropped) inner image wrapper, so it can't be cut off on wide screens */
+.hero-image {
+  position: static;
+}
+
 .DUDE-top {
   position: relative;
   text-align: center;
