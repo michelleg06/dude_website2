@@ -10,12 +10,10 @@ main.content,
   padding-top: 0 !important;
 }
 
-/* height follows the image, capped so it never swallows the viewport */
+/* the hero always shows the full banner photo — no height cap, no crop */
 .hero-container {
-  overflow: hidden;
   position: relative;
   height: auto;
-  max-height: 66vh;
 }
 
 /* anchor the photo credit to the visible container, not the (possibly
