@@ -6,7 +6,7 @@ On the website you can find:
 
 - **Posts:** blog posts with summaries of members' on-going projects, visualisations, or similar.
 
-- **Research:** Highlighted summaries of scientific research from DuDE members.
+- **Universities:** DuDE affiliated universities and their coordinators' contact information.
 
 - **Members:** DuDE affiliated members and their contact information.
 
