@@ -1,154 +1,145 @@
 ---
 toc: false
-format: 
-  html: 
-    include-in-header: hero-image.html
-    include-after-body: _footer.html
+format:
+  html:
+    include-before-body: hero-image.html
     sidebar: false
     anchor-sections: false
     css: [theme.css, index.css]
-    title-block: false
 ---
 
 ```{r}
 #| include: false
 library(htmltools)
-source("R/functions.R", local = TRUE)
 ```
 
+::: {.home-intro}
+[Our mission]{.mission-kicker}
 
-::: {.justify}
-# Welcome to the Dutch Development Economics Network (DuDE)
+[Facilitating knowledge exchange and connections among development economists based in the Netherlands.]{.mission-statement}
 
-Our mission is to facilitate knowledge exchange and connections among development economists based in the Netherlands. Our members are researchers from seven participating universities: Groningen, Nijmegen, Tilburg, UNU-MERIT, Utrecht, VU Amsterdam, and Wageningen. We organize two annual Events: a general workshop and a workshop dedicated to PhD students. We are also affiliated to the [European Development Economics Group](https://www.ede-group.org/).
+::: {.mission-support}
+Our members are researchers from seven participating universities: Groningen, Nijmegen, Tilburg, UNU-MERIT, Utrecht, VU Amsterdam, and Wageningen. We organize two annual events — a general workshop and one dedicated to PhD students — and we are affiliated to the [European Development Economics Group](https://www.ede-group.org/).
 :::
-
-<br>
-<hr>
+:::
 
 ::::: {.column-screen}
-:::: {.column-screen-inset}
-::: {.home-column-image .col-right}
+:::: {.home-split}
 
-<div class="image-carousel">
-  <img class="carousel-img" src="images/homepage/img1.jpg" />
-  <img class="carousel-img" src="images/homepage/img2.jpg" />
-  <img class="carousel-img" src="images/homepage/img3.jpeg" />
-  <img class="carousel-img" src="images/homepage/img4.jpg" />
-  <img class="carousel-img" src="images/homepage/img5.jpg" />
+::: {.home-panel .home-panel-text}
+### JOIN US
+
+Connect with researchers in the Netherlands working on Development Economics. Seven participating universities take turns hosting engaging events where we share knowledge and new ideas in the field.
+
+```{=html}
+<div class="event-list">
+  <p class="event-list-title">Upcoming events</p>
+  <div class="event-row">
+    <span class="event-when">Fall 2025</span>
+    <span class="event-what">3rd PhD Workshop &middot; Tinbergen Institute</span>
+  </div>
+  <div class="event-row">
+    <span class="event-when">Spring 2026</span>
+    <span class="event-what">15th Workshop &middot; Nijmegen University</span>
+  </div>
+  <a class="btn-events" href="events/index.html">All events &rarr;</a>
 </div>
-
-<div class="carousel-controls">
-  <button id="pause">⏸️</button>
-  <button id="play" style="display: none;">▶️</button>
-</div>
-
-<!-- JS code for carousel / photo slider -->
-
-<script>
-
-let index = 0;
-const images = document.querySelectorAll('.carousel-img');
-const pauseBtn = document.getElementById('pause');
-const playBtn = document.getElementById('play');
-let interval;
-
-function showSlide(i) {
-  images.forEach(img => img.classList.remove('active'));
-  images[i].classList.add('active');
-}
-
-function startCarousel() {
-  interval = setInterval(() => {
-    index = (index + 1) % images.length;
-    showSlide(index);
-  }, 3000);
-}
-
-pauseBtn.addEventListener('click', () => {
-  clearInterval(interval);
-  pauseBtn.style.display = 'none';
-  playBtn.style.display = 'inline-block';
-});
-
-playBtn.addEventListener('click', () => {
-  startCarousel();
-  playBtn.style.display = 'none';
-  pauseBtn.style.display = 'inline-block';
-});
-
-showSlide(index);
-startCarousel();
-
-</script>
-<br>
-<div>
-  <center>
-    <p style="font-size: 0.7rem; color: #a7abb4;">
-      Images are all publicly shared from past events.
-    </p>
-  </center>
-</div>
-<br>
-
+```
 :::
 
-::: {.home-column-text .col-left}
-::: {.justify}
-<div style="max-width: 650px; margin: 0 auto;">
-  <p> <h3>Join us!</h3><br>
-    Connect with researchers in the Netherlands working on Development Economics. Seven participating universities in the Netherlands take turns hosting engaging events where we share knowledge and new ideas in the field of Development Economics.
-  </p>
-
-
-  <p><strong>Upcoming events</strong></p>
-  <ul>
-    <li>3rd PhD Workshop, fall 2025, Tinbergen Institute</li>
-    <li>15th Workshop, spring 2026, Nijmegen University</li>
-  </ul>
-
-  <p><strong>Recent events</strong></p>
-  <ul>
-    <li>14th Workshop, 27–28 March 2025, Tinbergen Institute</li>
-    <li>2nd PhD Workshop, 24–25 October 2024, Wageningen University</li>
-  </ul>
+::: {.home-panel .home-panel-media}
+<div class="gallery" id="home-gallery">
+  <img class="gallery-img" src="images/homepage/img1.jpg" alt="Participants at a past DuDE workshop" />
+  <img class="gallery-img" src="images/homepage/img2.jpg" alt="Presentation session at a DuDE event" />
+  <img class="gallery-img" src="images/homepage/img3.jpeg" alt="DuDE members during a workshop" />
+  <img class="gallery-img" src="images/homepage/img4.jpg" alt="Discussion between researchers at a DuDE event" />
+  <img class="gallery-img" src="images/homepage/img5.jpg" alt="Group photo from a DuDE workshop" />
+  <div class="gallery-dots" role="tablist" aria-label="Choose photo"></div>
+  <button class="gallery-toggle" id="gallery-toggle" aria-label="Pause slideshow">
+    <svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+    <svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><path d="M8 5v14l11-7z"/></svg>
+  </button>
 </div>
-<br>
-
+<p class="gallery-caption">Moments from past DuDE events, publicly shared by participants.</p>
 :::
+
 ::::
 :::::
 
-::::: {.column-screen style="background-color:#B8573E;"}
-:::: {.column-screen-inset}
+<script>
+(function () {
+  const gallery = document.getElementById('home-gallery');
+  const slides = gallery.querySelectorAll('.gallery-img');
+  const dotsWrap = gallery.querySelector('.gallery-dots');
+  const toggle = document.getElementById('gallery-toggle');
+  const iconPause = toggle.querySelector('.icon-pause');
+  const iconPlay = toggle.querySelector('.icon-play');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-::: {.home-column-image .col-left}
+  let current = 0;
+  let timer = null;
 
-![](images/homepage/dataviz.svg){.home-img2}
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'gallery-dot';
+    dot.setAttribute('aria-label', 'Show photo ' + (i + 1));
+    dot.addEventListener('click', () => { goTo(i); if (timer) restart(); });
+    dotsWrap.appendChild(dot);
+  });
+  const dots = dotsWrap.querySelectorAll('.gallery-dot');
 
-:::
+  function goTo(i) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = i;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
 
-::: {.home-column-text .col-right}
+  function next() { goTo((current + 1) % slides.length); }
 
-<span style = "color: #fff; font-style: italic">Read more about us: blog posts (with research highlights!), events, and more about our members.</span> 
+  function setToggle(playing) {
+    iconPause.style.display = playing ? '' : 'none';
+    iconPlay.style.display = playing ? 'none' : '';
+    toggle.setAttribute('aria-label', playing ? 'Pause slideshow' : 'Play slideshow');
+  }
 
+  function start() { timer = setInterval(next, 4000); setToggle(true); }
+  function stop() { clearInterval(timer); timer = null; setToggle(false); }
+  function restart() { clearInterval(timer); timer = setInterval(next, 4000); }
 
-```{r, echo = FALSE}
+  toggle.addEventListener('click', () => { timer ? stop() : start(); });
+
+  goTo(0);
+  if (reducedMotion) { setToggle(false); } else { start(); }
+})();
+</script>
+
+::::: {.column-screen .home-explore}
+
+<div class="home-explore-inner">
+
+## Explore DuDE
+
+<p class="explore-sub">Blog posts with research highlights, our events, and the people behind the network.</p>
+
+```{r}
+#| echo: false
 tags$div(class = "category-row",
 
   # Posts
   tags$div(class = "category-column",
-    tags$a(href = "posts/blog/index.html#category=Posts",
+    tags$a(href = "posts/blog/index.html",
       tags$img(
         src = "images/vectors/book.svg",
-        style = "color:#fff !important;",
+        alt = "Blog posts",
         class = "category-image honey-white"
       )
     ),
     tags$h4(style = "text-align:center;",
       tags$a(
         class = "white",
-        href = "posts/blog/index.html#category=Posts",
+        href = "posts/blog/index.html",
         "Posts"
       )
     )
@@ -156,17 +147,17 @@ tags$div(class = "category-row",
 
   # Affiliated Universities
   tags$div(class = "category-column",
-    tags$a(href = "members/universities/index.html#category=Affiliated Universities",
+    tags$a(href = "members/universities/index.html",
       tags$img(
         src = "images/vectors/nl.svg",
-        style = "color:#fff !important;",
+        alt = "Affiliated universities",
         class = "category-image honey-white"
       )
     ),
     tags$h4(style = "text-align:center;",
       tags$a(
         class = "white",
-        href = "members/universities/index.html#category=Affiliated Universities",
+        href = "members/universities/index.html",
         "Affiliated Universities"
       )
     )
@@ -177,7 +168,7 @@ tags$div(class = "category-row",
     tags$a(href = "events/index.html",
       tags$img(
         src = "images/vectors/events.svg",
-        style = "color:#fff !important;",
+        alt = "Events",
         class = "category-image honey-white"
       )
     ),
@@ -192,7 +183,6 @@ tags$div(class = "category-row",
 )
 ```
 
+</div>
 
-:::
-::::
 :::::

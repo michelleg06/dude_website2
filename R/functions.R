@@ -29,31 +29,7 @@ create_team_about = function(text){
 
 # Index page: Our Values boxes
 
-create_values_box1 = function(value, icon, text){
-  tags$div(
-    class = "col-lg-4 px-0",
-    tags$div(
-      class = "value-block value-feature",
-      h3(class = "value-text",
-         tags$i(class = icon), value),
-      p(text)
-    )
-  )
-}
-
-create_values_box2 = function(value, icon, text){
-  tags$div(
-    class = "col-lg-4 px-0",
-    tags$div(
-      class = "value-block value-feature",
-      h3(class = "value-text",
-         tags$i(class = icon), value),
-      p(text)
-    )
-  )
-}
-
-create_values_box3 = function(value, icon, text){
+create_values_box = function(value, icon, text){
   tags$div(
     class = "col-lg-4 px-0",
     tags$div(
@@ -102,11 +78,12 @@ create_button <- function(icon, url) {
 create_category_button <- function(silhouette_image, url, color) {
   tags$div(
     class = "category-column",
-    tags$button(
-      class = "category-button",
-      tags$i(
-        class = icon,
-        href = url,
-        style = paste0("color: ", color)
-      )))
+    tags$a(
+      href = url,
+      tags$button(
+        class = "category-button",
+        tags$img(
+          src = silhouette_image,
+          style = paste0("color: ", color)
+        ))))
 }

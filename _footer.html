@@ -1,3 +1,76 @@
 <footer class="clean-footer">
-    <p>© 2025 Dutch Development Economics Network (DuDE) 🌍</p>
+    <p>© 2026 Dutch Development Economics Network (DuDE) 🌍</p>
 </footer>
+
+<!-- Contact modal (opened from the navbar "Contact" item) -->
+<div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content contact-modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h4" id="contact-modal-title">Get in touch</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="contact-blurb">We'll get back to you as soon as possible!</p>
+        <form id="contact-form" action="https://formspree.io/f/xkgrbjkp" method="POST">
+          <div class="mb-3">
+            <label for="contact-email" class="form-label">Your e-mail</label>
+            <input type="email" class="form-control" id="contact-email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="contact-message" class="form-label">Your message</label>
+            <textarea class="form-control" id="contact-message" name="message" rows="5" required placeholder="What's on your mind?"></textarea>
+          </div>
+          <button type="submit" class="btn contact-submit" id="contact-submit">Send message</button>
+          <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // open the modal from any navbar link ending in #contact
+  document.querySelectorAll('a[href$="#contact"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      bootstrap.Modal.getOrCreateInstance(document.getElementById('contact-modal')).show();
+    });
+  });
+
+  // submit via fetch so the visitor stays on the page
+  var form = document.getElementById('contact-form');
+  var button = document.getElementById('contact-submit');
+  var status = document.getElementById('contact-status');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    button.disabled = true;
+    button.textContent = 'Sending…';
+    status.textContent = '';
+    status.className = 'contact-status';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function (response) {
+      if (response.ok) {
+        form.reset();
+        status.textContent = 'Thanks! Your message has been sent.';
+        status.classList.add('is-success');
+      } else {
+        status.textContent = 'Something went wrong — please try again or email us directly.';
+        status.classList.add('is-error');
+      }
+    }).catch(function () {
+      status.textContent = 'Something went wrong — please try again or email us directly.';
+      status.classList.add('is-error');
+    }).finally(function () {
+      button.disabled = false;
+      button.textContent = 'Send message';
+    });
+  });
+});
+</script>

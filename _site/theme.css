@@ -458,22 +458,30 @@ img.rounded {
   }
 }*/
 
+/* event page: side panel + main text as a robust flex layout
+   (was floats sized 35% + 60% + 50px, which overflowed and pushed
+   the text below the panel on most screens) */
+.paper-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
 .paper-side-column {
-  float: left;
-  width: 35%;
-  padding: 20px 20px;
-  flex-direction: column;
+  flex: 1 1 260px;
+  max-width: 360px;
+  position: sticky;
+  top: 6rem;
+  padding: 24px 20px;
   background-color: #EEECEA;
   font-size: .85rem;
-  border-radius: 30px;
+  border-radius: 24px;
 }
 
 .paper-main-column {
-  float: left;
-  width: 60%;
-  padding: 0 0px;
-  flex-direction: column;
-  margin-left: 50px;
+  flex: 2 1 420px;
+  min-width: 0;
 }
 
 .col-image {
@@ -485,17 +493,8 @@ img.rounded {
 
 @media screen and (max-width: 952px) {
   .paper-side-column {
-    width: 100%;
-    display: block;
-    margin-top: -30px;
-  }
-  .paper-main-column {
-    width: 100%;
-    display: block;
-    padding-top:20px;
-    padding-bottom:20px;
-    margin-left: auto;
-    margin-right: auto;
+    position: static;
+    max-width: none;
   }
 
   .col-image {
@@ -757,6 +756,34 @@ img.rounded {
   object-fit: contain;
 }
 
+/* map with clickable pin: wrapper hugs the image so the overlay
+   percentages (from Python/nl_maps_unis/map_uni_pins.py) line up exactly */
+.card-uni-imgs .map-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.card-uni-imgs .map-wrap img {
+  width: auto;
+  height: 100px;
+}
+
+.map-pin-link {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  transform: translate(-50%, -60%);
+  border-radius: 50%;
+  border-bottom: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.map-pin-link:hover,
+.map-pin-link:focus-visible {
+  background-color: rgba(184, 87, 62, 0.14);
+}
+
 .card-uni-imgs .profile-img {
   border-radius: 50%; 
   object-fit: cover;
@@ -852,4 +879,364 @@ img.rounded {
   gap: 1.5rem; /* space between cards */
   align-items: start;
   justify-content: center;
+}
+
+/* ---------- modern navbar refresh ---------- */
+
+.navbar {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.22);
+}
+
+.navbar .navbar-nav .nav-link {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* at squeezed widths (navbar still expanded), drop the long title — the logo carries the brand */
+@media (min-width: 992px) and (max-width: 1250px) {
+  .navbar .navbar-title {
+    display: none;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 0.45rem 0.7rem;
+  }
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus-visible {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.navbar .navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.navbar .nav-link .bi {
+  margin-right: 0.4rem;
+}
+
+/* modern chevron instead of the default caret triangle; rotates when the menu is open */
+.navbar .dropdown-toggle::after {
+  content: "";
+  border: none;
+  width: 0.85em;
+  height: 0.85em;
+  margin-left: 0.35rem;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat center / contain;
+  transition: transform 0.2s ease;
+}
+
+.navbar .dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+.navbar .dropdown-menu {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+  padding: 0.4rem;
+  margin-top: 0.35rem;
+}
+
+.navbar .dropdown-item {
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #f6ece7;
+  color: #472605;
+}
+
+/* ---------- contact modal ---------- */
+
+#contact-modal .modal-content {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+#contact-modal .modal-header {
+  border-bottom: none;
+  padding: 1.5rem 1.75rem 0.25rem;
+}
+
+#contact-modal .modal-title {
+  color: #472605;
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#contact-modal .modal-body {
+  padding: 0.25rem 1.75rem 1.75rem;
+}
+
+#contact-modal .contact-blurb {
+  color: #8a8f98;
+  margin-bottom: 1.25rem;
+}
+
+#contact-modal .form-label {
+  font-weight: 600;
+  color: #5c4a36;
+}
+
+#contact-modal .form-control {
+  border-radius: 10px;
+  padding: 0.65rem 0.85rem;
+}
+
+#contact-modal .form-control:focus {
+  border-color: #B8573E;
+  box-shadow: 0 0 0 0.2rem rgba(184, 87, 62, 0.15);
+}
+
+.contact-submit {
+  background-color: #B8573E;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.6rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.contact-submit:hover,
+.contact-submit:focus-visible {
+  background-color: #9c432e;
+  color: #fff;
+}
+
+.contact-submit:disabled {
+  background-color: #c98a77;
+}
+
+.contact-status {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.contact-status.is-success {
+  display: block;
+  color: #2e7d32;
+}
+
+.contact-status.is-error {
+  display: block;
+  color: #b3261e;
+}
+
+/* ---------- event page: poster cards ---------- */
+
+.paper-main-column h3 {
+  display: inline-block;
+  margin-top: 2.25rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid #B8573E;
+}
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.poster-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 1rem 1rem 1.1rem;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(71, 38, 5, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.poster-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(71, 38, 5, 0.13);
+}
+
+.poster-card a {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.poster-card img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.poster-card p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.poster-card strong {
+  color: #472605;
+}
+
+.poster-uni {
+  display: block;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #8a8f98;
+}
+
+/* ---------- member directory ---------- */
+
+.member-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem auto 2.25rem;
+}
+
+.member-chip {
+  border: 1.5px solid #B8573E;
+  background: transparent;
+  color: #B8573E;
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.member-chip:hover {
+  background-color: rgba(184, 87, 62, 0.1);
+}
+
+.member-chip.active {
+  background-color: #B8573E;
+  color: #fff;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 1.5rem;
+  max-width: 64rem;
+  margin: 0 auto 2.5rem;
+}
+
+.member-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 1.5rem 1rem 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(71, 38, 5, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(71, 38, 5, 0.12);
+}
+
+.member-card.is-hidden {
+  display: none;
+}
+
+.member-photo {
+  display: block;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 0.9rem;
+  border: 2px solid #eee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.member-name {
+  margin: 0 0 0.3rem;
+  color: #472605;
+  font-size: 1rem !important;
+}
+
+.member-role {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #5c5852;
+  line-height: 1.35;
+}
+
+.member-uni {
+  margin: 0.15rem 0 0.65rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #8a8f98;
+}
+
+.member-link .icon-link {
+  width: 20px;
+  height: 20px;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.member-link:hover .icon-link {
+  opacity: 1;
+}
+
+.member-note {
+  text-align: center;
+  color: #5c5852;
+  margin-bottom: 3rem;
+}
+
+.members-h {
+  display: table;
+  margin: 0 auto 1.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid #B8573E;
+  text-align: center;
+}
+
+.phd-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  max-width: 64rem;
+  margin: 0 auto 2.5rem;
+}
+
+.phd-block {
+  background: #faf7f4;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+}
+
+.phd-block.is-hidden {
+  display: none;
+}
+
+.phd-uni {
+  margin: 0 0 0.4rem;
+  color: #B8573E;
+  font-size: 0.95rem !important;
+}
+
+.phd-names {
+  margin: 0;
+  font-size: 0.87rem;
+  color: #5c5852;
+  line-height: 1.6;
 }

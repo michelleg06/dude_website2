@@ -3,28 +3,30 @@ title: "2025: 14th Dutch Development Economics Network (DuDE) Workshop"
 title-block-banner: "#B8573E"
 title-block-banner-color: body
 page-layout: article
-include-after-body: _footer.html
 image: thumbnail.jpg
-listing-date: 2025-03-27
+date: 2025-03-27
 categories: ["Workshop"]
 description: "DuDE 14th annual workshop hosted by the Tinbergen Institute in Amsterdam."
 ---
 
-<!-- Side panel -->
-
 :::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
 
 :::{.paper-side-column}
 
 <center>
 
 <div style="text-align: center;">
-  <img 
-    src="https://www.pngkit.com/png/detail/63-632326_times-tinbergen-institute-logo.png"
+  <img
+    src="tinbergen_logo.svg"
     alt="Tinbergen Institute Logo"
     style="
       width: 160px;
       height: 160px;
+      padding: 16px;
+      background: #fff;
       border-radius: 50%;
       object-fit: contain;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -32,7 +34,7 @@ description: "DuDE 14th annual workshop hosted by the Tinbergen Institute in Ams
   />
 </div>
 
-**Tinbergen Institute**  
+**Tinbergen Institute**
 (Graduate School and Research Institute for Economics and Business)
 
 **Location**
@@ -52,6 +54,8 @@ leaflet() %>%
 
 :::
 
+<!-- Main column -->
+
 :::{.paper-main-column}
 
 ```{css, echo = FALSE}
@@ -62,47 +66,53 @@ leaflet() %>%
 
 :::{.justify}
 
-The 14th Dutch Development Economics Network (DuDE) Workshop was hosted by the Tinbergen Institute, in Amsterdam. Chaired by [Marc Witte](https://www.marcwitte.com/), the event took place on 27 and 28 March 2025 and included various academic and social activities, among which paper presentations, social lunches and dinner, and poster presentations. For a detailed version of the full itinerary, please download the [workshop program](program.pdf). 
+The 14th Dutch Development Economics Network (DuDE) Workshop was hosted by the Tinbergen Institute, in Amsterdam. Chaired by [Marc Witte](https://www.marcwitte.com/), the event took place on 27 and 28 March 2025 and included various academic and social activities, among which paper presentations, social lunches and dinner, and poster presentations. For a detailed version of the full itinerary, please download the [workshop program](program.pdf).
 
-**Posters**
+### Posters
 
 Feel free to download the posters from the 14th iteration of the DuDE Workshop.
 
-::: {.grid} 
+::: {.poster-grid}
 
-:::{.card}
-[![Non-Random Locations of Random Trials?](posters/poster1-thumb.jpg){.img-thumbnail}](posters/poster1_anna.pdf)
-**Anna Minasyan**  *Groningen University*
+:::{.poster-card}
+[![Non-Random Locations of Random Trials?](posters/poster1-thumb.jpg)](posters/poster1_anna.pdf){title="Download poster (PDF)"}
+**Anna Minasyan**
+[Groningen University]{.poster-uni}
 :::
 
-
-
-:::{.card}
-[![Worker performance and In-Group Bias: Evidence from Chinese firms in Zambia](posters/poster2-thumb.jpg){.img-thumbnail}](posters/poster2_kacana.pdf)
-**Kacana Sipangule Khadjavi** *VU Amsterdam* 
+:::{.poster-card}
+[![Worker performance and In-Group Bias: Evidence from Chinese firms in Zambia](posters/poster2-thumb.jpg)](posters/poster2_kacana.pdf){title="Download poster (PDF)"}
+**Kacana Sipangule Khadjavi**
+[VU Amsterdam]{.poster-uni}
 :::
 
-:::{.card}
-[![Reforms Welcome?](posters/poster4-thumb.jpg){.img-thumbnail}](posters/poster4_tobias.pdf)
-**Tobias Hillebrand** *UNU-MERIT*
+:::{.poster-card}
+[![Reforms Welcome?](posters/poster4-thumb.jpg)](posters/poster4_tobias.pdf){title="Download poster (PDF)"}
+**Tobias Hillebrand**
+[UNU-MERIT]{.poster-uni}
 :::
 
-:::{.card}
-[![Weathering Conflict: The Effect of Resource Shocks on Livestock Raids](posters/poster5-thumb.jpg){.img-thumbnail}](posters/poster5_rikken.pdf)
-**Emma E. Rikken** *Wageningen University*
+:::{.poster-card}
+[![Weathering Conflict: The Effect of Resource Shocks on Livestock Raids](posters/poster5-thumb.jpg)](posters/poster5_rikken.pdf){title="Download poster (PDF)"}
+**Emma E. Rikken**
+[Wageningen University]{.poster-uni}
 :::
 
-:::{.card}
-[![Empowering Female Leaders in Group Lending](posters/poster6-thumb.jpg){.img-thumbnail}](posters/poster6_seimel.pdf)
-**Natália Seimel** *Tilburg University*
+:::{.poster-card}
+[![Empowering Female Leaders in Group Lending](posters/poster6-thumb.jpg)](posters/poster6_seimel.pdf){title="Download poster (PDF)"}
+**Natália Seimel**
+[Tilburg University]{.poster-uni}
 :::
 
-:::{.card}
-[![Decoding Green Justice: AI-Assisted Analysis of Environmental Court Rulings in India](posters/poster3-thumb.jpg){.img-thumbnail}](posters/poster3_kyrychenko.pdf)
-**Olexiy Kyrychenko** *Radboud University*
+:::{.poster-card}
+[![Decoding Green Justice: AI-Assisted Analysis of Environmental Court Rulings in India](posters/poster3-thumb.jpg)](posters/poster3_kyrychenko.pdf){title="Download poster (PDF)"}
+**Olexiy Kyrychenko**
+[Radboud University]{.poster-uni}
 :::
 
 :::
 :::
 :::
+
+::::
 :::

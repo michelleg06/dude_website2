@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d372958ccc882403dd3f117bf1b9c52e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d63217bea78317b18a74e2180246ca7f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,7 +76,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../theme.css">
-<link rel="stylesheet" href="../../custom_theme.scss">
 <meta property="og:title" content="Blog – Dutch Development Economics Network">
 <meta property="og:description" content="A blog by the Dutch Development Economics Network (DuDE)">
 <meta property="og:image" content="https://michelleg06.github.io/dude_website2/posts/blog/images/dude_banner.svg">
@@ -110,27 +109,14 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> <i class="bi bi-house-door-fill" role="img">
+    <a class="nav-link active" href="../../posts/blog/index.html" aria-current="page"> <i class="bi bi-journal-text" role="img">
 </i> 
-<span class="menu-text"> </span></a>
+<span class="menu-text">Posts</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-posts" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Posts</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-posts">    
-        <li>
-    <a class="dropdown-item" href="../../posts/blog/index.html">
- <span class="dropdown-text">Blog</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../posts/research/index.html">
- <span class="dropdown-text">Research</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-members" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-people-fill" role="img">
+</i> 
  <span class="menu-text">Members</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-members">    
@@ -145,11 +131,13 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../events/index.html"> 
+    <a class="nav-link" href="../../events/index.html"> <i class="bi bi-calendar-event" role="img">
+</i> 
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contact/index.html"> 
+    <a class="nav-link" href="../../#contact"> <i class="bi bi-envelope" role="img">
+</i> 
 <span class="menu-text">Contact</span></a>
   </li>  
   <li class="nav-item compact">
@@ -205,6 +193,79 @@ ul.task-list li input[type="checkbox"] {
 <footer class="clean-footer">
     <p>© 2025 Dutch Development Economics Network (DuDE) 🌍</p>
 </footer>
+
+<!-- Contact modal (opened from the navbar "Contact" item) -->
+<div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content contact-modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h4" id="contact-modal-title">Get in touch</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="contact-blurb">We'll get back to you as soon as possible!</p>
+        <form id="contact-form" action="https://formspree.io/f/xkgrbjkp" method="POST">
+          <div class="mb-3">
+            <label for="contact-email" class="form-label">Your e-mail</label>
+            <input type="email" class="form-control" id="contact-email" name="email" required="" placeholder="you@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="contact-message" class="form-label">Your message</label>
+            <textarea class="form-control" id="contact-message" name="message" rows="5" required="" placeholder="What's on your mind?"></textarea>
+          </div>
+          <button type="submit" class="btn contact-submit" id="contact-submit">Send message</button>
+          <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // open the modal from any navbar link ending in #contact
+  document.querySelectorAll('a[href$="#contact"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      bootstrap.Modal.getOrCreateInstance(document.getElementById('contact-modal')).show();
+    });
+  });
+
+  // submit via fetch so the visitor stays on the page
+  var form = document.getElementById('contact-form');
+  var button = document.getElementById('contact-submit');
+  var status = document.getElementById('contact-status');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    button.disabled = true;
+    button.textContent = 'Sending…';
+    status.textContent = '';
+    status.className = 'contact-status';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function (response) {
+      if (response.ok) {
+        form.reset();
+        status.textContent = 'Thanks! Your message has been sent.';
+        status.classList.add('is-success');
+      } else {
+        status.textContent = 'Something went wrong — please try again or email us directly.';
+        status.classList.add('is-error');
+      }
+    }).catch(function () {
+      status.textContent = 'Something went wrong — please try again or email us directly.';
+      status.classList.add('is-error');
+    }).finally(function () {
+      button.disabled = false;
+      button.textContent = 'Send message';
+    });
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

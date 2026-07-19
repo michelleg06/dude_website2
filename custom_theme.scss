@@ -1,19 +1,17 @@
-// use litera as the base
-$theme: "lumen" !default;
+/*-- scss:defaults --*/
 
-// fonts
-$font-family-sans-serif: "Roboto", Roboto, serif;
-$font-family-monospace: "Fira Mono", Fira;
+// fonts (Roboto is imported in the rules section below)
+$font-family-sans-serif: "Roboto", sans-serif;
 
 // colours
 // $body-bg: #FFFBF7;
-$link-color: #E06E53;
 $navbar-hl: #E06E53;
 
-.h4 {
-  font-size: 1.11rem !important;
-}
+/*-- scss:rules --*/
 
-h4 {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+h4,
+.h4 {
   font-size: 1.11rem !important;
 }

@@ -23,25 +23,22 @@ website:
     search: true
     logo: images/logos/dude_logo_m2.svg
     right:
-      - href: index.qmd
-        icon: house-door-fill
-        text: " "
       - text: "Posts"
-        menu:
-        - href: posts/blog/index.qmd
-          text: "Blog"
-        - href: posts/research/index.qmd
-          text: "Research"
+        icon: journal-text
+        href: posts/blog/index.qmd
       - text: "Members"
+        icon: people-fill
         menu:
         - href: members/universities/index.qmd
           text: "Affiliated Universities"
         - href: members/members/index.qmd
           text: "Members"
-      - href: events/index.qmd
-        text: "Events"
-      - href: contact/index.qmd
-        text: "Contact"
+      - text: "Events"
+        icon: calendar-event
+        href: events/index.qmd
+      - text: "Contact"
+        icon: envelope
+        href: "#contact"
       - href: https://github.com/michelleg06/dude_website2
         icon: github
   announcement:
@@ -54,12 +51,11 @@ website:
 format:
   html:
     fontsize: 1.15rem
+    include-after-body: _footer.html
     monofont: Fira Code
     highlight-style: arrow
-    css: [theme.css, custom_theme.scss]
+    theme: custom_theme.scss
+    css: theme.css
     toc: true
     code-overflow: scroll
     linkcolor: "#B8573E"
-    includes:
-      before-body: hero-image.html
-      after-body: _footer.html
