@@ -7,3 +7,6 @@
 /_site/
 
 **/*.quarto_ipynb
+
+# macOS Finder metadata
+.DS_Store

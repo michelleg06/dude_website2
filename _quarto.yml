@@ -3,12 +3,11 @@ project:
   render:
     - "**/*.qmd"
     - "!archive/"
-  # Quarto copies the images it finds in src attributes; these are reached
-  # through srcset, a <link> tag and CSS masks, so they have to be named here
+  # Quarto copies the images it finds in src attributes; these two are reached
+  # through srcset and a <link> tag, so they have to be named here
   resources:
     - images/hero-workshop@2x.jpg
     - images/apple-touch-icon.png
-    - images/vectors/
 
 website:
   site-url: "https://michelleg06.github.io/dude_website2"
