@@ -20,7 +20,7 @@ import math
 GEOJSON = "nl_provinces_2025.geojson"
 
 MAP_FILL = "#cfcdcc"
-PIN_FILL = "#B8573E"
+PIN_FILL = "#F47F09"  # the logo's orange node
 
 # Canvas: portrait, roughly the proportions of the old maps
 CANVAS_W = 340.0
@@ -38,6 +38,7 @@ UNIVERSITIES = [
     {"file": "map_nijmegen.svg",   "name": "Radboud University Nijmegen",   "lat": 51.8190, "lon": 5.8560},
     {"file": "map_utrecht.svg",    "name": "Utrecht University",            "lat": 52.0851, "lon": 5.1804},
     {"file": "map_amsterdam.svg",  "name": "Vrije Universiteit Amsterdam",  "lat": 52.3336, "lon": 4.8654},
+    {"file": "map_rotterdam.svg",  "name": "Erasmus University Rotterdam",  "lat": 51.9175, "lon": 4.5250},
 ]
 
 

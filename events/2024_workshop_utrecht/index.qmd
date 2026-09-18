@@ -1,0 +1,85 @@
+---
+title: "2024: 13th Dutch Development Economics Network Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2024-04-18
+categories: ["Workshop"]
+host: "Utrecht University"
+event-dates: "18–19 April 2024"
+description: "The thirteenth workshop, hosted by Utrecht University."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/utrecht-university.svg" alt="Utrecht University logo" />
+
+**Utrecht University**
+
+{{< fa calendar >}} **When**\
+18–19 April 2024
+
+{{< fa location-dot >}} **Where**\
+Janskerkhof 2-3, 3512 BK Utrecht
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 5.1219, lat = 52.0935, popup = "Janskerkhof, Utrecht University")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[2 days]{.event-fact} [11 papers]{.event-fact}
+:::
+
+Utrecht University hosted the thirteenth edition at Janskerkhof, in the heart of the city. Eleven papers from Warwick, the Stockholm School of Economics, Bocconi, the University of Ghana and across the network took up job loss and job search, mobile internet and structural change in Nigeria, seed markets, incentives in a community health programme in Sierra Leone, culture and competition, female entrepreneurship, early-childhood skills in Roma communities in Bulgaria, temperature and manufacturing in India, mobile salary payments in Afghanistan and child stunting.
+
+The local organizing team was Patricio Dalton and Harry Son. The workshop was jointly organized and co-sponsored by the network and its participating universities, represented by their node coordinators: Wendy Janssens (Vrije Universiteit Amsterdam), Karlijn Morsink (Utrecht), Patricio Dalton (Tilburg), Kristina Czura (Groningen), Natascha Wagner (Nijmegen), Eleonora Nillesen (UNU-MERIT) and Francesco Cecchi (Wageningen).
+
+### Programme
+
+::: {.programme}
+
+#### Thursday 18 April
+
+- **Stefano Caria**, University of Warwick [Mitigating the Consequences of Job-Loss in Low-Income Countries: Experimental Evidence from Ethiopia]{.talk-title}
+- **Marc Witte**, Vrije Universiteit Amsterdam [Feedback, Overconfidence and Job Search Behavior]{.talk-title} [Discussant: Eleonora Nillesen, UNU-MERIT · presented online by Lucas Hensel]{.discussant}
+- **Bernardo Caldarola**, UNU-MERIT [Mobile Internet Adoption and Inclusive Structural Change: Evidence from Nigerian Non-Farming Enterprises]{.talk-title} [Discussant: Emmanuel B. Mensah, Utrecht University]{.discussant}
+- **Tessa Bold**, Stockholm School of Economics [Market Access and Demand for Improved Seeds]{.talk-title} [Discussant: Natascha Wagner, Nijmegen University]{.discussant}
+- **Erika Deserranno**, Bocconi University [The Allocation of Incentives in Multi-Layered Organizations: Evidence from a Community Health Program in Sierra Leone]{.talk-title} [Discussant: Menno Pradhan, Vrije Universiteit Amsterdam]{.discussant}
+- **Mark Treurniet**, University of Groningen [Culture and Competition: Independent vs. Interdependent Framing Alters Preference for Competition]{.talk-title} [Discussant: Ankush Asri, Nijmegen University]{.discussant}
+- **Monica Lambon-Quayefio**, University of Ghana (visiting Tilburg University) [Female Entrepreneurship and Professional Networks]{.talk-title} [Discussant: Kristina Czura, University of Groningen]{.discussant}
+
+#### Friday 19 April
+
+- **Joost de Laat**, Utrecht University [Closing the Early Childhood Skills Gap for Minorities: Evidence from Parental Investments and Preschool Attendance in Concentrated Roma Communities in Bulgaria]{.talk-title} [Discussant: Robert Sparrow, Wageningen University]{.discussant}
+- **Olexiy Kyrychenko**, Nijmegen University [Temperature and Manufacturing Production: Plant-Level Evidence from India]{.talk-title} [Discussant: Daan van Soest, Tilburg University]{.discussant}
+- **Stefano Fiorin**, Bocconi University [Strengthening Fragile States: Evidence from Mobile Salary Payments in Afghanistan]{.talk-title} [Discussant: Esther Gehrke, Wageningen University]{.discussant}
+- **Amal Ahmad**, Wageningen University [A Child Feeding a Child: Early Mother's Marriage and Offspring Stunting in India]{.talk-title} [Discussant: Harry Son, Utrecht University]{.discussant}
+
+:::
+
+:::
+
+::::
+:::

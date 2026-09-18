@@ -1,7 +1,7 @@
 ---
 title: "Affiliated Members"
 subtitle: "The people behind the network"
-title-block-banner: "#B8573E"
+title-block-banner: "#0D2757"
 title-block-banner-color: body
 page-layout: full
 toc: false
@@ -216,11 +216,11 @@ format:
       <img src="../universities/images/icons/website.svg" alt="" class="icon-link" /></a>
   </div>
 
-  <div class="member-card" data-uni="utrecht">
+  <div class="member-card" data-uni="wageningen">
     <img class="member-photo" src="photos/joost-de-laat.jpg" alt="Joost de Laat" loading="lazy" />
     <h4 class="member-name">Joost de Laat</h4>
-    <p class="member-uni">Utrecht University</p>
-    <a class="member-link" href="https://www.uu.nl/staff/JdeLaat" target="_blank" rel="noopener" title="Personal page" aria-label="Personal page of Joost de Laat">
+    <p class="member-uni">Wageningen University</p>
+    <a class="member-link" href="https://research.wur.nl/en/persons/joost-de-laat/" target="_blank" rel="noopener" title="Personal page" aria-label="Personal page of Joost de Laat">
       <img src="../universities/images/icons/website.svg" alt="" class="icon-link" /></a>
   </div>
 
@@ -481,7 +481,7 @@ format:
   </div>
 </div>
 
-<p class="member-note">Are you a development economist based in the Netherlands and would like to join the network? <a href="#contact">Get in touch</a>.</p>
+<p class="member-note">Are you a development economist based in the Netherlands and would like to join the network? Contact <a href="../universities/index.html">your university's coordinator</a>.</p>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {

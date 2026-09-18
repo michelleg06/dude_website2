@@ -1,0 +1,87 @@
+---
+title: "2019: 10th Dutch Development Economics Network Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2019-06-03
+categories: ["Workshop"]
+host: "Tinbergen Institute"
+event-dates: "3–4 June 2019"
+description: "The tenth workshop, hosted by the Tinbergen Institute in Amsterdam."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/tinbergen-institute.svg" alt="Tinbergen Institute logo" />
+
+**Tinbergen Institute**\
+with Vrije Universiteit Amsterdam
+
+{{< fa calendar >}} **When**\
+3–4 June 2019
+
+{{< fa location-dot >}} **Where**\
+Gustav Mahlerplein 117, 1082 MS Amsterdam
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 4.873, lat = 52.339, popup = "Tinbergen Institute")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[2 days]{.event-fact} [9 papers]{.event-fact} [Closing lecture]{.event-fact}
+:::
+
+For its tenth edition the workshop came to Amsterdam, hosted at the Tinbergen Institute, with the Vrije Universiteit Amsterdam joining Tilburg and Wageningen as co-sponsor. Nine papers covered aid fragmentation and conflict, mobile-phone monitoring in Niger, free university tuition in Ecuador, health care during Sierra Leone's Ebola outbreak, payment technology, community natural-resource management in Namibia, crop insurance bundles in Kenya, management consulting in Colombia and schooling for displaced children in Jordan.
+
+The workshop closed with Peter Lanjouw on *How Lives Change: Palanpur, India, and Development Economics*, drawn from the long-running study of a single village in north India. That same afternoon, Jenny Aker also presented at the Tinbergen Institute's labor seminar series.
+
+The workshop was co-sponsored by the Vrije Universiteit Amsterdam (School of Business and Economics), the Tinbergen Institute, Tilburg University (Department of Economics) and Wageningen University (Development Economics Group).
+
+### Programme
+
+::: {.programme}
+
+#### Monday 3 June
+
+- **Travers Child**, China Europe International Business School [Aid Fragmentation, Corruption, and Conflict: A Micro-Level Analysis]{.talk-title} [Discussant: Erwin Bulte]{.discussant}
+- **Jenny Aker**, Tufts University [Phone Calls, Monitoring and Learning: Evidence from Niger]{.talk-title} [Discussant: Arjun Bedi]{.discussant}
+- **Teresa Molina**, University of Hawai'i [The Labor Market Effects of Eliminating University Tuition in Ecuador]{.talk-title} [Discussant: Robert Sparrow]{.discussant}
+- **Maarten Voors**, Wageningen University & Research [Health Care Delivery During Crises: Experimental Evidence from Sierra Leone's Ebola Outbreak]{.talk-title} [Discussant: Wendy Janssens]{.discussant}
+- **Burak Uras**, Tilburg University [Payment Technology Adoption and Finance]{.talk-title} [Discussant: Wouter Zant]{.discussant}
+- **Julian Jamison**, University of Exeter [The Impact of Community Natural Resource Management on Farmers' Livelihoods and Land Quality in Namibia]{.talk-title} [Discussant: Daan van Soest]{.discussant}
+
+#### Tuesday 4 June
+
+- **Francesco Cecchi**, Wageningen University & Research [Do Crop Insurance–Certified Seed Bundles Crowd-in Investments? Experimental Evidence from Kenya]{.talk-title} [Discussant: Marleen Dekker]{.discussant}
+- **David McKenzie**, World Bank [Improving Management with Individual and Group-Based Consulting: Results from a Randomized Experiment in Colombia]{.talk-title} [Discussant: Patricio Dalton]{.discussant}
+- **Jacob de Hoop**, UNICEF [Supporting the School Participation of Displaced Children in Jordan]{.talk-title} [Discussant: Menno Pradhan]{.discussant}
+- [Closing lecture]{.session-label} **Peter Lanjouw**, Vrije Universiteit Amsterdam [How Lives Change: Palanpur, India, and Development Economics]{.talk-title}
+
+:::
+
+:::
+
+::::
+:::

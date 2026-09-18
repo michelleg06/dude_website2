@@ -1,0 +1,94 @@
+---
+title: "2024: 2nd Dutch Development Economics Network PhD Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2024-10-24
+categories: ["PhD Workshop"]
+host: "Wageningen University"
+event-dates: "24–25 October 2024"
+description: "The second PhD workshop: two days of papers, posters and research-skills sessions in Wageningen."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/wageningen-university.svg" alt="Wageningen University & Research logo" />
+
+**Wageningen University**
+
+{{< fa calendar >}} **When**\
+24–25 October 2024
+
+{{< fa location-dot >}} **Where**\
+Forum, Droevendaalsesteeg 2, Wageningen (day 1) · Leeuwenborch, Hollandseweg 1 (day 2)
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 5.6636, lat = 51.9853, popup = "Forum, Wageningen University")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[2 days]{.event-fact} [7 papers]{.event-fact} [7 posters]{.event-fact} [Skills sessions]{.event-fact}
+:::
+
+Wageningen University hosted the second PhD workshop over two days. On the first, in the Forum building, seven PhD candidates presented full papers and seven more presented posters, in sessions chaired by Yannick Markhof and Elisa van Dongen. Research ranged from crop insurance and welfare under catastrophic drought to anti-poverty transfers and self-belief, 3G coverage and child marriage, child care subsidies in Egypt, mineral trade and armed conflict in eastern Congo, and a refugee camp's effect on its hosts.
+
+The second day, in the Leeuwenborch, turned to the craft of research: Wageningen faculty ran two rounds of parallel sessions on preparing for the academic job market, the publication process and writing a response letter, moving from a research idea to an empirical strategy and a story, machine learning in economics, research designs with observational data, building a CV and writing a research proposal.
+
+### Programme
+
+::: {.programme}
+
+#### Thursday 24 October
+
+- **Jamleck Oroko**, Wageningen University [To What Extent Are Ex-Ante Valuations of Agricultural Innovations Reliable? What We Learn from Farmers' Willingness to Pay for Equal Single and Multiple Peril Crop Insurance]{.talk-title}
+- **Samin Nikkhah Bahrami**, Utrecht University [On Targeting: Predictors of Expected Consumer Welfare from Catastrophic Drought]{.talk-title}
+- **Elisa van Dongen**, University of Groningen [On the Relationship between Anti-Poverty Transfers and the Belief in One's Own Capabilities: Theory and Evidence from a Framed Field Experiment]{.talk-title}
+- [Poster]{.session-label} **Tiruwork Arega Tadesse**, UNU-MERIT [Impacts of Electricity Tariff Reform on Energy Insecurity Experiences: Evidence from Ethiopia]{.talk-title}
+- [Poster]{.session-label} **Anandita Bardia**, Tinbergen Institute [The Impact of a Conditional Cash Transfer on Investment in Daughters and Change in Parental Attitude: Evidence from Karnataka]{.talk-title}
+- [Poster]{.session-label} **Anne Lieke Ebbers**, Radboud University Nijmegen [Legal Reforms and Child Marriage: A Qualitative and Trend Analysis of Marriage Laws and Their Impact on Societal Norms and Behaviours]{.talk-title}
+- [Poster]{.session-label} **Alexandra Geis**, University of Groningen [Rainfall Shocks and Children's Nutritional Security: The Mediating Role of Women's Empowerment]{.talk-title}
+- [Poster]{.session-label} **Clare Nakimpi**, Wageningen University [Enhancing Farmer Participation in Biomass Supply Chains: Insights from a Discrete Choice Experiment in Uganda]{.talk-title}
+- [Poster]{.session-label} **Natalia Polakova**, Tilburg University [Leveraging Community Knowledge for Credit Distribution]{.talk-title}
+- [Poster]{.session-label} **Mia Ravbar**, Utrecht University [Farmers' Responses to Adverse Weather Shocks]{.talk-title}
+- **Jet Wildeman**, Radboud University Nijmegen [Mobile Internet as an Empowerment Tool for Young Women in Sub-Saharan Africa? The Effect of 3G Coverage on Child Marriage and Teen Pregnancy]{.talk-title}
+- **Abdelrahman Nagy**, UNU-MERIT [Can Economic Interventions Raise Female Employment when Social Norms Limit It? Experimental Evidence from Child Care Subsidies and Employment Services in Egypt]{.talk-title}
+- **Else-Marie van den Herik**, Tinbergen Institute [Minerals on the Move: Mineral Trade and Armed Conflict in Eastern Congo]{.talk-title}
+- **Juan Segnana**, Tilburg University [When Close Is Too Close: Effects of a Refugee Camp Expansion on Hosts' Normative Beliefs]{.talk-title}
+
+#### Friday 25 October — research-skills sessions
+
+- **Amal Ahmad** [Preparing for the Academic Job Market]{.talk-title}
+- **Erwin Bulte** [The Economics Publication Process & Writing an Effective Response Letter]{.talk-title}
+- **Francesco Cecchi** [From Research Idea to Empirical Strategy, from Empirical Strategy to Story]{.talk-title}
+- **Koos Gardebroek** [Machine Learning in Economics]{.talk-title}
+- **Esther Gehrke** [Research Designs with Observational Data · How to Position Yourself in the Market and Build a CV]{.talk-title}
+- **Maarten Voors** [Writing a Research Proposal]{.talk-title}
+
+:::
+
+:::
+
+::::
+:::

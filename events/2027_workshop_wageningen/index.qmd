@@ -1,0 +1,12 @@
+---
+title: "2027: 16th Dutch Development Economics Network Workshop"
+page-layout: article
+image: thumbnail.jpg
+date: 2027-04-21
+categories: ["Workshop"]
+host: "Wageningen University"
+event-dates: "21–23 April 2027"
+description: "The sixteenth workshop, hosted by Wageningen University."
+---
+
+{{< include ../_future-event.qmd >}}

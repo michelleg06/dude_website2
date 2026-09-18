@@ -1,0 +1,12 @@
+---
+title: "2026: 4th Dutch Development Economics Network PhD Workshop"
+page-layout: article
+image: thumbnail.jpg
+date: 2026-11-06
+categories: ["PhD Workshop"]
+host: "Tinbergen Institute"
+event-dates: "6 November 2026"
+description: "The fourth PhD workshop, hosted by the Tinbergen Institute in Amsterdam."
+---
+
+{{< include ../_future-event.qmd >}}

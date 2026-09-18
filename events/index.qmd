@@ -1,6 +1,6 @@
 ---
 title: "Events"
-subtitle: "Current and past events organized by the Dutch Development Economics Network (DuDE)"
+subtitle: "Current and past events organized by the Dutch Development Economics Network"
 listing:
   sort-ui: true
   sort: 
@@ -13,7 +13,7 @@ listing:
   grid-columns: 4
   page-size: 40
   fields: [image]
-title-block-banner: "#B8573E"
+title-block-banner: "#0D2757"
 title-block-banner-color: body
 page-layout: full
 format:

@@ -1,0 +1,78 @@
+---
+title: "2018: 9th Dutch Development Economics Network Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2018-04-18
+categories: ["Workshop"]
+host: "Wageningen University"
+event-dates: "18 April 2018"
+description: "The ninth workshop: a one-day edition on the Wageningen campus."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/wageningen-university.svg" alt="Wageningen University & Research logo" />
+
+**Wageningen University**\
+Development Economics Group
+
+{{< fa calendar >}} **When**\
+18 April 2018
+
+{{< fa location-dot >}} **Where**\
+Impulse, Stippeneng 2, 6708 Wageningen
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 5.6669, lat = 51.9868, popup = "Impulse, Wageningen Campus")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[1 day]{.event-fact} [6 papers]{.event-fact}
+:::
+
+The ninth edition was a focused one-day workshop in Impulse, on the Wageningen campus. Six papers — each with its own discussant — took on goals and support groups for microentrepreneurs in Medellín, the origins of violence in Rwanda, barriers to female empowerment in Tanzania, the political economy of school test scores, land markets and agricultural productivity, and how small-scale retailers learn business practices from their peers.
+
+The workshop was co-sponsored by Tilburg University (Department of Economics) and Wageningen University (Development Economics Group and Wageningen School of Social Sciences).
+
+### Programme
+
+::: {.programme}
+
+#### Wednesday 18 April
+
+- **Alessandra Cassar**, University of San Francisco [Raising Achievement Among Microentrepreneurs: An Experimental Test of Goals, Incentives, and Support Groups in Medellín, Colombia]{.talk-title} [Discussant: Wendy Janssens]{.discussant}
+- **Leander Heldring**, Tilburg University [The Origins of Violence in Rwanda]{.talk-title} [Discussant: Pauline Rossi]{.discussant}
+- **Bertil Tungodden**, NHH Norwegian School of Economics [Barriers to Female Empowerment: Evidence from a Field Experiment in Tanzania]{.talk-title} [Discussant: Janneke Pieters]{.discussant}
+- **Philip Verwimp**, Université libre de Bruxelles [The Political Economy of School Test Scores]{.talk-title} [Discussant: Eleonora Nillesen]{.discussant}
+- **Raül Santaeulàlia-Llopis**, MOVE-UAB and Barcelona GSE [The Effects of Land Markets on Resource Allocation and Agricultural Productivity]{.talk-title} [Discussant: Daan van Soest]{.discussant}
+- **Patricio Dalton**, Tilburg University [Learning Business Practices from Peers: Experimental Evidence from Small-scale Retailers in an Emerging Market]{.talk-title} [Discussant: Erwin Bulte]{.discussant}
+
+:::
+
+:::
+
+::::
+:::

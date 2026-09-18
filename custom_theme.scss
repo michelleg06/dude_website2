@@ -3,9 +3,22 @@
 // fonts (Roboto is imported in the rules section below)
 $font-family-sans-serif: "Roboto", sans-serif;
 
-// colours
-// $body-bg: #FFFBF7;
-$navbar-hl: #E06E53;
+// Brand colours, sampled from the logo. The full set of tokens lives in
+// theme.css (:root); these are the ones Bootstrap and Quarto need up front.
+$navy: #0D2757; // the logo's ink
+$blue: #2B5597; // the logo's connecting lines, darkened enough to be text
+$orange: #F47F09; // the logo's single orange node
+
+$primary: $navy;
+$body-color: #1A2233;
+$link-color: $blue;
+$link-hover-color: $navy;
+
+// navbar: white on navy. The current page is marked with a solid orange pill
+// (see theme.css) rather than orange text, which navy is too dark to carry.
+$navbar-bg: $navy;
+$navbar-fg: #FFFFFF;
+$navbar-hl: #FFFFFF;
 
 /*-- scss:rules --*/
 

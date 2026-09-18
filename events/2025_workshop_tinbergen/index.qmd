@@ -1,12 +1,14 @@
 ---
-title: "2025: 14th Dutch Development Economics Network (DuDE) Workshop"
-title-block-banner: "#B8573E"
+title: "2025: 14th Dutch Development Economics Network Workshop"
+title-block-banner: "#0D2757"
 title-block-banner-color: body
 page-layout: article
 image: thumbnail.jpg
 date: 2025-03-27
 categories: ["Workshop"]
-description: "DuDE 14th annual workshop hosted by the Tinbergen Institute in Amsterdam."
+host: "Tinbergen Institute"
+event-dates: "27–28 March 2025"
+description: "The network's 14th annual workshop, hosted by the Tinbergen Institute in Amsterdam."
 ---
 
 :::{.column-page}
@@ -14,43 +16,32 @@ description: "DuDE 14th annual workshop hosted by the Tinbergen Institute in Ams
 
 <!-- Side panel -->
 
-:::{.paper-side-column}
+::: {.paper-side-column}
 
-<center>
+::: {.event-side}
 
-<div style="text-align: center;">
-  <img
-    src="tinbergen_logo.svg"
-    alt="Tinbergen Institute Logo"
-    style="
-      width: 160px;
-      height: 160px;
-      padding: 16px;
-      background: #fff;
-      border-radius: 50%;
-      object-fit: contain;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    "
-  />
-</div>
+<img class="event-badge" src="../logos/tinbergen-institute.svg" alt="Tinbergen Institute logo" />
 
-**Tinbergen Institute**
-(Graduate School and Research Institute for Economics and Business)
+**Tinbergen Institute**\
+Graduate School and Research Institute for Economics and Business
 
-**Location**
-📍 Gustav Mahlerplein 117, 1082 MS Amsterdam, The Netherlands.
+{{< fa calendar >}} **When**\
+27–28 March 2025
+
+{{< fa location-dot >}} **Where**\
+Gustav Mahlerplein 117, 1082 MS Amsterdam
 
 ```{r}
 #| echo: false
-#| output: true
-
 library(leaflet)
 leaflet() %>%
   addTiles() %>%
   addMarkers(lng = 4.873, lat = 52.339, popup = "Tinbergen Institute")
 ```
 
-</center>
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
 
 :::
 
@@ -58,19 +49,42 @@ leaflet() %>%
 
 :::{.paper-main-column}
 
-```{css, echo = FALSE}
-.justify {
-  text-align: justify;
-}
-```
+::: {.event-facts}
+[2 days]{.event-fact} [9 papers]{.event-fact} [Invited talk]{.event-fact} [6 posters]{.event-fact}
+:::
 
-:::{.justify}
+The 14th Dutch Development Economics Network Workshop was hosted by the Tinbergen Institute, in Amsterdam. Chaired by [Marc Witte](https://www.marcwitte.com/), the event took place on 27 and 28 March 2025 and included various academic and social activities, among which paper presentations, social lunches and dinner, and poster presentations. For a detailed version of the full itinerary, please download the [workshop program](program.pdf).
 
-The 14th Dutch Development Economics Network (DuDE) Workshop was hosted by the Tinbergen Institute, in Amsterdam. Chaired by [Marc Witte](https://www.marcwitte.com/), the event took place on 27 and 28 March 2025 and included various academic and social activities, among which paper presentations, social lunches and dinner, and poster presentations. For a detailed version of the full itinerary, please download the [workshop program](program.pdf).
+Nine papers ranged from education after a natural disaster and protectionist FDI rules in Indonesia to legal trade and drug trafficking, mental accounting and cash transfers, youth mental health, drought insurance, how far to trust observational estimates, colonial legacies and fertility, and tax nudges among firms in Kampala. Jonathan Morduch of New York University spoke on selecting experimental sites for external validity, and six researchers presented posters.
+
+The workshop was jointly organized and co-sponsored by the network, the Tinbergen Institute and the participating universities of Groningen, Radboud, Tilburg, UNU-MERIT, Utrecht, the Vrije Universiteit Amsterdam and Wageningen.
+
+### Programme
+
+::: {.programme}
+
+#### Thursday 27 March
+
+- **Natascha Wagner**, Radboud University Nijmegen [The Power of Fast and Concerted Reconstruction: Evidence for Education Gains in the Aftermath of a Natural Disaster]{.talk-title} [Discussant: Bruno Martorano, UNU-MERIT]{.discussant}
+- **Esther Gehrke**, Wageningen University & Research [Regulating Manufacturing FDI: Local Labor Market Responses to a Protectionist Policy in Indonesia]{.talk-title} [Discussant: Marcello Perez, University of Groningen]{.discussant}
+- **Juan Vargas**, Collegio Carlo Alberto & University of Turin [Legal Trade Exposure and Illicit Drug Trafficking]{.talk-title} [Discussant: Erwin Bulte, Wageningen University & Research]{.discussant}
+- [Invited talk]{.session-label} **Jonathan J. Morduch**, New York University [Selecting Experimental Sites for External Validity]{.talk-title}
+- **Poster presentations** — see the posters below
+- **Patricio Dalton**, Tilburg University [Mental Accounting and Cash Transfers: Experimental Evidence from a Humanitarian Setting]{.talk-title} [Discussant: Karlijn Morsink, Utrecht University]{.discussant}
+- **Clotilde Mahé**, Vrije Universiteit Amsterdam [Cash Transfers and Youth Mental Health: Improving Behaviour but Feeling No Better]{.talk-title} [Discussant: Laura Metzger, Radboud University Nijmegen]{.discussant}
+
+#### Friday 28 March
+
+- **Harry Hyuk Son**, Utrecht University [Tailoring Advice and Incentives to Enhance Consumer Welfare from Catastrophic Drought Insurance]{.talk-title} [Discussant: Ashley Wong, Tilburg University]{.discussant}
+- **Jon de Quidt**, Queen Mary University of London [How Much Should We Trust Observational Estimates? Accumulating Evidence Using Randomized Controlled Trials with Imperfect Compliance]{.talk-title} [Discussant: Marc Witte, Vrije Universiteit Amsterdam & Tinbergen Institute]{.discussant}
+- **Kritika Saxena**, University of Groningen [Imperial Fault Lines: Colonial Legacy and Fertility in Sub-Saharan Africa]{.talk-title} [Discussant: Robert Sparrow, Wageningen University & Research]{.discussant}
+- **Stephan Dietrich**, UNU-MERIT [Easy Come Easy Go? On the Spillover Effects of Tax Nudges among Firms in Kampala]{.talk-title} [Discussant: Remco Oostendorp, Vrije Universiteit Amsterdam & Tinbergen Institute]{.discussant}
+
+:::
 
 ### Posters
 
-Feel free to download the posters from the 14th iteration of the DuDE Workshop.
+Feel free to download the posters from the 14th iteration of the workshop.
 
 ::: {.poster-grid}
 
@@ -88,7 +102,7 @@ Feel free to download the posters from the 14th iteration of the DuDE Workshop.
 
 :::{.poster-card}
 [![Reforms Welcome?](posters/poster4-thumb.jpg)](posters/poster4_tobias.pdf){title="Download poster (PDF)"}
-**Tobias Hillebrand**
+**Tobias Hillenbrand**
 [UNU-MERIT]{.poster-uni}
 :::
 
@@ -111,7 +125,7 @@ Feel free to download the posters from the 14th iteration of the DuDE Workshop.
 :::
 
 :::
-:::
+
 :::
 
 ::::

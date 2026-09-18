@@ -1,7 +1,7 @@
 ---
 title: "Blog"
-subtitle: "A blog by the Dutch Development Economics Network (DuDE)"
-title-block-banner: "#B8573E"
+subtitle: "A blog by the Dutch Development Economics Network"
+title-block-banner: "#0D2757"
 title-block-banner-color: body
 page-layout: full
 format:

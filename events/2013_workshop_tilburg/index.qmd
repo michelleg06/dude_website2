@@ -1,0 +1,88 @@
+---
+title: "2013: 4th Dutch Development Economics Network Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2013-06-13
+categories: ["Workshop"]
+host: "Tilburg University"
+event-dates: "13–14 June 2013"
+description: "The fourth workshop, organized jointly by Tilburg and Wageningen universities."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/tilburg-university.svg" alt="Tilburg University logo" />
+
+**Tilburg University**\
+with Wageningen University
+
+{{< fa calendar >}} **When**\
+13–14 June 2013
+
+{{< fa location-dot >}} **Where**\
+Dante and Koopmans buildings, Warandelaan 2, 5037 AB Tilburg
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 5.0435, lat = 51.5632, popup = "Tilburg University")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[2 days]{.event-fact} [8 papers]{.event-fact} [PhD session]{.event-fact}
+:::
+
+The fourth edition returned to Tilburg University, now organized jointly by Tilburg and Wageningen — a partnership that carried the workshop through the years that followed. Over two days in the Dante and Koopmans buildings, eight papers covered market access and internal migration, tariff evasion, financial development, eye disease, resource windfalls, the long shadow of the slave trade, free education in Cambodia and unemployment benefits.
+
+The programme also included a session for PhD students, with three shorter presentations from Tilburg and Wageningen. Among the presenters was Francesco Cecchi, who would later serve as the network's coordinator at Wageningen.
+
+The workshop was organized by Thorsten Beck, Erwin Bulte, Benedikt Goderis and Manuel Oechslin, and sponsored by Tilburg University (Department of Economics and CentER) and Wageningen University.
+
+### Programme
+
+::: {.programme}
+
+#### Thursday 13 June
+
+- **Laura Hering**, Erasmus University Rotterdam [How Does Market Access Shape Internal Migration?]{.talk-title} [Discussant: Gonzague Vannoorenberghe]{.discussant}
+- **Beata Javorcik**, University of Oxford [WTO Accession and Tariff Evasion]{.talk-title} [Discussant: Maarten Bosker]{.discussant}
+- **Burak Uras**, Tilburg University [Secondary Markets, Financial Development, and Economic Growth]{.talk-title} [Discussant: Manuel Oechslin]{.discussant}
+- **Carl-Johan Dalgaard**, University of Copenhagen [Eye Disease and Development]{.talk-title} [Discussant: Thorsten Beck]{.discussant}
+- **Ola Olsson**, University of Gothenburg [Resource Windfalls and Public Goods: Evidence from a Policy Reform]{.talk-title} [Discussant: Benedikt Goderis]{.discussant}
+- **James Fenske**, University of Oxford [Climate, Ecosystem Resilience and the Slave Trade]{.talk-title} [Discussant: Erwin Bulte]{.discussant}
+
+#### Friday 14 June
+
+- [PhD session]{.session-label} **Mohammad Hoseini**, Tilburg University [Finance and Poverty: Evidence from India]{.talk-title}
+- [PhD session]{.session-label} **Francesco Cecchi**, Wageningen University [Civil War Exposure and Competitiveness: Experimental Evidence from the Football Field in Sierra Leone]{.talk-title}
+- [PhD session]{.session-label} **Marijke Bos**, Tilburg University [Inter-Industry Productivity Spillovers from Trade Liberalization in India]{.talk-title}
+- **Andreas Madestam**, Stockholm University [Who Benefits from Free Education? Long-Term Evidence from a Policy Experiment in Cambodia]{.talk-title} [Discussant: Asako Ohinata]{.discussant}
+- **Patricio Dalton**, Tilburg University [Does the Unemployment Benefit Institution Affect Workers' Productivity? A Natural Field Experiment]{.talk-title} [Discussant: Steven Poelhekke]{.discussant}
+
+:::
+
+:::
+
+::::
+:::

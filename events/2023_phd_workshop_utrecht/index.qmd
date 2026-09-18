@@ -1,0 +1,85 @@
+---
+title: "2023: 1st Dutch Development Economics Network PhD Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2023-11-10
+categories: ["PhD Workshop"]
+host: "Utrecht University"
+event-dates: "10 November 2023"
+description: "The network's first workshop dedicated to PhD students, hosted by Utrecht University."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/utrecht-university.svg" alt="Utrecht University logo" />
+
+**Utrecht University**
+
+{{< fa calendar >}} **When**\
+10 November 2023
+
+{{< fa location-dot >}} **Where**\
+Utrecht University, Utrecht
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 5.1804, lat = 52.0851, popup = "Utrecht University")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[1 day]{.event-fact} [14 PhD presentations]{.event-fact} [7 universities]{.event-fact}
+:::
+
+The network's first workshop dedicated to PhD students gave the floor entirely to early-career researchers. Fourteen PhD candidates — two from each of the seven participating universities in Amsterdam, Groningen, Maastricht, Nijmegen, Tilburg, Utrecht and Wageningen — presented their work in 25-minute slots over a single day at Utrecht University, and the day ended with dinner.
+
+Child marriage and intimate partner violence, vulnerability within institutions, attitudes towards refugees, pensions and old-age support, crop insurance, parental migration, soft skills in school, Covid-19 and economic mobility, foreign aid, seed access and nutrition, social media and gender norms, and the aftermath of war were among the topics.
+
+### Programme
+
+::: {.programme}
+
+#### Friday 10 November
+
+- **Albena Sotirova**, Amsterdam [Child Marriage Around the World: Evidence from Repeated Cross-sectional Data]{.talk-title}
+- **Anne Lieke Ebbers**, Nijmegen [Child Marriage, The Law and Contraceptive Use in Sub-Saharan Africa]{.talk-title}
+- **Anouk van Veldhoven**, Utrecht [Interventions that Disrupt the Peace: Intimate Partner Violence when Targeting Men, Women or Both]{.talk-title}
+- **Sueda Evirgen**, Tilburg [Vulnerability within Institutions: An Economic Framework]{.talk-title}
+- **Tobias Hillenbrand**, Maastricht [Rather Unsafe or Sorry? The Role of Humanitarian Concern and Threat Perceptions in Shaping Solidarity Towards Refugees]{.talk-title}
+- **Frederick Amon-Armah**, Groningen [Do Pension Savings by Smallholder Farmers in Africa Depend on Old-Age Support of their Children?]{.talk-title}
+- **Samyuktha Kannan**, Wageningen [The Effect of Premium Payment Timing and Window on Willingness-To-Pay and Uptake of Crop Insurance]{.talk-title}
+- **Emily Häntschel**, Nijmegen [The Effects of Parental Migration on Educational and Child Labour Outcomes for Children Left Behind: A Systematic Review and Meta-Analysis]{.talk-title}
+- **Anaya Dam**, Utrecht [Can Teaching Soft Skills Improve Academic Outcomes? Evidence from a Goal-Setting Curriculum]{.talk-title}
+- **Gerton Rongen**, Amsterdam [Effects of Covid-19 on Economic Mobility in Malaysia]{.talk-title}
+- **Calumn Hamilton**, Groningen [Foreign Aid and Structural Change]{.talk-title}
+- **Lan Nguyen T.T.**, Wageningen [Linking Seed Accessibility to Nutrition in the Context of Ethnic Minority Groups in Northern Vietnam: An Application of Multi-level Structural Equation Model (MSEM)]{.talk-title}
+- **Praachi Kumar**, Maastricht [Mind the App: Gender Norms and Social Media]{.talk-title}
+- **Camilo Arias**, Tilburg (& Los Andes) [What to Expect when you are Expecting (War is Over)]{.talk-title}
+
+:::
+
+:::
+
+::::
+:::

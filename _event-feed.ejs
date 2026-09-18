@@ -1,0 +1,37 @@
+```{=html}
+<div class="event-feed">
+<%
+  // Upcoming events first (soonest first), then the most recent past ones,
+  // filling whole rows of three: at least one row, at most two.
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const today = new Date().toISOString().slice(0, 10);
+  const byDate = (a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
+  const upcoming = items.filter((i) => i.date >= today).sort(byDate).slice(0, 6);
+  const recent = items.filter((i) => i.date < today).sort(byDate).reverse();
+  const count = Math.max(3, Math.ceil(upcoming.length / 3) * 3);
+  const shown = upcoming.concat(recent).slice(0, count);
+
+  for (const item of shown) {
+    const d = new Date(item.date + "T12:00:00");
+    const kind = (item.categories || [])[0] || "Event";
+    const external = /^https?:\/\//.test(item.path);
+    // "2026: 15th Dutch Development Economics Network Workshop" -> "15th Workshop"
+    const short = item.title.replace(/^\d{4}:\s*/, "").replace("Dutch Development Economics Network ", "");
+    const classes = ["event-tile", kind === "PhD Workshop" ? "is-phd" : "", external ? "is-external" : ""].join(" ").trim();
+%>
+  <a class="<%= classes %>" href="<%- item.path %>" data-date="<%= item.date %>"<%- external ? ' target="_blank" rel="noopener"' : '' %>>
+    <span class="cal" aria-hidden="true">
+      <span class="cal-month"><%= months[d.getMonth()] %></span>
+      <span class="cal-day"><%= d.getDate() %></span>
+      <span class="cal-year"><%= d.getFullYear() %></span>
+    </span>
+    <span class="event-tile-body">
+      <span class="event-tile-kind"><%= kind %></span>
+      <span class="event-tile-title"><%= short %><% if (external) { %><span class="event-tile-out" aria-hidden="true"> &#8599;</span><span class="visually-hidden"> (opens the host's page in a new tab)</span><% } %></span>
+      <span class="event-tile-meta"><%= item["event-dates"] %></span>
+      <span class="event-tile-meta"><%= item.host %></span>
+    </span>
+  </a>
+<% } %>
+</div>
+```

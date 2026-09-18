@@ -1,7 +1,7 @@
 ---
 title: "Affiliated Universities"
 subtitle: "Participating Universities and Node Coordinators"
-title-block-banner: "#B8573E"
+title-block-banner: "#0D2757"
 title-block-banner-color: body
 page-layout: full
 format:
@@ -30,12 +30,12 @@ library(htmltools)
 <!-- Images Row -->
 <div class="card-uni-imgs">
   <span class="map-wrap"><img src="images/tilburg.svg" alt="Map of the Netherlands with a pin on Tilburg University" /><a class="map-pin-link" style="left:44.0%; top:72.8%" href="https://www.google.com/maps/search/?api=1&amp;query=Tilburg+University" target="_blank" rel="noopener" title="Open Tilburg University in Google Maps" aria-label="Open Tilburg University in Google Maps"></a></span>
-  <img src="images/patricio_dalton.jpg" alt="Tilburg DuDE Coordinator" class="profile-img" />
+  <img src="images/patricio_dalton.jpg" alt="Tilburg coordinator" class="profile-img" />
 </div>
 
 <!-- Description Row -->
 <div class="full-text">
-  <p><strong>Patricio Dalton</strong>, Associate Professor of Economics.</p>
+  <p><strong>Patricio Dalton</strong>, Professor of Economics.</p>
 </div>
 
 <!-- Links Row -->
@@ -67,24 +67,18 @@ library(htmltools)
 <!-- Images Row -->
 <div class="card-uni-imgs">
   <span class="map-wrap"><img src="images/map_wageningen.svg" alt="Map of the Netherlands with a pin on Wageningen University" /><a class="map-pin-link" style="left:59.2%; top:59.6%" href="https://www.google.com/maps/search/?api=1&amp;query=Wageningen+University" target="_blank" rel="noopener" title="Open Wageningen University in Google Maps" aria-label="Open Wageningen University in Google Maps"></a></span>
-  <img src="images/francesco.jpeg" alt="Wageningen DuDE Coordinator" class="profile-img"/>
+  <img src="../members/photos/ritika-gupta.jpg" alt="Wageningen coordinator" class="profile-img"/>
 </div>
 
 <!-- Description Row -->
 <div class="full-text">
-  <p><strong>Francesco Cecchi</strong>, Associate Professor of Development Economics.</p>
+  <p><strong>Ritika Gupta</strong>, Assistant Professor of Development Economics.</p>
 </div>
 
 <!-- Links Row -->
 <div class="full-icons">
-  <a href="mailto:francesco.cecchi@wur.nl" title="Email">
-    <img src="images/icons/email.svg" alt="Email" class="icon-link" />
-  </a>
-  <a href="https://sites.google.com/view/francescocecchi" target="_blank" title="Website">
+  <a href="https://research.wur.nl/en/persons/ritika-gupta" target="_blank" title="Website">
     <img src="images/icons/website.svg" alt="Website" class="icon-link" />
-  </a>
-  <a href="https://www.linkedin.com/in/francesco-cecchi/" target="_blank" title="LinkedIn">
-    <img src="images/icons/linkedin.svg" alt="LinkedIn" class="icon-link" />
   </a>
 </div>
 
@@ -101,7 +95,7 @@ library(htmltools)
 <!-- Images Row -->
 <div class="card-uni-imgs">
   <span class="map-wrap"><img src="images/merit.svg" alt="Map of the Netherlands with a pin on UNU-MERIT" /><a class="map-pin-link" style="left:59.8%; top:94.5%" href="https://www.google.com/maps/search/?api=1&amp;query=UNU-MERIT+Maastricht" target="_blank" rel="noopener" title="Open UNU-MERIT in Google Maps" aria-label="Open UNU-MERIT in Google Maps"></a></span>
-  <img src="images/lonneke.jpg" alt="UNU-MERIT DuDE Coordinator" class="profile-img"/>
+  <img src="images/lonneke.jpg" alt="UNU-MERIT coordinator" class="profile-img"/>
 </div>
 
 <!-- Description Row -->
@@ -132,7 +126,7 @@ library(htmltools)
 <!-- Images Row -->
 <div class="card-uni-imgs">
   <span class="map-wrap"><img src="images/map_groningen.svg" alt="Map of the Netherlands with a pin on University of Groningen" /><a class="map-pin-link" style="left:81.1%; top:20.5%" href="https://www.google.com/maps/search/?api=1&amp;query=University+of+Groningen" target="_blank" rel="noopener" title="Open University of Groningen in Google Maps" aria-label="Open University of Groningen in Google Maps"></a></span>
-  <img src="images/Mark_Treurniet.jpg" alt="Groningen DuDE Coordinator" class="profile-img"/>
+  <img src="images/Mark_Treurniet.jpg" alt="Groningen coordinator" class="profile-img"/>
 </div>
 
 <!-- Description Row -->
@@ -166,7 +160,7 @@ library(htmltools)
 <!-- Images Row -->
 <div class="card-uni-imgs">
   <span class="map-wrap"><img src="images/map_nijmegen.svg" alt="Map of the Netherlands with a pin on Radboud University" /><a class="map-pin-link" style="left:63.8%; top:64.8%" href="https://www.google.com/maps/search/?api=1&amp;query=Radboud+University+Nijmegen" target="_blank" rel="noopener" title="Open Radboud University in Google Maps" aria-label="Open Radboud University in Google Maps"></a></span>
-  <img src="images/Wagner_Natascha.jpg" alt="Nijmegen DuDE Coordinator" class="profile-img"/>
+  <img src="images/Wagner_Natascha.jpg" alt="Nijmegen coordinator" class="profile-img"/>
 </div>
 
 <!-- Description Row -->
@@ -201,7 +195,7 @@ library(htmltools)
 <!-- Images Row -->
 <div class="card-uni-imgs">
   <span class="map-wrap"><img src="images/map_utrecht.svg" alt="Map of the Netherlands with a pin on Utrecht University" /><a class="map-pin-link" style="left:47.4%; top:56.5%" href="https://www.google.com/maps/search/?api=1&amp;query=Utrecht+University" target="_blank" rel="noopener" title="Open Utrecht University in Google Maps" aria-label="Open Utrecht University in Google Maps"></a></span>
-  <img src="images/karlijn_morsink.avif" alt="Utrecht DuDE Coordinator" class="profile-img"/>
+  <img src="images/karlijn_morsink.avif" alt="Utrecht coordinator" class="profile-img"/>
 </div>
 
 <!-- Description Row -->
@@ -238,7 +232,7 @@ library(htmltools)
 <!-- Images Row -->
 <div class="card-uni-imgs">
   <span class="map-wrap"><img src="images/map_amsterdam.svg" alt="Map of the Netherlands with a pin on VU Amsterdam" /><a class="map-pin-link" style="left:39.7%; top:48.7%" href="https://www.google.com/maps/search/?api=1&amp;query=Vrije+Universiteit+Amsterdam" target="_blank" rel="noopener" title="Open VU Amsterdam in Google Maps" aria-label="Open VU Amsterdam in Google Maps"></a></span>
-  <img src="images/Witte_Marc.jpg" alt="Amsterdam DuDE Coordinator" class="profile-img"/>
+  <img src="images/Witte_Marc.jpg" alt="Amsterdam coordinator" class="profile-img"/>
 </div>
 
 <!-- Description Row -->
@@ -268,5 +262,36 @@ library(htmltools)
 :::
 
 
+
+::: {.card-uni}
+<!-- Title Row -->
+:::{.full-title}
+::: {.profile-title-box}
+#### [**Erasmus University Rotterdam** Coordinator](https://www.iss.nl/en)
+:::
+:::
+
+<!-- Images Row -->
+<div class="card-uni-imgs">
+  <span class="map-wrap"><img src="images/map_rotterdam.svg" alt="Map of the Netherlands with a pin on Erasmus University Rotterdam" /><a class="map-pin-link" style="left:31.4%; top:61.8%" href="https://www.google.com/maps/search/?api=1&amp;query=Erasmus+University+Rotterdam" target="_blank" rel="noopener" title="Open Erasmus University Rotterdam in Google Maps" aria-label="Open Erasmus University Rotterdam in Google Maps"></a></span>
+  <img src="../members/photos/arjun-bedi.jpg" alt="Erasmus University Rotterdam coordinator" class="profile-img"/>
+</div>
+
+<!-- Description Row -->
+<div class="full-text">
+  <p><strong>Arjun S. Bedi</strong>, Professor of Development Economics at the International Institute of Social Studies (ISS).</p>
+</div>
+
+<!-- Links Row -->
+<div class="full-icons">
+  <a href="mailto:bedi@iss.nl" title="Email">
+    <img src="images/icons/email.svg" alt="Email" class="icon-link" />
+  </a>
+  <a href="https://www.eur.nl/en/people/arjun-bedi" target="_blank" title="Website">
+    <img src="images/icons/website.svg" alt="Website" class="icon-link" />
+  </a>
+</div>
+
+:::
 
 :::

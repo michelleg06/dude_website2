@@ -1,0 +1,89 @@
+---
+title: "2016: 7th Dutch Development Economics Network Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2016-03-10
+categories: ["Workshop"]
+host: "Tilburg University"
+event-dates: "10–11 March 2016"
+description: "The seventh workshop, back at Tilburg University."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/tilburg-university.svg" alt="Tilburg University logo" />
+
+**Tilburg University**\
+Department of Economics
+
+{{< fa calendar >}} **When**\
+10–11 March 2016
+
+{{< fa location-dot >}} **Where**\
+Cobbenhagen building, Warandelaan 2, 5037 AB Tilburg
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 5.0435, lat = 51.5632, popup = "Tilburg University")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[2 days]{.event-fact} [9 papers]{.event-fact} [3 early-research talks]{.event-fact}
+:::
+
+Back in Tilburg for its seventh edition, the workshop gained a new partner in the University of Lucerne. Finance ran through much of the programme — joint-liability lending against rainwater tanks in Kenya, sharing borrower information, relationship banking and informal debt in China — alongside teacher pay in Indonesia, informal taxation on the Congo river, the roots of conflict and an overpaid public sector.
+
+The DFID early-research session returned with new work on skilled labour and finance among SMEs in Uganda, mobile money adoption in Kenya, and poverty and cognitive function among small retailers in Vietnam.
+
+The organizing team was Thorsten Beck, Erwin Bulte, Patricio S. Dalton, Manuel Oechslin and Burak Uras. The workshop was co-sponsored by Tilburg University, Wageningen University, the University of Lucerne and the DFID research programme on innovation and growth in low-income countries.
+
+### Programme
+
+::: {.programme}
+
+#### Thursday 10 March
+
+- **William Jack** [Joint Liability, Asset Collateralization, and Credit Access: Evidence from Rainwater Harvesting Tanks in Kenya]{.talk-title} [Discussant: Haki Pamuk]{.discussant}
+- **Menno Pradhan** [Double for Nothing? Experimental Evidence on the Impact of an Unconditional Teacher Salary Increase on Student Performance in Indonesia]{.talk-title} [Discussant: Erwin Bulte]{.discussant}
+- **Esteban Jaimovich** [From Process to Product Innovation along the Path of Development]{.talk-title} [Discussant: Gonzague Vannoorenberghe]{.discussant}
+- [DFID early research]{.session-label} **Mikael Homanen** [Demand for Skilled Labour and Financial Constraints: Evidence from SMEs in Uganda]{.talk-title}
+- [DFID early research]{.session-label} **Burak Uras** [Mobile Money Adoption: Evidence from SMEs in Kenya]{.talk-title}
+- [DFID early research]{.session-label} **Patricio S. Dalton** [Poverty, Income Variability and Cognitive Function: Evidence from Small Retailers in Vietnam]{.talk-title}
+- **Ola Olsson** [Tolling on the River: Trade and Informal Taxation on the Congo]{.talk-title} [Discussant: Robert Sparrow]{.discussant}
+- **Matteo Millone** [Show Me Yours and I'll Show You Mine: Sharing Borrower Information in a Competitive Credit Market]{.talk-title} [Discussant: Thorsten Beck]{.discussant}
+
+#### Friday 11 March
+
+- **Thorsten Beck** [Keep Walking? Geographical Proximity, Religion and Relationship Banking]{.talk-title}
+- **Robert Lensink** [The Signaling Effect of Household's Informal Indebtedness in Bank Credit Allocation: Evidence from China]{.talk-title} [Discussant: Mohammad Hoseini]{.discussant}
+- **Mathieu Couttenier** [Fertile Ground for Conflict]{.talk-title} [Discussant: Manuel Oechslin]{.discussant}
+- **Tiago Cavalcanti** [(Mis)Allocation Effects of an Overpaid Public Sector]{.talk-title} [Discussant: Burak Uras]{.discussant}
+
+:::
+
+:::
+
+::::
+:::

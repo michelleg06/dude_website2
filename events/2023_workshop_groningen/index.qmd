@@ -1,0 +1,88 @@
+---
+title: "2023: 12th Dutch Development Economics Network Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2023-04-20
+categories: ["Workshop"]
+host: "University of Groningen"
+event-dates: "20–21 April 2023"
+description: "The twelfth workshop, hosted by the University of Groningen."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/university-of-groningen.svg" alt="University of Groningen logo" />
+
+**University of Groningen**
+
+{{< fa calendar >}} **When**\
+20–21 April 2023
+
+{{< fa location-dot >}} **Where**\
+Doopsgezinde Kerk, Oude Boteringestraat 33, 9712 GD Groningen
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 6.5641, lat = 53.2197, popup = "Doopsgezinde Kerk")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[2 days]{.event-fact} [12 papers]{.event-fact}
+:::
+
+The twelfth edition met in the Kerkzaal of the Doopsgezinde Kerk, in the centre of Groningen. Its programme names the network itself as co-organizer, alongside seven participating universities, and it switched to a tighter format than earlier editions: 45 minutes per paper — 30 to present, 5 for the discussant and 10 for discussion.
+
+Twelve papers brought speakers from the World Bank, LSE, MIT Sloan, Nova School of Business and Economics and Universitat Pompeu Fabra together with researchers from across the Dutch universities. They covered crop insurance, slum upgrading in the Dominican Republic, the political legacies of trade liberalization in Brazil, land markets in Uganda and Kenya, menstrual health at work, child marriage, aspirations, e-money, jobs and political participation in Ethiopia, universal basic income in Kenya, evidence use among civil servants in Pakistan and trust in public services.
+
+The local organizing team was Kristina Czura, Robert Lensink and Kritika Saxena. The workshop was jointly organized and co-sponsored by the network and the Vrije Universiteit Amsterdam, Utrecht University, Tilburg University, the University of Groningen, Nijmegen University, UNU-MERIT and Wageningen University.
+
+### Programme
+
+::: {.programme}
+
+#### Thursday 20 April
+
+- **Wouter Zant**, Vrije Universiteit Amsterdam [Two Birds with One Stone: Technology Adoption and Market Participation through Protection against Crop Failure]{.talk-title} [Discussant: Manuela Fritz, University of Groningen]{.discussant}
+- **Xavier Giné**, World Bank [Anticipation Effects and Hedonic Adaptation: Evidence from a Slum Upgrading Project in the Dominican Republic]{.talk-title} [Discussant: Daan van Soest, Tilburg University]{.discussant}
+- **Bruno Martorano**, UNU-MERIT [Roots of Dissent: The Long-Term Political Legacies of Trade Liberalization in Brazil]{.talk-title} [Discussant: Steven Brakman, University of Groningen]{.discussant}
+- **Gharad Bryan**, London School of Economics [Market Design for Land Trade: Evidence from Uganda and Kenya]{.talk-title} [Discussant: Jenny Aker, Wageningen University]{.discussant}
+- **Kristina Czura**, University of Groningen [Improved Menstrual Health and the Workplace: An RCT with Female Bangladeshi Garment Workers]{.talk-title} [Discussant: Wendy Janssens, Vrije Universiteit Amsterdam]{.discussant}
+- **Karlijn Morsink**, Utrecht University [Targeting Men, Women, or Both to Reduce Child Marriage]{.talk-title} [Discussant: Annika Müller, University of Groningen]{.discussant}
+- **Cátia Batista**, Nova School of Business and Economics [Aspirations as Constraints on Microentrepreneurship]{.talk-title} [Discussant: Mark Treurniet, University of Groningen]{.discussant}
+- **Burak Uras**, Tilburg University [Money, E-Money, and Consumer Welfare]{.talk-title} [Discussant: Petros Milionis, University of Groningen]{.discussant}
+
+#### Friday 21 April
+
+- **Janneke Pieters**, Wageningen University [Jobs and Political Participation: Evidence from a Field Experiment in Ethiopia]{.talk-title} [Discussant: Olexiy Kyrychenko, Nijmegen University]{.discussant}
+- **Tavneet Suri**, MIT Sloan School of Management [The (Many) Million Dollar Question: Experimental Evidence from Kenya on Universal Basic Income]{.talk-title} [Discussant: Francesco Cecchi, Wageningen University]{.discussant}
+- **Laura Metzger**, Nijmegen University [Policy Decisions and Evidence Use among Civil Servants: A Group Decision Experiment in Pakistan]{.talk-title} [Discussant: Christine Gutekunst, UNU-MERIT]{.discussant}
+- **Gianmarco León-Ciliotta**, Universitat Pompeu Fabra [Policy-Making, Trust and the Demand for Public Services: Evidence from a Nationwide Family Planning Program]{.talk-title} [Discussant: Kritika Saxena, University of Groningen]{.discussant}
+
+:::
+
+:::
+
+::::
+:::

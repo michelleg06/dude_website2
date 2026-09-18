@@ -1,0 +1,147 @@
+<!-- Shown on the page of an event that hasn't happened yet: the page stays
+     blank apart from this. The R code on the left "draws" the card on the
+     right: each step highlights a few lines and reveals the matching layer of
+     the card (layers made by Python/make_assets.py). Once the event has taken
+     place, replace the include line in the event's index.qmd with its content
+     (see any past event).
+
+     data-steps lists, per step, the code lines to highlight; the card layer
+     with the same data-step appears at that step. -->
+
+::: {.future-event .column-page data-steps="1,4-7|8-10|11-13|14-17|18-20|2,21-22"}
+
+::: {.future-code aria-hidden="true"}
+```r
+library(ggplot2)
+logo <- png::readPNG("logo-mark.png")
+
+ggplot() +
+  theme_void() +
+  theme(plot.background =
+          element_rect(fill = "#EEF3FA", colour = NA)) +
+  annotate("text", x = 0, y = 0.55, label = "404",
+           size = 70, fontface = "bold",
+           colour = "#0D2757") +
+  annotate("segment", x = -0.04, xend = 0.04,
+           y = 0.18, yend = 0.18,
+           linewidth = 2.5, colour = "#F47F09") +
+  annotate("text", x = 0, y = 0.05,
+           label = "This event is in the future",
+           size = 12, fontface = "bold",
+           colour = "#0D2757") +
+  annotate("text", x = 0, y = -0.08,
+           label = "Check back after it has taken place.",
+           size = 8, colour = "#4B5568") +
+  annotation_raster(logo, xmin = -0.03, xmax = 0.03,
+                    ymin = -0.32, ymax = -0.2)
+```
+:::
+
+::: {.future-card}
+```{=html}
+<div class="future-stage" role="img" aria-label="404: this event is in the future. Check back after it has taken place.">
+  <img class="fc-layer fc-bg" data-step="1" src="../future-event/bg.png" alt="">
+  <img class="fc-layer fc-404" data-step="2" src="../future-event/404.png" alt="">
+  <img class="fc-layer fc-rule" data-step="3" src="../future-event/rule.png" alt="">
+  <img class="fc-layer fc-headline" data-step="4" src="../future-event/headline.png" alt="">
+  <img class="fc-layer fc-subline" data-step="5" src="../future-event/subline.png" alt="">
+  <img class="fc-layer fc-logo" data-step="6" src="../future-event/logo.png" alt="">
+</div>
+<button class="future-replay" type="button" hidden>&#8635; Replay</button>
+```
+:::
+
+:::
+
+```{=html}
+<script>
+(function () {
+  var root = document.querySelector('.future-event[data-steps]');
+  if (!root) return;
+  // without motion (or without JavaScript) the code and the card are simply shown whole
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var lines = [].slice.call(root.querySelectorAll('.future-code pre > code > span'));
+  var layers = root.querySelectorAll('.fc-layer');
+  var replay = root.querySelector('.future-replay');
+  var steps = root.dataset.steps.split('|').map(function (group) {
+    var wanted = [];
+    group.split(',').forEach(function (part) {
+      var ends = part.split('-').map(Number);
+      for (var n = ends[0]; n <= (ends[1] || ends[0]); n++) wanted.push(n - 1);
+    });
+    return wanted;
+  });
+
+  // every text node of every line, with its full text, so it can be emptied and retyped
+  // without touching the syntax-highlighting spans around it
+  var texts = lines.map(function (line) {
+    var walker = document.createTreeWalker(line, NodeFilter.SHOW_TEXT), out = [], node;
+    while ((node = walker.nextNode())) out.push({ node: node, text: node.data });
+    return out;
+  });
+
+  var caret = document.createElement('span');
+  caret.className = 'future-caret';
+  var run = 0;  // bumped on replay, so an older run stops typing
+
+  function wait(ms, id) {
+    return new Promise(function (resolve, reject) {
+      setTimeout(function () { id === run ? resolve() : reject(); }, ms);
+    });
+  }
+
+  function charsIn(i) {
+    return texts[i].reduce(function (n, t) { return n + t.text.length; }, 0) -
+      (lines[i].textContent.match(/^\s*/) || [''])[0].length;
+  }
+
+  async function typeLine(i, perChar, id) {
+    lines[i].classList.add('is-active');
+    var leading = true;
+    for (var k = 0; k < texts[i].length; k++) {
+      var t = texts[i][k];
+      t.node.parentNode.insertBefore(caret, t.node.nextSibling);
+      for (var c = 0; c < t.text.length; c++) {
+        t.node.data = t.text.slice(0, c + 1);
+        if (leading && /\s/.test(t.text[c])) continue;  // indentation arrives at once
+        leading = false;
+        await wait(perChar, id);
+      }
+    }
+    lines[i].classList.remove('is-active');
+  }
+
+  async function play() {
+    var id = ++run;
+    replay.hidden = true;
+    root.classList.add('is-playing', 'is-typing');
+    layers.forEach(function (layer) { layer.classList.remove('is-shown'); });
+    texts.forEach(function (line) { line.forEach(function (t) { t.node.data = ''; }); });
+    lines[0].insertBefore(caret, lines[0].firstChild);
+    try {
+      await wait(700, id);
+      for (var s = 0; s < steps.length; s++) {
+        var chars = steps[s].reduce(function (n, i) { return n + charsIn(i); }, 0);
+        var perChar = Math.min(40, Math.max(8, 950 / chars));  // each step types in about a second
+        root.classList.add('is-typing');
+        for (var j = 0; j < steps[s].length; j++) {
+          await typeLine(steps[s][j], perChar, id);
+          await wait(90, id);  // the newline
+        }
+        root.classList.remove('is-typing');  // the caret blinks while the card updates
+        layers.forEach(function (layer) { if (+layer.dataset.step === s + 1) layer.classList.add('is-shown'); });
+        await wait(550, id);
+      }
+      await wait(600, id);
+      caret.remove();
+      root.classList.remove('is-playing');
+      replay.hidden = false;
+    } catch (stopped) { /* a replay started: this run gives way */ }
+  }
+
+  replay.addEventListener('click', play);
+  play();
+})();
+</script>
+```

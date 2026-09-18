@@ -3,25 +3,32 @@ project:
   render:
     - "**/*.qmd"
     - "!archive/"
-    
+  # Quarto copies the images it finds in src attributes; these are reached
+  # through srcset, a <link> tag and CSS masks, so they have to be named here
+  resources:
+    - images/hero-workshop@2x.jpg
+    - images/apple-touch-icon.png
+    - images/vectors/
+
 website:
   site-url: "https://michelleg06.github.io/dude_website2"
   title: "Dutch Development Economics Network"
   description: "A website to to facilitate knowledge exchange and connections among development economists based in the Netherlands."
   open-graph:
-    image: images/dude_banner.svg
-    image-alt: "Explaining an economic game to farmers in Masaka, Uganda."
+    image: images/social-card.png
+    image-alt: "Dutch Development Economics Network"
   twitter-card:
-    image: images/dude_banner.svg
-    image-alt: "Explaining an economic game to farmers in Masaka, Uganda."
+    image: images/social-card.png
+    image-alt: "Dutch Development Economics Network"
     card-style: summary_large_image
-  favicon: images/favicon.ico
+  favicon: images/favicon.png
   navbar:
-    background: "#472605"
-    foreground: "#FFFFFF"
-    title: ""
+    # the full logo spells out the name, so no separate text title
+    # (an empty string would fall back to the site title)
+    title: false
     search: true
-    logo: images/logos/dude_logo_m2.svg
+    logo: images/logos/logo-full-white.png
+    logo-alt: "Dutch Development Economics Network"
     right:
       - text: "Posts"
         icon: journal-text
@@ -39,8 +46,25 @@ website:
       - text: "Contact"
         icon: envelope
         href: "#contact"
-      - href: https://github.com/michelleg06/dude_website2
-        icon: github
+  page-footer:
+    background: "#0D2757"
+    foreground: "#FFFFFF"
+    border: false
+    left: |
+      [![](/images/logos/logo-full-white.png){.footer-logo fig-alt="Dutch Development Economics Network"}](/index.qmd)
+    center:
+      - text: "Events"
+        href: events/index.qmd
+      - text: "Universities"
+        href: members/universities/index.qmd
+      - text: "Members"
+        href: members/members/index.qmd
+      - text: "Posts"
+        href: posts/blog/index.qmd
+      - text: "Contact"
+        href: "#contact"
+    right: |
+      © 2026 Dutch Development Economics Network (DDEN)
   announcement:
     icon: info-circle
     dismissable: true
@@ -52,10 +76,12 @@ format:
   html:
     fontsize: 1.15rem
     include-after-body: _footer.html
+    include-in-header:
+      - text: |
+          <link rel="apple-touch-icon" sizes="180x180" href="https://michelleg06.github.io/dude_website2/images/apple-touch-icon.png">
     monofont: Fira Code
     highlight-style: arrow
     theme: custom_theme.scss
     css: theme.css
     toc: true
     code-overflow: scroll
-    linkcolor: "#B8573E"

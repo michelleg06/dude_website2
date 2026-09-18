@@ -1,0 +1,91 @@
+---
+title: "2026: 15th Dutch Development Economics Network Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2026-03-12
+categories: ["Workshop"]
+host: "Radboud University"
+event-dates: "12–13 March 2026"
+description: "The fifteenth workshop, hosted by Radboud University Nijmegen."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/radboud-university.svg" alt="Radboud University logo" />
+
+**Radboud University**\
+Nijmegen
+
+{{< fa calendar >}} **When**\
+12–13 March 2026
+
+{{< fa location-dot >}} **Where**\
+Elinor Ostromgebouw, Heyendaalseweg 141, 6525 AJ Nijmegen
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 5.8577, lat = 51.8196, popup = "Elinor Ostromgebouw, Radboud University")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[2 days]{.event-fact} [10 papers]{.event-fact} [Roundtable]{.event-fact} [Radboud Special]{.event-fact}
+:::
+
+Radboud University hosted the fifteenth edition in the Elinor Ostromgebouw — a building named for the economist of the commons. After an official opening by Saskia Lavrijssen, ten papers ran from a choice framework for empirical research design and hiring women in Bangladesh to firms facing uncertainty in Uganda, social capital and gender equality, newborn health during Covid-19, structural change in India, colonial institutional transfer, affirmative action and inequality in climate preferences.
+
+Two additions broadened the programme: a *Radboud Special* on heritage diets by Quirijn de Mast of Radboudumc, and a roundtable on the research needs of development practice, with IPA, SNV, HKV, FMO, CARE and IOB. It was also the first workshop with Erasmus University Rotterdam among the co-organizing universities, bringing the network to eight.
+
+The local organizer was Natascha Wagner. The workshop was jointly organized and co-sponsored by the network and its participating universities, represented by their node coordinators: Arjun Bedi (Erasmus), Mark Treurniet (Groningen), Natascha Wagner (Radboud), Patricio Dalton (Tilburg), Eleonora Nillesen (UNU-MERIT), Karlijn Morsink (Utrecht), Marc Witte (Vrije Universiteit Amsterdam) and Francesco Cecchi (Wageningen).
+
+### Programme
+
+::: {.programme}
+
+#### Thursday 12 March
+
+- **Saskia Lavrijssen**, Radboud University — official welcome and opening
+- **David Jackson**, VU Amsterdam [A Generalized Choice Framework for Empirical Research Design]{.talk-title} [Discussant: Gaaitzen de Vries, University of Groningen]{.discussant}
+- **Lore Vandewalle**, KU Leuven [Hiring Women vs Hiring Men: Experimental Evidence on Workers and Firms in Bangladesh]{.talk-title} [Discussant: Karlijn Morsink, Utrecht University]{.discussant}
+- **Kristina Czura**, University of Groningen [Gendered Access to Finance: Team Formation, Idea Quality, and Implementation Constraints]{.talk-title} [Discussant: Matilde João Mota, Maastricht University]{.discussant}
+- **Imran Rasul**, University College London [Firm Responses to Uncertainty and Implications for Workers: Experimental Evidence from Uganda During the Pandemic]{.talk-title} [Discussant: Margarita Mecheva, Erasmus University Rotterdam]{.discussant}
+- **Irene van Staveren**, Erasmus University Rotterdam [Does Social Capital Support Gender Equality?]{.talk-title} [Discussant: Remco Oostendorp, VU Amsterdam]{.discussant}
+- **Jimena Pacheco**, Utrecht University [Covid-19 and Newborn and Child Health]{.talk-title} [Discussant: Lisa van Dongen, Radboud University]{.discussant}
+- **Jonas Gathen**, Tilburg University [Inequality and the Dynamics of Growth: Evidence from 25 Years of Structural Change in India]{.talk-title} [Discussant: Peter Lanjouw, VU Amsterdam]{.discussant}
+- [Radboud Special]{.session-label} **Quirijn de Mast**, Radboudumc [Heritage Diets]{.talk-title}
+
+#### Friday 13 March
+
+- **Robbert Maseland**, Radboud University [Long Live the Nigerian-Fijian Empire! Persistent Effects of Horizontal Institutional Transfer in the Late British Empire]{.talk-title} [Discussant: Maarten Voors, Wageningen University]{.discussant}
+- [Roundtable]{.session-label} [Research Needs in Development Collaboration: Bridging Research and Practice]{.talk-title} [With Paul Adams (IPA), John Belt (SNV), Dorien Lugt (HKV), Thijs Viertelhauzen (FMO), Josee Koch (CARE) and Joes de Natris / Blanca Beuving (IOB)]{.discussant}
+- **Ritika Gupta**, Wageningen University [Equity Conundrum: Unintended Consequences of College-Level Affirmative Action on the Labor Market]{.talk-title} [Discussant: Patricio Dalton, Tilburg University]{.discussant}
+- **Bruno Martorano**, Maastricht University [Does Inequality Shape Preferences for Climate Policies and Climate Action?]{.talk-title} [Discussant: Jenny Aker, Wageningen University]{.discussant}
+- **Natascha Wagner**, Radboud University — closing remarks
+
+:::
+
+:::
+
+::::
+:::

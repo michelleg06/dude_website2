@@ -6,183 +6,204 @@ format:
     sidebar: false
     anchor-sections: false
     css: [theme.css, index.css]
+listing:
+  id: latest-events
+  contents:
+    - "events/*/index.qmd"
+    - "events/external.yml"
+  sort: "date desc"
+  template: _event-feed.ejs
+  date-format: "YYYY-MM-DD"
+  fields: [title, date, categories, host, event-dates]
+  sort-ui: false
+  filter-ui: false
 ---
 
 ```{r}
 #| include: false
-library(htmltools)
+source("R/home.R")
+ev <- past_events()
+unis <- universities()
+stats <- network_stats(ev, unis)
+number_word <- function(n) if (n <= 10) c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten")[n] else n
+latest <- Filter(function(u) u$node == stats$latest_node, unis)[[1]]
 ```
 
-::: {.home-intro}
+::: {.home-intro .reveal}
 [Our mission]{.mission-kicker}
 
 [Facilitating knowledge exchange and connections among development economists based in the Netherlands.]{.mission-statement}
 
 ::: {.mission-support}
-Our members are researchers from seven participating universities: Groningen, Nijmegen, Tilburg, UNU-MERIT, Utrecht, VU Amsterdam, and Wageningen. We organize two annual events — a general workshop and one dedicated to PhD students — and we are affiliated to the [European Development Economics Group](https://www.ede-group.org/).
+Our members are researchers from eight participating universities: Erasmus University Rotterdam, Groningen, Nijmegen, Tilburg, UNU-MERIT, Utrecht, VU Amsterdam, and Wageningen. We organize two annual events — a general workshop and one dedicated to PhD students — and we are affiliated to the [European Development Economics Group](https://www.ede-group.org/).
 :::
 :::
 
-::::: {.column-screen}
-:::: {.home-split}
+<!-- The network: numbers and the map of member universities -->
 
-::: {.home-panel .home-panel-text}
-### JOIN US
+::::: {.column-screen .home-network}
+:::: {.home-network-inner}
 
-Connect with researchers in the Netherlands working on Development Economics. Seven participating universities take turns hosting engaging events where we share knowledge and new ideas in the field.
+::: {.network-copy .reveal}
+[Since `r stats$first_year`]{.section-kicker}
 
-```{=html}
-<div class="event-list">
-  <p class="event-list-title">Upcoming events</p>
-  <div class="event-row">
-    <span class="event-when">Fall 2025</span>
-    <span class="event-what">3rd PhD Workshop &middot; Tinbergen Institute</span>
-  </div>
-  <div class="event-row">
-    <span class="event-when">Spring 2026</span>
-    <span class="event-what">15th Workshop &middot; Nijmegen University</span>
-  </div>
-  <a class="btn-events" href="events/index.html">All events &rarr;</a>
-</div>
+## One network, in numbers {.section-title}
+
+Every year the workshop moves to another member university. The line on the map follows its route, from `r city_of(stats$first_node)` in `r stats$first_year` to `r city_of(stats$latest_node)` in `r stats$latest_year`. Select a university to meet its coordinator.
+
+```{r}
+#| echo: false
+tags$ul(class = "network-stats",
+  tags$li(tags$span(class = "stat-num", `data-count` = stats$workshops, stats$workshops),
+          tags$span(class = "stat-label", "annual workshops")),
+  tags$li(tags$span(class = "stat-num", `data-count` = stats$phd, stats$phd),
+          tags$span(class = "stat-label", "PhD workshops")),
+  tags$li(tags$span(class = "stat-num", `data-count` = stats$papers, `data-suffix` = "+", paste0(stats$papers, "+")),
+          tags$span(class = "stat-label", "papers presented")),
+  tags$li(tags$span(class = "stat-num", `data-count` = stats$universities, stats$universities),
+          tags$span(class = "stat-label", "universities"))
+)
 ```
+
+[Based at one of these universities? [Contact your coordinator](members/universities/index.qmd) to join the network.]{.network-join}
 :::
 
-::: {.home-panel .home-panel-media}
-<div class="gallery" id="home-gallery">
-  <img class="gallery-img" src="images/homepage/img1.jpg" alt="Participants at a past DuDE workshop" />
-  <img class="gallery-img" src="images/homepage/img2.jpg" alt="Presentation session at a DuDE event" />
-  <img class="gallery-img" src="images/homepage/img3.jpeg" alt="DuDE members during a workshop" />
-  <img class="gallery-img" src="images/homepage/img4.jpg" alt="Discussion between researchers at a DuDE event" />
-  <img class="gallery-img" src="images/homepage/img5.jpg" alt="Group photo from a DuDE workshop" />
-  <div class="gallery-dots" role="tablist" aria-label="Choose photo"></div>
-  <button class="gallery-toggle" id="gallery-toggle" aria-label="Pause slideshow">
-    <svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
-    <svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><path d="M8 5v14l11-7z"/></svg>
-  </button>
-</div>
-<p class="gallery-caption">Moments from past DuDE events, publicly shared by participants.</p>
+::: {.network-visual .reveal}
+```{r}
+#| echo: false
+HTML(paste(readLines("images/network-map.svg", warn = FALSE), collapse = "\n"))
+```
+
+```{r}
+#| echo: false
+# the card starts on the most recent host; the map's script swaps it on hover, focus or tap
+div(class = "node-card", `aria-live` = "polite",
+  tags$img(class = "node-card-photo", src = latest$photo, alt = ""),
+  div(
+    tags$p(class = "node-card-uni", latest$university),
+    tags$p(class = "node-card-person", latest$coordinator),
+    tags$p(class = "node-card-role", latest$role),
+    tags$p(class = "node-card-hosted", "Most recent host")
+  )
+)
+network_data(ev, unis)
+```
 :::
 
 ::::
 :::::
 
-<script>
-(function () {
-  const gallery = document.getElementById('home-gallery');
-  const slides = gallery.querySelectorAll('.gallery-img');
-  const dotsWrap = gallery.querySelector('.gallery-dots');
-  const toggle = document.getElementById('gallery-toggle');
-  const iconPause = toggle.querySelector('.icon-pause');
-  const iconPlay = toggle.querySelector('.icon-play');
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+<!-- Events: the latest three, pulled from events/ -->
 
-  let current = 0;
-  let timer = null;
+::: {.column-screen .home-events .reveal}
+::: {.home-events-head}
+<div>
+[What's on]{.section-kicker}
 
-  slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.className = 'gallery-dot';
-    dot.setAttribute('aria-label', 'Show photo ' + (i + 1));
-    dot.addEventListener('click', () => { goTo(i); if (timer) restart(); });
-    dotsWrap.appendChild(dot);
-  });
-  const dots = dotsWrap.querySelectorAll('.gallery-dot');
+## Upcoming and recent events {.section-title}
+</div>
 
-  function goTo(i) {
-    slides[current].classList.remove('active');
-    dots[current].classList.remove('active');
-    current = i;
-    slides[current].classList.add('active');
-    dots[current].classList.add('active');
-  }
+[All events &rarr;](events/index.qmd){.btn-events}
+:::
 
-  function next() { goTo((current + 1) % slides.length); }
+::: {#latest-events}
+:::
+:::
 
-  function setToggle(playing) {
-    iconPause.style.display = playing ? '' : 'none';
-    iconPlay.style.display = playing ? 'none' : '';
-    toggle.setAttribute('aria-label', playing ? 'Pause slideshow' : 'Play slideshow');
-  }
+<!-- People and moments -->
 
-  function start() { timer = setInterval(next, 4000); setToggle(true); }
-  function stop() { clearInterval(timer); timer = null; setToggle(false); }
-  function restart() { clearInterval(timer); timer = setInterval(next, 4000); }
+::::: {.column-screen .home-people}
+::: {.home-people-head .reveal}
+<div>
+[Community]{.section-kicker}
 
-  toggle.addEventListener('click', () => { timer ? stop() : start(); });
+## The people behind the network {.section-title}
+</div>
 
-  goTo(0);
-  if (reducedMotion) { setToggle(false); } else { start(); }
-})();
-</script>
-
-::::: {.column-screen .home-explore}
-
-<div class="home-explore-inner">
-
-## Explore DuDE
-
-<p class="explore-sub">Blog posts with research highlights, our events, and the people behind the network.</p>
+[Meet all members &rarr;](members/members/index.qmd){.btn-events}
+:::
 
 ```{r}
 #| echo: false
-tags$div(class = "category-row",
-
-  # Posts
-  tags$div(class = "category-column",
-    tags$a(href = "posts/blog/index.html",
-      tags$img(
-        src = "images/vectors/book.svg",
-        alt = "Blog posts",
-        class = "category-image honey-white"
-      )
-    ),
-    tags$h4(style = "text-align:center;",
-      tags$a(
-        class = "white",
-        href = "posts/blog/index.html",
-        "Posts"
-      )
-    )
-  ),
-
-  # Affiliated Universities
-  tags$div(class = "category-column",
-    tags$a(href = "members/universities/index.html",
-      tags$img(
-        src = "images/vectors/nl.svg",
-        alt = "Affiliated universities",
-        class = "category-image honey-white"
-      )
-    ),
-    tags$h4(style = "text-align:center;",
-      tags$a(
-        class = "white",
-        href = "members/universities/index.html",
-        "Affiliated Universities"
-      )
-    )
-  ),
-
-  # Events
-  tags$div(class = "category-column",
-    tags$a(href = "events/index.html",
-      tags$img(
-        src = "images/vectors/events.svg",
-        alt = "Events",
-        class = "category-image honey-white"
-      )
-    ),
-    tags$h4(style = "text-align:center;",
-      tags$a(
-        class = "white",
-        href = "events/index.html",
-        "Events"
-      )
-    )
-  )
-)
+photo_strip()
+people_strip(n = 14)
 ```
 
-</div>
+::: {.home-people-foot}
+[Event photos publicly shared by participants.]{.strip-caption}
 
+<button class="strip-toggle" type="button" aria-pressed="false">Pause motion</button>
+:::
 :::::
+
+<script>
+(function () {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // --- the network: count up and draw the route once the section is in view
+  var section = document.querySelector('.home-network');
+  var map = document.querySelector('.network-map');
+  var counters = document.querySelectorAll('.stat-num[data-count]');
+
+  function countUp(el) {
+    var target = +el.dataset.count, suffix = el.dataset.suffix || '', start = performance.now();
+    (function tick(now) {
+      var p = Math.min(1, (now - start) / 1400);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    })(start);
+    // browsers throttle animation frames in background tabs: always land on the real number
+    setTimeout(function () { el.textContent = target + suffix; }, 1600);
+  }
+
+  if (!reduced && 'IntersectionObserver' in window && section && map) {
+    map.classList.add('nm-animate');
+    counters.forEach(function (el) { el.textContent = '0' + (el.dataset.suffix || ''); });
+    var io = new IntersectionObserver(function (entries) {
+      if (!entries.some(function (e) { return e.isIntersecting; })) return;
+      io.disconnect();
+      map.classList.add('is-drawn');
+      counters.forEach(countUp);
+    }, { threshold: 0.3 });
+    io.observe(section);
+  }
+
+  // --- map nodes update the coordinator card
+  var data = JSON.parse(document.getElementById('network-data').textContent);
+  var card = document.querySelector('.node-card');
+  var nodes = document.querySelectorAll('.nm-node');
+
+  function show(id) {
+    var u = data[id];
+    if (!u) return;
+    nodes.forEach(function (n) { n.classList.toggle('is-active', n.dataset.node === id); });
+    card.querySelector('.node-card-photo').src = u.photo;
+    card.querySelector('.node-card-uni').textContent = u.university;
+    card.querySelector('.node-card-person').textContent = u.coordinator;
+    card.querySelector('.node-card-role').textContent = u.role;
+    card.querySelector('.node-card-hosted').textContent = u.latest ? u.hosted + ' · most recent host' : u.hosted;
+  }
+
+  nodes.forEach(function (n) {
+    var id = n.dataset.node;
+    n.addEventListener('mouseenter', function () { show(id); });
+    n.addEventListener('focus', function () { show(id); });
+    n.addEventListener('click', function () { show(id); });
+    n.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(id); }
+    });
+  });
+  var start = document.querySelector('.nm-node.is-latest');
+  if (start) show(start.dataset.node);
+
+  // --- a way to stop the moving strips (and none needed without motion)
+  var toggle = document.querySelector('.strip-toggle');
+  var people = document.querySelector('.home-people');
+  if (toggle && reduced) toggle.hidden = true;
+  if (toggle) toggle.addEventListener('click', function () {
+    var paused = people.classList.toggle('is-paused');
+    toggle.setAttribute('aria-pressed', paused);
+    toggle.textContent = paused ? 'Play motion' : 'Pause motion';
+  });
+})();
+</script>

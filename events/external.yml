@@ -1,0 +1,24 @@
+# Events by or for network members that the network does not organize itself
+# (inaugural lectures and the like). They appear in "Recent and upcoming
+# events" on the homepage and link out to the host's page; they are not part
+# of the Events archive.
+- title: "Patricio Dalton"
+  date: 2026-09-25
+  path: https://www.tilburguniversity.edu/current/inaugural-address-ps-dalton
+  host: "Tilburg University"
+  event-dates: "25 September 2026"
+  categories: ["Inaugural lecture"]
+
+- title: "Maarten Voors"
+  date: 2026-10-09
+  path: https://www.wur.nl/nl/activiteit/inauguratie-profdr-maarten-voors
+  host: "Wageningen University"
+  event-dates: "9 October 2026"
+  categories: ["Inaugural lecture"]
+
+- title: "Matthias Rieger"
+  date: 2026-11-20
+  path: https://www.eur.nl/en/eshpm/events/symposium-inaugural-lecture-professor-matthias-rieger-2026-11-20
+  host: "Erasmus University Rotterdam"
+  event-dates: "20 November 2026"
+  categories: ["Inaugural lecture"]

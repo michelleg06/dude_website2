@@ -1,0 +1,3 @@
+# The date on an event page is when the event took place, not a publication date
+language:
+  title-block-published: "Event date"

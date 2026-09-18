@@ -1,0 +1,88 @@
+---
+title: "2025: 3rd Dutch Development Economics Network PhD Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2025-10-31
+categories: ["PhD Workshop"]
+host: "Tinbergen Institute"
+event-dates: "31 October 2025"
+description: "The third PhD workshop, hosted by the Tinbergen Institute in Amsterdam."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/tinbergen-institute.svg" alt="Tinbergen Institute logo" />
+
+**Tinbergen Institute**\
+Amsterdam
+
+{{< fa calendar >}} **When**\
+31 October 2025
+
+{{< fa location-dot >}} **Where**\
+Gustav Mahlerplein 117, 1082 MS Amsterdam
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 4.873, lat = 52.339, popup = "Tinbergen Institute")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[1 day]{.event-fact} [8 papers]{.event-fact} [8 posters]{.event-fact}
+:::
+
+The third PhD workshop filled a day at the Tinbergen Institute in Amsterdam. Eight PhD candidates presented papers, each paired with a discussant from across the network, and eight more pitched their work in a rapid-fire poster session — seven minutes per poster, with a bell announcing each new round.
+
+Research ranged from Mexico's penal justice reform and intimate partner violence in India to aspirations and child outcomes, eldercare, the dynamics of discrimination, insurance decisions within the household, elites and human capital in Peru, and gendered climate policy. Sessions were chaired by Davide Manzoni, Juan Segnana, Anne Lieke Ebbers and Nicola Mangraviti — Anne Lieke Ebbers having presented at the first PhD workshop in 2023. The day closed with dinner at the Tinbergen Institute.
+
+### Programme
+
+::: {.programme}
+
+#### Friday 31 October
+
+- **Emiliano Hernandez Gomes**, Radboud University Nijmegen [Confessions Under Pressure: Incentive Effects of Mexico's Penal Justice Reform]{.talk-title} [Discussant: Calumn Hamilton, Wageningen University]{.discussant}
+- **Karthika Baby Sujatha**, UNU-MERIT [Reducing IPV Prevalence by Focusing on Men: Experimental Evidence from India]{.talk-title} [Discussant: Matthias Rieger, Erasmus University Rotterdam (ISS)]{.discussant}
+- **Yifu He**, VU Amsterdam / Tinbergen Institute [Dream a Better Future: Aspiration and Child Outcomes]{.talk-title} [Discussant: Anna Minasyan, University of Groningen]{.discussant}
+- **Zhiqi Xu**, Erasmus University Rotterdam (ISS) [When Responsibility Meets Framing: Normative Beliefs and Public Goods Contributions in Eldercare]{.talk-title} [Discussant: Menno Pradhan, VU Amsterdam / University of Amsterdam / Tinbergen Institute]{.discussant}
+- **Till Wicker**, Tilburg University [Discrimination as Retaliation: Past Experiences and the Dynamics of Discrimination]{.talk-title} [Discussant: Marc Witte, VU Amsterdam / Tinbergen Institute]{.discussant}
+- **Anouk van Veldhoven**, Utrecht University [Information, Insurance Decisions and Conflict in the Household]{.talk-title} [Discussant: Eleonora Nillesen, UNU-MERIT]{.discussant}
+- [Poster]{.session-label} **Manisha Mukherjee**, UNU-MERIT [Stuck in the Fields: How Rising Temperatures Deepen Gender Inequality in Rural India]{.talk-title}
+- [Poster]{.session-label} **Sarah Leuthold**, Tinbergen Institute [Shifting Norms: The Impact of Climate Change and Migration on Marriage Markets in Indonesia]{.talk-title}
+- [Poster]{.session-label} **Emily Bergner**, Radboud University Nijmegen [Urban Heat Islands and Migration]{.talk-title}
+- [Poster]{.session-label} **Sophie von Russdorf**, University of Groningen [Cognitive Collateral: The Impact of Armed Conflict on Human Capital Development in Ethiopia]{.talk-title}
+- [Poster]{.session-label} **Stellamaris Aju**, Wageningen University [No Pay, No Play? Leveraging an Integrated Supply- and Demand-Driven Social Learning in Agricultural Extension Service]{.talk-title}
+- [Poster]{.session-label} **Shashank Misra**, Tilburg University [Impact of Air Pollution on Birth Outcomes: Causal Evidence from India]{.talk-title}
+- [Poster]{.session-label} **Anandita Bardia**, Erasmus University Rotterdam (ISS) [Fertility, Family and Son-Preference: The Role of Co-residence with Brother-in-Law on Women's Fertility Behavior in India]{.talk-title}
+- [Poster]{.session-label} **Enric Vila i de Villasante**, Utrecht University [Social Preferences as Human Capital: Intergenerational Transmission in an Ethnically Diverse Context]{.talk-title}
+- **Mauricio Espinoza Hermoza**, Wageningen University [The Unpromised Land: Elites and Human Capital Development in 20th-Century Peru]{.talk-title} [Discussant: Daan van Soest, Tilburg University]{.discussant}
+- **Deepakshi Singh**, University of Groningen [Impact of Gendered Climate Policies on Women's Work: Evidence from India]{.talk-title} [Discussant: Olexiy Kyrychenko, Radboud University Nijmegen]{.discussant}
+
+:::
+
+:::
+
+::::
+:::

@@ -1,0 +1,89 @@
+---
+title: "2015: 6th Dutch Development Economics Network Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+page-layout: article
+image: thumbnail.jpg
+date: 2015-03-12
+categories: ["Workshop"]
+host: "Wageningen University"
+event-dates: "12–13 March 2015"
+description: "The sixth workshop, hosted by Wageningen University."
+---
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/wageningen-university.svg" alt="Wageningen University & Research logo" />
+
+**Wageningen University**\
+Development Economics Group
+
+{{< fa calendar >}} **When**\
+12–13 March 2015
+
+{{< fa location-dot >}} **Where**\
+Leeuwenborch building, Hollandseweg 1, 6706 KN Wageningen
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 5.6679, lat = 51.9662, popup = "Leeuwenborch, Wageningen University")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[2 days]{.event-fact} [9 papers]{.event-fact} [3 early-research talks]{.event-fact}
+:::
+
+The sixth edition moved to Wageningen University, with every session held in room C76 of the Leeuwenborch building. Nine papers spanned national capabilities and competitiveness, civil unrest, weather forecasting in semi-arid India, investment liberalisation in China, how interview modes change measured village networks, malaria insurance in Nigeria, business training in Vietnam, vulnerability lines and redistribution preferences.
+
+Alongside them ran a session of early results from the DFID research programme *Coordinated Country Case Studies – Innovation and Growth: Raising Productivity in Low Income Countries*, with three shorter talks on mobile money, retailers in Jakarta and exporters in South Africa.
+
+The workshop was co-sponsored by Tilburg University (Department of Economics), Wageningen University (Development Economics Group) and the DFID research programme.
+
+### Programme
+
+::: {.programme}
+
+#### Thursday 12 March
+
+- **Martin Srholec**, CERGE-EI [Capabilities, Competitiveness, Nations]{.talk-title} [Discussant: Manuel Oechslin]{.discussant}
+- **Patricia Justino**, Institute of Development Studies [Civil Unrest and Government Transfers]{.talk-title} [Discussant: Maarten Voors]{.discussant}
+- **Xavier Giné**, World Bank [Forecasting When It Matters: Evidence from Semi-Arid India]{.talk-title} [Discussant: Erwin Bulte]{.discussant}
+- [DFID early research]{.session-label} **Burak Uras**, Tilburg University [Mobile Money, Trade Credit and Economic Development: Theory and Evidence]{.talk-title}
+- [DFID early research]{.session-label} **Patricio Dalton**, Tilburg University [Retailers in Jakarta's Business Practices and Trade Credits]{.talk-title}
+- [DFID early research]{.session-label} **Gonzague Vannoorenberghe**, Tilburg University [Exports and Innovation in South Africa: Firm-Level Evidence]{.talk-title}
+- **Holger Görg**, Kiel University [Investment Liberalisation, Technology Take-off and Export Market Entry: Firm Level Evidence for China]{.talk-title} [Discussant: Haki Pamuk]{.discussant}
+- **Matthias Schündeln**, Goethe University Frankfurt [How Anonymous Is the Village? An Experimental Comparison of Network Measures across Different Interview Modes]{.talk-title} [Discussant: Thorsten Beck]{.discussant}
+
+#### Friday 13 March
+
+- **Pieter Serneels**, University of East Anglia [Agricultural Workers' Willingness to Pay for Malaria Insurance at the Workplace: Experimental Evidence from Nigeria]{.talk-title} [Discussant: Ty Turley]{.discussant}
+- **Robert Lensink**, University of Groningen [Do Gender and Business Trainings Affect Business Outcomes? Experimental Evidence from Vietnam]{.talk-title} [Discussant: Francesco Cecchi]{.discussant}
+- **Peter Lanjouw**, VU University Amsterdam [Welfare Dynamics Measurement: Two Definitions of a Vulnerability Line and Their Empirical Application]{.talk-title} [Discussant: Janneke Pieters]{.discussant}
+- **Ty Turley**, Brigham Young University [You Get What You Deserve: Experimental Evidence on Redistribution Preferences in China, Paraguay and Uganda]{.talk-title} [Discussant: Patricio Dalton]{.discussant}
+
+:::
+
+:::
+
+::::
+:::
