@@ -47,7 +47,7 @@ Our members are researchers from eight participating universities: Erasmus Unive
 ::: {.network-copy .reveal}
 [Since `r stats$first_year`]{.section-kicker}
 
-## One network, in numbers {.section-title}
+## Our network in numbers {.section-title}
 
 Every year the workshop moves to another member university. The line on the map follows its route, from `r city_of(stats$first_node)` in `r stats$first_year` to `r city_of(stats$latest_node)` in `r stats$latest_year`. Select a university to meet its coordinator.
 
