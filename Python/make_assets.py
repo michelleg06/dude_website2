@@ -6,12 +6,9 @@ Masters (never edited by this script):
     images/sources/logo-master.png            full logo, transparent background
     images/sources/hero-workshop-original.jpg the hero photo, uncropped
 
-Everything else under images/ (logo variants, favicons, hero crops, social card)
-and the event thumbnails are generated here, so a colour or wording change is a
-one-line edit plus a re-run.
+Everything else under images/ (logo variants, favicons, hero crops, social card) and the event thumbnails are generated here, so a colour or wording change is a one-line edit plus a re-run.
 
-Note: the social card and the event thumbnail are typeset in Avenir Next, which
-ships with macOS. On another OS pick a different FONT_PATH below.
+Note: the social card and the event thumbnail are typeset in Avenir Next, which ships with macOS. On another OS pick a different FONT_PATH below.
 """
 
 from datetime import datetime
