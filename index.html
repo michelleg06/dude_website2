@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Dutch Development Economics Network</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -30,16 +36,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/favicon.ico" rel="icon">
+<link href="./images/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0732d460ba2f35b1d252f819319797a1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-015780205977833833417eb959b4d1e8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,18 +75,81 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-latest-events .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date','listing-categories','listing-host','listing-event-dates',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-title-block-banner","listing-title-block-banner-color","listing-page-layout","listing-image","listing-date","listing-categories","listing-host","listing-event-dates","listing-description","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-latest-events'] = new List('listing-latest-events', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="https://michelleg06.github.io/dude_website2/images/apple-touch-icon.png">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="theme.css">
 <link rel="stylesheet" href="index.css">
 <meta property="og:title" content="Dutch Development Economics Network">
-<meta property="og:image" content="https://michelleg06.github.io/dude_website2/images/dude_banner.svg">
+<meta property="og:image" content="https://michelleg06.github.io/dude_website2/images/social-card.png">
 <meta property="og:site_name" content="Dutch Development Economics Network">
-<meta property="og:image:alt" content="Explaining an economic game to farmers in Masaka, Uganda.">
+<meta property="og:image:alt" content="Dutch Development Economics Network">
+<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200">
 <meta name="twitter:title" content="Dutch Development Economics Network">
-<meta name="twitter:image" content="https://michelleg06.github.io/dude_website2/images/dude_banner.svg">
-<meta name="twitter:image:alt" content="Explaining an economic game to farmers in Masaka, Uganda.">
+<meta name="twitter:image" content="https://michelleg06.github.io/dude_website2/images/social-card.png">
+<meta name="twitter:image:alt" content="Dutch Development Economics Network">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="630">
+<meta name="twitter:image-width" content="1200">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -89,10 +160,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logos/dude_logo_m2.svg" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Dutch Development Economics Network</span>
+    <img src="./images/logos/logo-full-white.png" alt="Dutch Development Economics Network" class="navbar-logo light-content">
+    <img src="./images/logos/logo-full-white.png" alt="Dutch Development Economics Network" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -133,11 +202,6 @@ ul.task-list li input[type="checkbox"] {
 </i> 
 <span class="menu-text">Contact</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/michelleg06/dude_website2"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -155,156 +219,476 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
-<div class="hero-container column-screen">
-  <div class="hero-image">
-    <img src="images/dude_banner.svg" alt="Hero image" class="hero-img">
-    <div class="credit-text">
-      <span class="DuDE-photo-description">
-        Explaining an economic game to farmers in Masaka, Uganda.<br>
-      </span>
-      <span class="DUDE-image-credit">
-        <i class="fas fa-camera"></i> by Mariajose Silva Vargas, PhD.
-      </span>
-    </div>
+<div class="hero column-screen">
+  <img class="hero-photo" src="images/hero-workshop.jpg" srcset="images/hero-workshop.jpg 1400w, images/hero-workshop@2x.jpg 2400w" sizes="100vw" alt="A researcher holds up a chart for participants seated in a classroom in Masaka, Uganda.">
+  <div class="hero-content">
+    <span class="hero-rule" aria-hidden="true"></span>
+    <h1 class="hero-name">Dutch Development Economics Network</h1>
   </div>
+  <p class="hero-credit">
+    Explaining an economic game to farmers in Masaka, Uganda.<br>
+    <i class="fas fa-camera" aria-hidden="true"></i> by Mariajose Silva Vargas, PhD.
+  </p>
 </div>
 
 
 
 
-<div class="home-intro">
+<div class="home-intro reveal">
 <p><span class="mission-kicker">Our mission</span></p>
 <p><span class="mission-statement">Facilitating knowledge exchange and connections among development economists based in the Netherlands.</span></p>
 <div class="mission-support">
-<p>Our members are researchers from seven participating universities: Groningen, Nijmegen, Tilburg, UNU-MERIT, Utrecht, VU Amsterdam, and Wageningen. We organize two annual events — a general workshop and one dedicated to PhD students — and we are affiliated to the <a href="https://www.ede-group.org/">European Development Economics Group</a>.</p>
+<p>Our members are researchers from eight participating universities: Erasmus University Rotterdam, Groningen, Nijmegen, Tilburg, UNU-MERIT, Utrecht, VU Amsterdam, and Wageningen. We organize two annual events — a general workshop and one dedicated to PhD students — and we are affiliated to the <a href="https://www.ede-group.org/">European Development Economics Group</a>.</p>
 </div>
 </div>
-<div class="column-screen">
-<div class="home-split">
-<section id="join-us" class="level3 home-panel home-panel-text">
-<h3 data-anchor-id="join-us">JOIN US</h3>
-<p>Connect with researchers in the Netherlands working on Development Economics. Seven participating universities take turns hosting engaging events where we share knowledge and new ideas in the field.</p>
-<div class="event-list">
-  <p class="event-list-title">Upcoming events</p>
-  <div class="event-row">
-    <span class="event-when">Fall 2025</span>
-    <span class="event-what">3rd PhD Workshop · Tinbergen Institute</span>
-  </div>
-  <div class="event-row">
-    <span class="event-when">Spring 2026</span>
-    <span class="event-what">15th Workshop · Nijmegen University</span>
-  </div>
-  <a class="btn-events" href="events/index.html">All events →</a>
+<!-- The network: numbers and the map of member universities -->
+<div class="column-screen home-network">
+<div class="home-network-inner">
+<div class="network-copy reveal">
+<p><span class="section-kicker">Since 2010</span></p>
+<section id="one-network-in-numbers" class="level2 section-title">
+<h2 class="section-title" data-anchor-id="one-network-in-numbers">One network, in numbers</h2>
+<p>Every year the workshop moves to another member university. The line on the map follows its route, from Tilburg in 2010 to Nijmegen in 2026. Select a university to meet its coordinator.</p>
+<div class="cell">
+<div class="cell-output-display">
+<ul class="network-stats">
+<li>
+<span class="stat-num" data-count="15">15</span>
+<span class="stat-label">annual workshops</span>
+</li>
+<li>
+<span class="stat-num" data-count="3">3</span>
+<span class="stat-label">PhD workshops</span>
+</li>
+<li>
+<span class="stat-num" data-count="110" data-suffix="+">110+</span>
+<span class="stat-label">papers presented</span>
+</li>
+<li>
+<span class="stat-num" data-count="8">8</span>
+<span class="stat-label">universities</span>
+</li>
+</ul>
 </div>
+</div>
+<p><span class="network-join">Based at one of these universities? <a href="./members/universities/index.html">Contact your coordinator</a> to join the network.</span></p>
 </section>
-<div class="home-panel home-panel-media">
-<div id="home-gallery" class="gallery">
-<img class="gallery-img" src="images/homepage/img1.jpg" alt="Participants at a past DuDE workshop"> <img class="gallery-img" src="images/homepage/img2.jpg" alt="Presentation session at a DuDE event"> <img class="gallery-img" src="images/homepage/img3.jpeg" alt="DuDE members during a workshop"> <img class="gallery-img" src="images/homepage/img4.jpg" alt="Discussion between researchers at a DuDE event"> <img class="gallery-img" src="images/homepage/img5.jpg" alt="Group photo from a DuDE workshop">
-<div class="gallery-dots" role="tablist" aria-label="Choose photo">
+</div>
+<div class="network-visual reveal">
+<div class="cell">
+<div class="cell-output-display">
+<svg class="network-map" viewbox="0 0 520 610" role="group" aria-label="Map of the network's universities"><path class="nm-country" d="M488.2 167.1L487.4 164.6L489.6 161.7L499.4 145.3L503.4 130.8L501.6 116.1L502.1 109.4L499.6 107.5L499.1 103.9L500.6 99.0L504.0 91.4L503.9 87.9L502.5 83.4L496.2 81.9L493.4 80.5L489.6 80.0L486.3 76.9L487.1 70.3L479.9 69.5L472.4 65.9L468.1 62.9L463.4 58.0L462.3 49.6L460.5 47.0L461.5 40.2L459.4 38.1L452.9 35.3L450.9 37.0L444.3 34.7L438.0 35.6L430.2 37.9L425.7 40.7L419.2 42.6L418.0 42.1L402.5 44.0L396.5 45.3L388.7 50.2L387.7 48.7L383.0 45.7L380.9 45.5L375.2 47.0L374.2 46.4L373.4 48.1L377.6 56.3L379.3 55.7L381.6 59.5L386.3 61.2L385.3 69.3L382.1 72.2L382.4 76.0L380.1 77.9L377.6 82.2L379.1 87.2L375.3 92.1L372.4 98.0L372.1 104.5L376.1 108.9L383.1 109.2L386.8 112.1L389.8 113.4L393.5 114.8L398.4 101.6L401.6 95.7L406.0 93.6L406.7 91.9L411.5 90.2L417.0 92.1L419.3 95.0L421.3 99.9L423.5 98.6L424.4 102.4L428.3 105.4L430.3 110.8L437.9 107.7L443.2 108.1L468.5 134.6L478.5 148.9L482.3 150.8L478.3 159.8L481.5 159.8L485.5 165.6L488.2 167.1ZM413.9 16.6L411.6 16.0L408.3 19.2L411.5 21.7L414.0 19.4L413.9 16.6ZM243.8 70.7L239.6 69.9L240.4 73.3L243.8 70.7ZM236.2 69.7L231.7 68.2L228.1 69.5L218.7 76.0L215.1 79.4L205.1 86.4L204.0 89.3L207.0 90.2L208.4 87.9L213.3 87.6L220.9 80.7L220.0 77.3L227.8 73.9L231.6 71.2L236.2 69.7ZM374.2 46.4L372.4 45.5L367.6 47.9L362.0 47.0L352.0 48.1L341.5 51.3L335.9 50.6L332.3 52.1L322.1 58.0L319.2 58.7L309.6 64.0L297.8 69.9L294.6 73.1L290.2 79.0L284.7 82.4L280.4 86.8L276.7 94.8L274.7 107.5L271.5 110.4L271.4 113.2L267.7 116.7L260.6 119.0L244.6 133.1L261.1 119.0L267.1 117.6L271.0 114.0L273.3 119.9L271.1 121.6L275.2 128.9L273.8 132.5L275.8 140.7L274.3 145.9L275.0 152.0L270.5 154.3L268.7 157.5L269.9 159.6L273.9 163.1L277.4 165.0L281.0 163.5L286.8 165.4L292.5 168.1L295.3 167.9L297.5 164.8L301.7 164.4L305.1 162.5L306.8 165.8L310.2 165.4L313.7 167.1L315.2 165.8L318.3 166.7L324.1 173.6L327.3 171.5L330.3 174.0L334.3 174.8L337.1 173.4L340.4 170.0L341.2 167.7L346.5 166.3L349.6 171.5L353.2 170.2L353.9 171.9L357.6 169.6L356.7 167.3L360.3 166.9L365.2 163.8L376.2 156.0L379.3 151.4L382.5 148.2L388.3 148.9L392.1 152.9L399.7 147.2L404.1 139.0L395.9 126.0L396.5 119.0L388.6 116.1L389.8 113.4L386.8 112.1L383.1 109.2L376.1 108.9L372.1 104.5L372.4 98.0L375.3 92.1L379.1 87.2L377.6 82.2L380.1 77.9L382.4 76.0L382.1 72.2L385.3 69.3L386.3 61.2L382.1 59.7L378.0 61.0L370.5 55.3L369.6 50.4L370.5 47.0L374.2 46.4ZM292.2 40.4L286.2 39.4L271.1 43.8L255.3 47.9L249.0 49.8L244.4 55.1L242.7 59.3L247.7 59.7L251.5 56.3L256.1 54.4L260.6 55.1L268.7 51.3L272.1 48.3L281.6 47.7L283.8 45.1L292.0 41.7L292.2 40.4ZM316.0 35.6L311.5 35.6L308.0 33.6L306.0 33.9L301.5 37.5L301.5 40.2L304.9 43.0L309.6 43.4L312.5 42.4L315.9 39.6L325.4 40.7L336.2 37.9L341.3 34.3L321.1 36.0L316.0 35.6ZM397.9 26.0L393.6 24.1L386.6 25.6L379.0 26.4L369.0 28.1L365.1 31.1L364.6 35.3L370.4 33.4L374.9 33.4L381.9 32.2L384.7 29.8L391.7 27.3L392.7 26.2L397.9 26.0ZM488.2 167.1L485.5 165.6L481.5 159.8L478.3 159.8L482.3 150.8L478.5 148.9L468.5 134.6L443.2 108.1L437.9 107.7L430.3 110.8L428.3 105.4L424.4 102.4L423.5 98.6L421.3 99.9L419.3 95.0L417.0 92.1L411.5 90.2L406.7 91.9L406.0 93.6L401.6 95.7L398.4 101.6L393.5 114.8L389.8 113.4L388.6 116.1L396.5 119.0L395.9 126.0L404.1 139.0L399.7 147.2L392.1 152.9L388.3 148.9L382.5 148.2L379.3 151.4L376.2 156.0L365.2 163.8L367.3 166.9L375.6 176.3L369.7 182.8L365.2 185.5L369.9 197.6L372.9 201.2L375.6 199.1L381.4 200.9L384.1 203.2L391.4 202.4L391.2 204.3L396.0 207.8L398.6 214.3L404.9 211.4L407.3 213.9L409.4 211.6L415.6 213.9L415.0 207.2L419.9 203.0L427.8 201.4L439.5 206.6L439.8 210.9L443.8 207.4L448.2 205.9L453.9 206.8L463.4 206.2L466.2 208.4L468.7 208.9L473.3 207.2L481.7 209.9L483.4 207.6L484.5 191.1L485.5 173.0L488.2 167.1ZM439.8 210.9L439.5 206.6L427.8 201.4L419.9 203.0L415.0 207.2L415.6 213.9L409.4 211.6L407.3 213.9L404.9 211.4L398.6 214.3L396.0 207.8L391.2 204.3L391.4 202.4L384.1 203.2L381.4 200.9L375.6 199.1L372.9 201.2L369.9 197.6L365.2 185.5L369.7 182.8L375.6 176.3L367.3 166.9L365.2 163.8L360.3 166.9L356.7 167.3L357.6 169.6L353.9 171.9L353.2 170.2L349.6 171.5L346.5 166.3L341.2 167.7L340.4 170.0L337.1 173.4L334.3 174.8L330.3 174.0L327.3 171.5L324.1 173.6L327.1 177.6L331.1 178.2L334.8 180.7L340.2 185.3L342.8 192.8L345.6 197.2L341.7 200.9L347.9 204.7L352.4 207.8L348.2 212.0L345.2 211.8L341.3 213.9L336.9 213.0L330.2 214.5L328.4 219.5L332.1 228.0L332.7 233.2L335.7 234.0L338.6 238.2L340.7 243.0L343.8 240.9L345.6 242.6L351.0 236.7L353.6 235.5L356.8 237.6L359.0 241.3L362.9 244.6L363.3 249.4L365.1 251.5L364.0 256.7L366.4 258.5L365.7 262.2L360.4 264.1L359.0 274.5L360.6 278.6L362.8 278.8L364.2 283.6L366.4 287.1L365.7 289.1L368.7 293.9L373.2 292.6L377.4 294.3L392.9 294.1L392.7 292.2L398.3 290.2L402.6 291.0L404.3 294.9L410.6 303.2L412.7 304.4L415.5 303.6L420.2 304.4L424.6 303.4L427.4 307.3L431.6 305.0L434.8 306.7L435.2 311.4L433.8 314.1L440.5 316.6L446.2 316.4L458.1 316.1L460.4 313.5L461.5 308.7L465.8 304.2L470.2 303.6L475.0 294.1L478.8 294.5L484.2 292.4L484.8 291.2L481.7 288.1L480.0 283.6L479.7 280.7L482.5 274.9L483.5 271.2L485.5 268.3L485.5 263.9L483.9 258.5L480.9 257.5L477.8 252.3L475.7 244.8L473.7 244.6L471.5 249.2L469.1 251.1L459.0 247.7L458.0 245.9L448.0 245.9L445.2 245.0L438.3 240.5L439.1 233.2L436.1 226.6L440.5 227.4L441.9 224.5L445.1 225.3L447.0 224.3L440.9 219.1L441.9 213.7L439.8 210.9ZM330.2 214.5L336.9 213.0L335.6 212.6L330.2 214.5ZM324.1 173.6L318.3 166.7L315.2 165.8L313.7 167.1L307.0 169.2L298.8 182.8L298.6 203.7L301.5 206.2L306.0 213.2L303.0 215.7L294.3 218.4L286.9 225.9L281.2 227.2L280.2 230.3L277.7 229.7L279.2 225.9L282.9 223.0L281.2 218.0L274.2 206.6L269.2 201.4L268.3 200.5L261.8 197.6L259.9 197.8L262.1 198.0L269.1 201.4L274.0 206.6L281.1 218.0L282.6 222.6L280.0 224.9L279.0 226.1L277.6 229.7L277.4 231.3L278.6 235.3L273.5 239.4L271.4 240.3L256.2 251.1L244.1 258.3L239.9 261.8L241.0 273.6L246.9 271.8L251.5 272.0L259.6 275.5L263.2 278.4L274.4 288.7L283.0 286.7L290.5 284.2L293.5 274.7L293.5 272.0L291.6 268.7L294.9 264.9L301.2 266.2L302.6 262.5L307.2 258.7L314.6 255.0L318.0 255.2L324.4 250.2L326.9 246.5L330.8 239.0L331.9 233.8L331.9 228.4L326.4 221.6L319.2 220.5L306.4 217.4L307.4 214.1L328.8 214.1L345.5 208.7L347.9 204.7L341.7 200.9L345.6 197.2L342.8 192.8L340.2 185.3L334.8 180.7L331.1 178.2L327.1 177.6L324.1 173.6ZM446.2 316.4L440.5 316.6L433.8 314.1L435.2 311.4L434.8 306.7L431.6 305.0L427.4 307.3L424.6 303.4L420.2 304.4L415.5 303.6L412.7 304.4L410.6 303.2L404.3 294.9L402.6 291.0L398.3 290.2L392.7 292.2L392.9 294.1L377.4 294.3L373.2 292.6L368.7 293.9L365.7 289.1L366.4 287.1L364.2 283.6L362.8 278.8L360.6 278.6L359.0 274.5L360.4 264.1L365.7 262.2L366.4 258.5L364.0 256.7L365.1 251.5L363.3 249.4L362.9 244.6L359.0 241.3L356.8 237.6L353.6 235.5L351.0 236.7L345.6 242.6L343.8 240.9L340.7 243.0L338.6 238.2L335.7 234.0L333.1 233.6L329.9 244.4L326.9 246.5L326.1 250.9L317.1 258.7L312.1 262.2L309.3 262.7L306.1 265.6L301.3 266.0L300.8 269.5L296.4 273.4L294.3 276.7L290.2 286.4L283.1 286.4L281.0 288.5L274.7 290.0L273.3 295.3L275.4 295.7L279.1 299.2L279.2 305.6L283.0 306.7L286.7 310.6L285.0 321.5L281.6 324.4L284.8 326.6L289.7 324.8L293.6 320.3L294.8 324.8L294.1 330.8L297.8 334.5L298.3 340.2L301.2 342.9L302.7 346.2L302.9 350.7L300.2 352.5L294.5 350.1L291.9 347.6L285.0 344.1L279.5 343.7L276.4 345.5L272.0 347.2L267.6 347.4L265.7 349.6L257.7 348.0L254.8 345.5L252.7 345.7L249.6 349.2L246.3 347.6L240.3 358.3L237.9 363.8L234.7 363.8L233.8 366.3L230.5 366.9L231.0 369.9L227.0 369.7L224.2 369.9L223.6 372.0L227.5 373.4L226.9 377.9L223.6 377.5L225.6 380.2L229.7 382.2L232.1 385.7L235.7 384.3L241.0 387.3L241.0 391.8L244.2 393.4L250.9 393.4L254.6 395.3L259.4 394.1L261.0 394.7L268.3 391.0L270.2 383.8L274.4 377.5L279.1 379.8L283.5 378.7L285.0 375.9L292.0 378.5L294.1 376.1L298.1 375.7L303.9 377.7L306.7 382.2L311.3 384.3L312.3 386.3L316.1 387.5L317.8 390.2L322.2 391.6L331.3 390.2L332.8 390.4L333.3 386.7L336.5 386.3L339.3 391.4L344.1 392.4L348.9 388.7L347.4 382.2L343.1 376.9L345.3 374.2L348.4 375.5L354.6 373.0L357.0 371.2L358.0 368.5L363.5 372.0L367.2 372.2L371.1 373.4L371.1 369.1L368.3 367.5L367.3 364.2L363.9 362.4L369.9 360.3L374.2 363.0L373.3 364.8L377.2 367.9L383.1 367.9L385.4 366.7L388.1 368.5L388.7 371.8L393.6 371.4L395.9 374.6L401.5 376.1L401.6 370.8L399.1 369.1L399.4 366.9L404.3 368.5L407.0 368.5L408.8 370.5L413.4 367.9L420.3 365.0L424.1 362.6L430.7 360.5L435.4 358.1L437.6 358.3L441.3 362.2L447.4 358.1L450.4 354.2L451.0 349.2L454.8 348.2L454.6 342.1L452.5 341.2L445.2 335.1L440.3 332.6L437.0 332.6L438.0 326.4L442.9 325.4L445.0 323.4L446.2 316.4ZM262.3 283.6L257.2 282.7L251.8 294.5L251.0 298.4L248.0 304.2L238.9 303.6L229.4 306.7L227.9 297.0L228.9 293.3L230.8 292.0L227.0 286.4L229.0 282.7L225.2 278.2L223.2 281.3L221.6 281.1L218.7 283.6L214.2 283.6L214.6 285.6L212.3 288.7L207.2 288.7L203.7 292.0L200.1 294.1L197.7 294.1L200.1 299.2L203.9 303.8L209.9 307.5L207.7 308.7L207.8 312.2L205.3 312.6L202.5 311.0L199.9 312.0L197.3 315.7L201.5 318.8L201.6 325.4L206.9 327.9L202.0 330.5L198.7 337.9L204.2 337.1L205.5 339.6L200.6 340.8L204.1 346.0L205.9 347.4L208.2 353.5L215.0 351.5L215.9 355.4L218.0 358.1L223.0 360.9L223.5 364.6L226.6 365.2L227.0 369.7L231.0 369.9L230.5 366.9L233.8 366.3L234.7 363.8L237.9 363.8L240.3 358.3L246.3 347.6L249.6 349.2L252.7 345.7L254.8 345.5L257.7 348.0L265.7 349.6L267.6 347.4L272.0 347.2L276.4 345.5L279.5 343.7L285.0 344.1L291.9 347.6L294.5 350.1L300.2 352.5L302.9 350.7L302.7 346.2L301.2 342.9L298.3 340.2L297.8 334.5L294.1 330.8L294.8 324.8L293.6 320.3L289.7 324.8L284.8 326.6L281.6 324.4L285.0 321.5L286.7 310.6L283.0 306.7L279.2 305.6L279.1 299.2L275.4 295.7L273.3 295.3L274.7 290.0L268.7 285.2L262.3 283.6ZM183.4 141.5L184.8 137.3L181.5 136.7L181.0 139.6L183.4 141.5ZM259.9 197.8L261.4 195.3L260.0 192.8L259.4 187.6L256.2 184.9L248.0 184.5L246.3 187.4L242.0 187.2L236.7 180.5L238.0 165.4L229.8 149.1L228.5 147.6L244.7 133.3L228.4 147.2L227.0 146.2L219.5 147.8L215.4 153.5L211.8 155.4L207.7 156.4L199.4 151.8L197.2 146.6L198.6 143.0L195.6 142.6L193.6 140.5L189.6 140.9L187.8 144.3L187.1 155.6L183.1 173.0L178.5 185.3L177.7 189.9L177.8 194.3L176.4 203.2L174.9 217.6L172.1 234.9L169.9 241.9L173.7 244.4L167.2 245.7L168.2 248.8L167.3 253.5L159.6 273.2L168.5 277.1L169.1 275.7L174.5 276.1L171.5 283.1L169.0 285.4L167.6 295.7L173.4 296.6L177.2 296.4L181.9 293.3L183.9 294.1L186.2 292.6L188.7 293.1L188.8 297.0L197.7 294.1L200.1 294.1L203.7 292.0L207.2 288.7L212.3 288.7L214.6 285.6L214.2 283.6L218.7 283.6L221.6 281.1L223.2 281.3L225.2 278.2L229.0 282.7L227.0 286.4L230.8 292.0L228.9 293.3L227.9 297.0L229.4 306.7L238.9 303.6L248.0 304.2L251.0 298.4L251.8 294.5L257.2 282.7L262.3 283.6L261.1 280.5L263.3 278.4L260.4 279.6L254.9 276.5L248.5 277.1L245.6 278.2L242.3 275.9L241.2 273.8L233.3 270.7L228.3 272.0L228.0 269.7L224.9 268.0L220.3 264.1L225.4 261.4L230.2 255.6L232.1 255.6L233.1 252.3L235.2 250.6L235.5 249.8L235.6 248.4L240.4 245.9L236.6 244.4L235.3 247.5L235.3 250.0L234.6 250.6L233.5 250.6L229.8 250.2L229.7 246.9L232.2 243.4L231.0 240.5L234.5 236.7L231.9 232.8L230.5 228.2L227.5 223.6L226.1 217.6L226.0 210.5L229.4 208.0L232.2 209.5L234.8 207.8L239.8 212.6L243.7 212.0L245.7 209.9L248.7 209.3L253.4 204.9L254.7 198.9L259.9 198.0ZM208.3 100.1L206.0 94.6L203.5 94.6L198.1 103.5L193.0 110.8L188.7 118.8L186.8 128.5L187.4 133.8L190.3 135.4L196.4 132.7L200.7 127.0L204.2 126.0L207.5 121.6L207.5 119.5L210.6 116.5L210.9 106.8L212.0 104.7L208.3 100.1ZM141.8 394.7L136.5 392.6L131.0 392.8L135.0 395.9L138.9 396.9L141.8 394.7ZM91.6 386.3L88.8 383.8L85.2 387.7L91.6 386.3ZM197.7 294.1L188.8 297.0L188.7 293.1L186.2 292.6L183.9 294.1L181.9 293.3L177.2 296.4L173.4 296.6L167.6 295.7L169.0 285.4L171.5 283.1L174.5 276.1L169.1 275.7L168.5 277.1L159.6 273.2L153.7 285.8L144.4 302.3L135.5 314.3L130.2 319.6L125.6 325.6L121.4 330.1L114.5 338.8L108.9 343.9L103.1 342.1L102.5 343.7L97.7 343.1L95.1 343.9L92.7 347.6L92.5 350.3L95.1 357.6L97.0 358.3L102.2 356.4L103.9 357.6L100.8 364.2L105.8 371.8L101.7 376.9L97.2 371.8L90.6 373.6L85.7 376.3L83.5 376.5L79.5 378.9L78.8 381.2L80.1 385.5L79.5 387.7L76.8 390.4L77.2 390.8L78.8 390.4L80.6 385.7L84.0 384.9L84.1 383.0L89.1 382.2L90.7 381.2L95.8 381.4L99.7 386.1L99.3 390.8L99.9 393.4L104.6 399.8L111.2 400.6L116.8 402.8L116.8 405.7L121.1 405.7L125.0 407.5L126.5 410.2L132.7 411.4L140.0 409.4L142.3 408.1L143.7 405.3L147.0 403.4L148.2 402.4L148.5 397.7L152.7 399.0L156.3 399.2L164.0 401.8L167.6 401.4L173.8 398.8L177.6 398.8L178.6 398.3L182.5 397.3L190.3 390.8L192.6 385.5L195.0 383.2L197.9 381.8L204.1 382.0L209.6 377.9L215.5 376.1L223.6 377.5L226.9 377.9L227.5 373.4L223.6 372.0L224.2 369.9L227.0 369.7L226.6 365.2L223.5 364.6L223.0 360.9L218.0 358.1L215.9 355.4L215.0 351.5L208.2 353.5L205.9 347.4L204.1 346.0L200.6 340.8L205.5 339.6L204.2 337.1L198.7 337.9L202.0 330.5L206.9 327.9L201.6 325.4L201.5 318.8L197.3 315.7L199.9 312.0L202.5 311.0L205.3 312.6L207.8 312.2L207.7 308.7L209.9 307.5L203.9 303.8L200.1 299.2L197.7 294.1ZM104.5 374.0L106.5 373.0L109.0 375.9L113.7 377.7L116.9 377.1L120.2 380.8L124.0 381.8L126.2 384.3L128.6 388.7L133.8 390.2L141.3 393.4L148.2 397.5L145.7 401.8L138.8 401.6L135.0 398.8L130.4 396.5L127.9 393.0L120.9 386.7L113.1 384.0L108.9 381.0L102.7 377.9L104.5 374.0ZM36.4 461.8L26.4 465.6L25.2 464.8L17.5 468.9L18.0 473.5L19.4 476.6L16.0 480.4L18.4 483.1L17.5 485.1L22.2 492.1L27.6 495.2L37.5 494.4L35.8 486.1L41.9 484.3L43.6 485.9L45.5 482.6L51.8 485.9L53.9 485.5L58.5 488.3L66.3 489.7L71.2 492.3L70.5 494.4L70.7 500.8L74.5 501.8L79.5 501.4L83.1 499.0L82.8 503.7L92.0 500.4L97.9 495.2L104.5 495.0L118.2 484.9L126.9 473.7L123.2 468.5L119.0 468.7L114.7 471.1L111.5 471.1L103.9 470.1L99.4 463.0L93.9 461.8L93.1 466.1L91.5 469.9L86.7 471.1L80.4 476.2L72.8 475.8L70.5 473.3L62.1 473.3L57.6 469.1L51.8 468.1L44.7 465.6L40.0 462.2L36.4 461.8ZM77.2 390.8L76.8 390.4L73.5 393.9L67.3 393.4L60.5 395.9L57.8 398.1L56.6 400.8L57.8 406.7L62.0 409.8L61.0 414.0L59.0 414.7L57.1 417.9L56.8 422.6L50.9 424.8L46.5 423.8L40.5 424.6L26.1 434.4L25.5 437.2L28.9 440.9L33.4 444.1L37.4 450.4L43.4 455.3L51.7 454.3L53.9 451.7L58.2 454.3L61.9 457.9L63.7 461.0L66.2 460.2L70.6 463.2L73.4 466.1L79.2 465.0L81.5 463.8L84.6 464.2L87.8 456.3L87.2 454.1L94.0 450.6L95.5 452.3L101.3 456.7L103.5 457.1L105.0 460.4L110.7 462.6L117.0 464.2L122.1 461.8L126.5 464.2L127.9 468.3L132.2 468.1L131.0 466.5L130.5 460.0L132.1 458.1L124.9 441.9L127.0 434.2L126.0 429.9L121.4 423.8L121.4 420.8L124.2 416.9L127.1 415.7L122.6 414.7L118.5 411.6L117.0 405.9L110.9 406.7L108.8 409.0L102.7 405.3L99.1 404.9L98.0 401.6L94.9 398.5L93.8 395.5L86.3 395.9L83.0 393.2L78.2 394.5L75.2 394.3L77.2 390.8ZM72.8 402.8L75.0 405.5L79.1 406.7L81.6 409.0L83.3 415.9L86.3 416.7L80.6 423.4L76.3 421.4L71.8 421.6L68.6 423.2L61.1 424.2L57.0 422.4L57.6 418.1L61.0 415.5L62.4 408.5L66.1 407.3L72.8 402.8ZM109.4 409.0L110.9 407.5L116.1 406.7L117.4 408.3L116.4 411.4L112.3 411.6L109.9 413.8L109.7 415.9L113.1 420.0L109.9 420.6L106.6 420.0L100.2 423.2L95.9 424.0L95.1 426.5L97.8 427.5L103.4 432.2L106.9 437.8L117.9 438.3L119.5 442.5L124.2 444.6L125.2 450.2L125.4 455.3L120.0 454.3L116.5 456.5L114.0 456.9L108.9 453.9L104.2 446.6L102.6 442.3L97.2 438.7L91.7 436.6L89.6 437.8L87.9 434.0L80.5 434.8L81.1 431.8L84.1 430.7L83.5 428.3L80.6 423.4L86.3 416.7L89.6 415.7L93.1 419.7L98.0 419.1L103.5 416.3L106.1 416.1L109.4 412.8L109.4 409.0ZM60.1 439.5L57.1 436.8L55.4 432.8L52.2 430.7L50.1 427.7L51.8 425.0L53.5 428.9L57.7 431.5L62.4 437.6L60.1 439.5ZM332.8 390.4L331.3 390.2L322.2 391.6L317.8 390.2L316.1 387.5L312.3 386.3L311.3 384.3L306.7 382.2L303.9 377.7L298.1 375.7L294.1 376.1L292.0 378.5L285.0 375.9L283.5 378.7L279.1 379.8L274.4 377.5L270.2 383.8L268.3 391.0L261.0 394.7L259.4 394.1L254.6 395.3L250.9 393.4L244.2 393.4L241.0 391.8L241.0 387.3L235.7 384.3L232.1 385.7L229.7 382.2L225.6 380.2L223.6 377.5L215.5 376.1L209.6 377.9L204.1 382.0L197.9 381.8L195.0 383.2L192.6 385.5L190.3 390.8L182.5 397.3L178.6 398.3L177.7 398.8L173.3 402.8L163.8 405.3L159.1 405.7L151.0 402.8L148.2 402.4L147.0 403.4L146.2 408.5L141.4 412.8L137.2 413.2L127.1 415.7L124.2 416.9L121.4 420.8L121.4 423.8L126.0 429.9L127.0 434.2L124.9 441.9L132.1 458.1L130.5 460.0L131.0 466.5L132.2 468.1L139.5 467.7L140.3 471.7L145.8 472.5L150.5 470.3L151.8 468.3L146.7 461.6L147.4 454.7L145.8 453.3L153.0 449.2L158.7 447.6L165.2 446.6L166.4 448.4L164.2 453.1L164.8 458.6L169.9 456.5L176.8 457.9L181.9 457.9L181.5 454.3L184.8 452.7L189.3 446.2L192.4 442.9L200.2 443.9L201.0 446.4L203.4 447.2L202.9 450.8L201.2 453.3L202.0 458.6L196.7 456.5L194.1 456.9L194.6 460.2L196.9 461.4L203.4 460.2L209.2 459.8L214.6 464.0L218.9 458.8L224.1 454.1L225.0 448.6L226.4 446.6L229.4 448.8L233.6 448.8L236.9 456.9L232.6 464.6L238.4 471.1L240.3 473.9L240.5 480.2L244.2 481.4L248.9 478.8L254.2 482.4L252.2 489.9L253.7 491.3L256.8 490.1L261.0 491.3L266.1 490.9L267.3 488.3L276.3 491.1L279.5 487.1L282.4 486.5L284.7 483.5L288.8 484.5L294.1 491.1L293.8 494.8L295.1 499.4L301.8 497.8L302.7 488.7L308.5 480.4L334.1 472.7L341.3 466.3L333.8 453.1L332.4 444.6L331.4 442.1L329.5 429.5L336.2 430.7L338.3 432.4L341.8 432.0L350.5 428.7L354.1 432.4L355.1 426.3L353.3 423.4L352.5 418.1L346.5 413.2L345.3 411.0L345.6 407.1L344.3 400.4L337.4 398.1L335.5 396.5L334.8 392.0L332.8 390.4ZM344.1 392.4L339.3 391.4L336.5 386.3L333.3 386.7L332.8 390.4L334.8 392.0L335.5 396.5L337.4 398.1L344.3 400.4L345.6 407.1L345.3 411.0L346.5 413.2L352.5 418.1L353.3 423.4L355.1 426.3L354.1 432.4L350.5 428.7L341.8 432.0L338.3 432.4L336.2 430.7L329.5 429.5L331.4 442.1L332.4 444.6L333.8 453.1L341.3 466.3L334.1 472.7L308.5 480.4L302.7 488.7L301.8 497.8L295.1 499.4L305.3 503.7L306.8 506.7L313.1 507.3L317.1 506.3L320.6 506.9L321.9 513.5L327.8 510.1L329.3 512.9L331.8 514.7L329.8 517.6L326.0 520.2L329.0 523.8L327.8 525.4L324.1 525.8L325.2 528.4L323.8 532.1L321.2 531.9L319.4 537.1L321.7 539.5L320.4 544.3L314.6 551.6L319.2 552.4L315.4 559.8L315.2 561.8L311.8 562.0L309.9 566.2L305.0 569.8L304.4 574.8L306.5 579.2L311.3 581.6L311.7 589.0L309.9 591.8L311.5 593.0L314.6 591.0L317.0 592.6L318.0 590.0L321.8 587.4L325.6 592.8L330.4 591.0L332.7 591.2L335.6 590.0L336.1 592.8L340.0 593.8L341.3 592.6L346.1 591.8L346.7 593.0L352.7 593.2L353.6 589.2L346.9 584.4L348.1 582.0L350.5 583.8L353.2 581.2L352.0 577.2L352.4 574.8L359.7 571.8L361.1 569.6L359.5 565.4L360.4 559.6L352.3 557.0L352.2 547.3L345.7 547.9L344.3 546.3L337.0 548.9L338.1 543.5L334.7 540.3L334.6 536.3L335.7 533.5L339.0 530.5L342.2 536.9L346.0 534.9L346.2 531.7L351.3 525.6L354.6 524.4L359.6 520.0L361.6 516.8L365.9 514.7L370.6 513.9L372.1 512.1L367.6 509.1L372.9 506.5L370.9 504.9L364.3 508.7L360.4 509.3L359.2 507.1L358.6 499.4L360.9 499.0L359.2 495.0L360.9 494.0L365.8 488.5L366.3 486.3L369.5 482.0L371.4 476.8L374.0 475.6L378.6 471.3L377.1 465.2L375.9 463.2L378.3 448.0L376.9 444.8L376.8 440.3L375.3 437.4L372.4 435.0L369.9 429.3L366.6 426.5L365.3 424.0L361.5 421.4L364.8 411.0L361.1 410.4L354.7 407.7L353.3 400.4L355.7 398.8L349.3 394.5L344.3 394.5L344.1 392.4Z"></path><g class="nm-edges"><path class="nm-edge" pathlength="1" style="--i:0" d="M229.1 430.1Q283.9 401.1 307.7 343.8"></path><path class="nm-edge" pathlength="1" style="--i:1" d="M307.7 343.8Q244.2 326.2 206.6 272.1"></path><path class="nm-edge" pathlength="1" style="--i:2" d="M206.6 272.1Q204.6 441.4 310.9 573.2"></path><path class="nm-edge" pathlength="1" style="--i:3" d="M310.9 573.2Q278.5 310.2 421.2 87.0"></path><path class="nm-edge" pathlength="1" style="--i:4" d="M421.2 87.0Q291.2 173.7 246.4 323.3"></path><path class="nm-edge" pathlength="1" style="--i:5" d="M246.4 323.3Q217.3 304.9 206.6 272.1"></path><path class="nm-edge" pathlength="1" style="--i:6" d="M206.6 272.1Q250.1 347.5 331.8 377.9"></path></g><g class="nm-nodes"><g class="nm-node" data-node="groningen" transform="translate(421.2 87.0)" tabindex="0" role="button" aria-label="Groningen"><circle class="nm-halo" r="15"></circle><circle class="nm-dot" r="7"></circle><text class="nm-label" x="-13" y="5" text-anchor="end">Groningen</text></g><g class="nm-node" data-node="amsterdam" transform="translate(206.6 272.1)" tabindex="0" role="button" aria-label="Amsterdam"><circle class="nm-halo" r="15"></circle><circle class="nm-dot" r="7"></circle><text class="nm-label" x="-13" y="5" text-anchor="end">Amsterdam</text></g><g class="nm-node" data-node="utrecht" transform="translate(246.4 323.3)" tabindex="0" role="button" aria-label="Utrecht"><circle class="nm-halo" r="15"></circle><circle class="nm-dot" r="7"></circle><text class="nm-label" x="0" y="25" text-anchor="middle">Utrecht</text></g><g class="nm-node" data-node="rotterdam" transform="translate(163.5 357.7)" tabindex="0" role="button" aria-label="Rotterdam"><circle class="nm-halo" r="15"></circle><circle class="nm-dot" r="7"></circle><text class="nm-label" x="-13" y="5" text-anchor="end">Rotterdam</text></g><g class="nm-node" data-node="wageningen" transform="translate(307.7 343.8)" tabindex="0" role="button" aria-label="Wageningen"><circle class="nm-halo" r="15"></circle><circle class="nm-dot" r="7"></circle><text class="nm-label" x="13" y="5" text-anchor="start">Wageningen</text></g><g class="nm-node is-latest" data-node="nijmegen" transform="translate(331.8 377.9)" tabindex="0" role="button" aria-label="Nijmegen"><circle class="nm-halo" r="15"></circle><circle class="nm-dot" r="7"></circle><text class="nm-label" x="0" y="25" text-anchor="middle">Nijmegen</text></g><g class="nm-node" data-node="tilburg" transform="translate(229.1 430.1)" tabindex="0" role="button" aria-label="Tilburg"><circle class="nm-halo" r="15"></circle><circle class="nm-dot" r="7"></circle><text class="nm-label" x="-13" y="5" text-anchor="end">Tilburg</text></g><g class="nm-node" data-node="maastricht" transform="translate(310.9 573.2)" tabindex="0" role="button" aria-label="Maastricht"><circle class="nm-halo" r="15"></circle><circle class="nm-dot" r="7"></circle><text class="nm-label" x="-13" y="5" text-anchor="end">Maastricht</text></g></g></svg>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="node-card" aria-live="polite">
+<img class="node-card-photo" src="members/universities/images/Wagner_Natascha.jpg" alt="">
+<div>
+<p class="node-card-uni">Radboud University</p>
+<p class="node-card-person">Natascha Wagner</p>
+<p class="node-card-role">Professor of Applied Economics and Development</p>
+<p class="node-card-hosted">Most recent host</p>
+</div>
+</div>
+</div>
+<div class="cell-output-display">
+<script type="application/json" id="network-data">{"tilburg":{"node":"tilburg","university":"Tilburg University","photo":"members/universities/images/patricio_dalton.jpg","coordinator":"Patricio Dalton","role":"Professor of Economics","hosted":"Hosted 3 workshops","latest":false},"wageningen":{"node":"wageningen","university":"Wageningen University","photo":"members/members/photos/ritika-gupta.jpg","coordinator":"Ritika Gupta","role":"Assistant Professor of Development Economics","hosted":"Hosted 3 workshops and 1 PhD workshop","latest":false},"maastricht":{"node":"maastricht","university":"UNU-MERIT","photo":"members/universities/images/lonneke.jpg","coordinator":"Eleonora Nillesen","role":"Professor of Public Policy and Development","hosted":"Hosted 1 workshop","latest":false},"groningen":{"node":"groningen","university":"Groningen University","photo":"members/universities/images/Mark_Treurniet.jpg","coordinator":"Mark Treurniet","role":"Assistant Professor at the Faculty of Economics","hosted":"Hosted 1 workshop","latest":false},"nijmegen":{"node":"nijmegen","university":"Radboud University","photo":"members/universities/images/Wagner_Natascha.jpg","coordinator":"Natascha Wagner","role":"Professor of Applied Economics and Development","hosted":"Hosted 1 workshop","latest":true},"utrecht":{"node":"utrecht","university":"Utrecht University","photo":"members/universities/images/karlijn_morsink.avif","coordinator":"Karlijn Morsink","role":"Associate Professor of Economics","hosted":"Hosted 1 workshop and 1 PhD workshop","latest":false},"amsterdam":{"node":"amsterdam","university":"VU Amsterdam","photo":"members/universities/images/Witte_Marc.jpg","coordinator":"Marc Witte","role":"Assistant Professor in the Economics Department","hosted":"Hosted 2 workshops and 1 PhD workshop at the Tinbergen Institute","latest":false},"rotterdam":{"node":"rotterdam","university":"Erasmus University Rotterdam","photo":"members/members/photos/arjun-bedi.jpg","coordinator":"Arjun S. Bedi","role":"Professor of Development Economics at the International Institute of Social Studies (ISS)","hosted":"Newest member of the network","latest":false}}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Events: the latest three, pulled from events/ -->
+<div class="column-screen home-events reveal">
+<div class="home-events-head">
+<div>
+<p><span class="section-kicker">What’s on</span></p>
+<section id="upcoming-and-recent-events" class="level2 section-title">
+<h2 class="section-title" data-anchor-id="upcoming-and-recent-events">Upcoming and recent events</h2>
+</section>
+</div>
+<p><a href="./events/index.html" class="btn-events">All events →</a></p>
+</div>
+<div id="listing-latest-events" class="quarto-listing quarto-listing-container-custom">
+<div class="event-feed">
+
+  <a class="event-tile  is-external" href="https://www.tilburguniversity.edu/current/inaugural-address-ps-dalton" data-date="2026-09-25" target="&quot;_blank&quot;" rel="&quot;noopener&quot;">
+    <span class="cal" aria-hidden="true">
+      <span class="cal-month">Sep</span>
+      <span class="cal-day">25</span>
+      <span class="cal-year">2026</span>
+    </span>
+    <span class="event-tile-body">
+      <span class="event-tile-kind">Inaugural lecture</span>
+      <span class="event-tile-title">Patricio Dalton<span class="event-tile-out" aria-hidden="true"> ↗</span><span class="visually-hidden"> (opens the host's page in a new tab)</span></span>
+      <span class="event-tile-meta">25 September 2026</span>
+      <span class="event-tile-meta">Tilburg University</span>
+    </span>
+  </a>
+
+  <a class="event-tile  is-external" href="https://www.wur.nl/nl/activiteit/inauguratie-profdr-maarten-voors" data-date="2026-10-09" target="&quot;_blank&quot;" rel="&quot;noopener&quot;">
+    <span class="cal" aria-hidden="true">
+      <span class="cal-month">Oct</span>
+      <span class="cal-day">9</span>
+      <span class="cal-year">2026</span>
+    </span>
+    <span class="event-tile-body">
+      <span class="event-tile-kind">Inaugural lecture</span>
+      <span class="event-tile-title">Maarten Voors<span class="event-tile-out" aria-hidden="true"> ↗</span><span class="visually-hidden"> (opens the host's page in a new tab)</span></span>
+      <span class="event-tile-meta">9 October 2026</span>
+      <span class="event-tile-meta">Wageningen University</span>
+    </span>
+  </a>
+
+  <a class="event-tile is-phd" href="./events/2026_phd_workshop_tinbergen/index.html" data-date="2026-11-06">
+    <span class="cal" aria-hidden="true">
+      <span class="cal-month">Nov</span>
+      <span class="cal-day">6</span>
+      <span class="cal-year">2026</span>
+    </span>
+    <span class="event-tile-body">
+      <span class="event-tile-kind">PhD Workshop</span>
+      <span class="event-tile-title">4th PhD Workshop</span>
+      <span class="event-tile-meta">6 November 2026</span>
+      <span class="event-tile-meta">Tinbergen Institute</span>
+    </span>
+  </a>
+
+  <a class="event-tile  is-external" href="https://www.eur.nl/en/eshpm/events/symposium-inaugural-lecture-professor-matthias-rieger-2026-11-20" data-date="2026-11-20" target="&quot;_blank&quot;" rel="&quot;noopener&quot;">
+    <span class="cal" aria-hidden="true">
+      <span class="cal-month">Nov</span>
+      <span class="cal-day">20</span>
+      <span class="cal-year">2026</span>
+    </span>
+    <span class="event-tile-body">
+      <span class="event-tile-kind">Inaugural lecture</span>
+      <span class="event-tile-title">Matthias Rieger<span class="event-tile-out" aria-hidden="true"> ↗</span><span class="visually-hidden"> (opens the host's page in a new tab)</span></span>
+      <span class="event-tile-meta">20 November 2026</span>
+      <span class="event-tile-meta">Erasmus University Rotterdam</span>
+    </span>
+  </a>
+
+  <a class="event-tile" href="./events/2027_workshop_wageningen/index.html" data-date="2027-04-21">
+    <span class="cal" aria-hidden="true">
+      <span class="cal-month">Apr</span>
+      <span class="cal-day">21</span>
+      <span class="cal-year">2027</span>
+    </span>
+    <span class="event-tile-body">
+      <span class="event-tile-kind">Workshop</span>
+      <span class="event-tile-title">16th Workshop</span>
+      <span class="event-tile-meta">21–23 April 2027</span>
+      <span class="event-tile-meta">Wageningen University</span>
+    </span>
+  </a>
+
+  <a class="event-tile" href="./events/2026_workshop_nijmegen/index.html" data-date="2026-03-12">
+    <span class="cal" aria-hidden="true">
+      <span class="cal-month">Mar</span>
+      <span class="cal-day">12</span>
+      <span class="cal-year">2026</span>
+    </span>
+    <span class="event-tile-body">
+      <span class="event-tile-kind">Workshop</span>
+      <span class="event-tile-title">15th Workshop</span>
+      <span class="event-tile-meta">12–13 March 2026</span>
+      <span class="event-tile-meta">Radboud University</span>
+    </span>
+  </a>
 
 </div>
-<p><button class="gallery-toggle" id="gallery-toggle" aria-label="Pause slideshow"> <svg class="icon-pause" width="16" height="16" viewbox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"></path></svg> <svg class="icon-play" width="16" height="16" viewbox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><path d="M8 5v14l11-7z"></path></svg> </button></p>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-<p class="gallery-caption">
-Moments from past DuDE events, publicly shared by participants.
-</p>
 </div>
+<!-- People and moments -->
+<div class="column-screen home-people">
+<div class="home-people-head reveal">
+<div>
+<p><span class="section-kicker">Community</span></p>
+<section id="the-people-behind-the-network" class="level2 section-title">
+<h2 class="section-title" data-anchor-id="the-people-behind-the-network">The people behind the network</h2>
+</section>
+</div>
+<p><a href="./members/members/index.html" class="btn-events">Meet all members →</a></p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="marquee marquee-photos" data-direction="left">
+<div class="marquee-track">
+<ul class="marquee-group">
+<li>
+<img src="images/homepage/strip/img1.jpg" alt="Participants at a past network workshop" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img2.jpg" alt="Presentation session at a network event" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img3.jpg" alt="Members of the network during a workshop" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img4.jpg" alt="Discussion between researchers at a network event" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img5.jpg" alt="Group photo from a network workshop" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img1.jpg" alt="Participants at a past network workshop" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img2.jpg" alt="Presentation session at a network event" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img3.jpg" alt="Members of the network during a workshop" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img4.jpg" alt="Discussion between researchers at a network event" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img5.jpg" alt="Group photo from a network workshop" loading="lazy">
+</li>
+</ul>
+<ul class="marquee-group" aria-hidden="true">
+<li>
+<img src="images/homepage/strip/img1.jpg" alt="Participants at a past network workshop" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img2.jpg" alt="Presentation session at a network event" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img3.jpg" alt="Members of the network during a workshop" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img4.jpg" alt="Discussion between researchers at a network event" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img5.jpg" alt="Group photo from a network workshop" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img1.jpg" alt="Participants at a past network workshop" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img2.jpg" alt="Presentation session at a network event" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img3.jpg" alt="Members of the network during a workshop" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img4.jpg" alt="Discussion between researchers at a network event" loading="lazy">
+</li>
+<li>
+<img src="images/homepage/strip/img5.jpg" alt="Group photo from a network workshop" loading="lazy">
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="marquee marquee-people" data-direction="right">
+<div class="marquee-track">
+<ul class="marquee-group">
+<li>
+<img src="images/people/amal-ahmad.jpg" alt="" loading="lazy">
+<span>Amal Ahmad</span>
+</li>
+<li>
+<img src="images/people/esther-gehrke.jpg" alt="" loading="lazy">
+<span>Esther Gehrke</span>
+</li>
+<li>
+<img src="images/people/bruno-martorano.jpg" alt="" loading="lazy">
+<span>Bruno Martorano</span>
+</li>
+<li>
+<img src="images/people/matthias-rieger.jpg" alt="" loading="lazy">
+<span>Matthias Rieger</span>
+</li>
+<li>
+<img src="images/people/wendy-janssens.jpg" alt="" loading="lazy">
+<span>Wendy Janssens</span>
+</li>
+<li>
+<img src="images/people/mansoob-murshed.jpg" alt="" loading="lazy">
+<span>Syed Mansoob Murshed</span>
+</li>
+<li>
+<img src="images/people/robert-sparrow.jpg" alt="" loading="lazy">
+<span>Robert Sparrow</span>
+</li>
+<li>
+<img src="images/people/gaaitzen-de-vries.jpg" alt="" loading="lazy">
+<span>Gaaitzen de Vries</span>
+</li>
+<li>
+<img src="images/people/jenny-aker.jpg" alt="" loading="lazy">
+<span>Jenny Aker</span>
+</li>
+<li>
+<img src="images/people/binyam-afewerk-demena.jpg" alt="" loading="lazy">
+<span>Binyam Afewerk Demena</span>
+</li>
+<li>
+<img src="images/people/kritika-saxena.jpg" alt="" loading="lazy">
+<span>Kritika Saxena</span>
+</li>
+<li>
+<img src="images/people/dirk-bezemer.jpg" alt="" loading="lazy">
+<span>Dirk Bezemer</span>
+</li>
+<li>
+<img src="images/people/jonas-gathen.jpg" alt="" loading="lazy">
+<span>Jonas Gathen</span>
+</li>
+<li>
+<img src="images/people/lisa-van-dongen.jpg" alt="" loading="lazy">
+<span>Lisa van Dongen</span>
+</li>
+</ul>
+<ul class="marquee-group" aria-hidden="true">
+<li>
+<img src="images/people/amal-ahmad.jpg" alt="" loading="lazy">
+<span>Amal Ahmad</span>
+</li>
+<li>
+<img src="images/people/esther-gehrke.jpg" alt="" loading="lazy">
+<span>Esther Gehrke</span>
+</li>
+<li>
+<img src="images/people/bruno-martorano.jpg" alt="" loading="lazy">
+<span>Bruno Martorano</span>
+</li>
+<li>
+<img src="images/people/matthias-rieger.jpg" alt="" loading="lazy">
+<span>Matthias Rieger</span>
+</li>
+<li>
+<img src="images/people/wendy-janssens.jpg" alt="" loading="lazy">
+<span>Wendy Janssens</span>
+</li>
+<li>
+<img src="images/people/mansoob-murshed.jpg" alt="" loading="lazy">
+<span>Syed Mansoob Murshed</span>
+</li>
+<li>
+<img src="images/people/robert-sparrow.jpg" alt="" loading="lazy">
+<span>Robert Sparrow</span>
+</li>
+<li>
+<img src="images/people/gaaitzen-de-vries.jpg" alt="" loading="lazy">
+<span>Gaaitzen de Vries</span>
+</li>
+<li>
+<img src="images/people/jenny-aker.jpg" alt="" loading="lazy">
+<span>Jenny Aker</span>
+</li>
+<li>
+<img src="images/people/binyam-afewerk-demena.jpg" alt="" loading="lazy">
+<span>Binyam Afewerk Demena</span>
+</li>
+<li>
+<img src="images/people/kritika-saxena.jpg" alt="" loading="lazy">
+<span>Kritika Saxena</span>
+</li>
+<li>
+<img src="images/people/dirk-bezemer.jpg" alt="" loading="lazy">
+<span>Dirk Bezemer</span>
+</li>
+<li>
+<img src="images/people/jonas-gathen.jpg" alt="" loading="lazy">
+<span>Jonas Gathen</span>
+</li>
+<li>
+<img src="images/people/lisa-van-dongen.jpg" alt="" loading="lazy">
+<span>Lisa van Dongen</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="home-people-foot">
+<p><span class="strip-caption">Event photos publicly shared by participants.</span></p>
+<button class="strip-toggle" type="button" aria-pressed="false">
+Pause motion
+</button>
 </div>
 </div>
 <script>
 (function () {
-  const gallery = document.getElementById('home-gallery');
-  const slides = gallery.querySelectorAll('.gallery-img');
-  const dotsWrap = gallery.querySelector('.gallery-dots');
-  const toggle = document.getElementById('gallery-toggle');
-  const iconPause = toggle.querySelector('.icon-pause');
-  const iconPlay = toggle.querySelector('.icon-play');
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  let current = 0;
-  let timer = null;
+  // --- the network: count up and draw the route once the section is in view
+  var section = document.querySelector('.home-network');
+  var map = document.querySelector('.network-map');
+  var counters = document.querySelectorAll('.stat-num[data-count]');
 
-  slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.className = 'gallery-dot';
-    dot.setAttribute('aria-label', 'Show photo ' + (i + 1));
-    dot.addEventListener('click', () => { goTo(i); if (timer) restart(); });
-    dotsWrap.appendChild(dot);
+  function countUp(el) {
+    var target = +el.dataset.count, suffix = el.dataset.suffix || '', start = performance.now();
+    (function tick(now) {
+      var p = Math.min(1, (now - start) / 1400);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    })(start);
+    // browsers throttle animation frames in background tabs: always land on the real number
+    setTimeout(function () { el.textContent = target + suffix; }, 1600);
+  }
+
+  if (!reduced && 'IntersectionObserver' in window && section && map) {
+    map.classList.add('nm-animate');
+    counters.forEach(function (el) { el.textContent = '0' + (el.dataset.suffix || ''); });
+    var io = new IntersectionObserver(function (entries) {
+      if (!entries.some(function (e) { return e.isIntersecting; })) return;
+      io.disconnect();
+      map.classList.add('is-drawn');
+      counters.forEach(countUp);
+    }, { threshold: 0.3 });
+    io.observe(section);
+  }
+
+  // --- map nodes update the coordinator card
+  var data = JSON.parse(document.getElementById('network-data').textContent);
+  var card = document.querySelector('.node-card');
+  var nodes = document.querySelectorAll('.nm-node');
+
+  function show(id) {
+    var u = data[id];
+    if (!u) return;
+    nodes.forEach(function (n) { n.classList.toggle('is-active', n.dataset.node === id); });
+    card.querySelector('.node-card-photo').src = u.photo;
+    card.querySelector('.node-card-uni').textContent = u.university;
+    card.querySelector('.node-card-person').textContent = u.coordinator;
+    card.querySelector('.node-card-role').textContent = u.role;
+    card.querySelector('.node-card-hosted').textContent = u.latest ? u.hosted + ' · most recent host' : u.hosted;
+  }
+
+  nodes.forEach(function (n) {
+    var id = n.dataset.node;
+    n.addEventListener('mouseenter', function () { show(id); });
+    n.addEventListener('focus', function () { show(id); });
+    n.addEventListener('click', function () { show(id); });
+    n.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(id); }
+    });
   });
-  const dots = dotsWrap.querySelectorAll('.gallery-dot');
+  var start = document.querySelector('.nm-node.is-latest');
+  if (start) show(start.dataset.node);
 
-  function goTo(i) {
-    slides[current].classList.remove('active');
-    dots[current].classList.remove('active');
-    current = i;
-    slides[current].classList.add('active');
-    dots[current].classList.add('active');
-  }
-
-  function next() { goTo((current + 1) % slides.length); }
-
-  function setToggle(playing) {
-    iconPause.style.display = playing ? '' : 'none';
-    iconPlay.style.display = playing ? 'none' : '';
-    toggle.setAttribute('aria-label', playing ? 'Pause slideshow' : 'Play slideshow');
-  }
-
-  function start() { timer = setInterval(next, 4000); setToggle(true); }
-  function stop() { clearInterval(timer); timer = null; setToggle(false); }
-  function restart() { clearInterval(timer); timer = setInterval(next, 4000); }
-
-  toggle.addEventListener('click', () => { timer ? stop() : start(); });
-
-  goTo(0);
-  if (reducedMotion) { setToggle(false); } else { start(); }
+  // --- a way to stop the moving strips (and none needed without motion)
+  var toggle = document.querySelector('.strip-toggle');
+  var people = document.querySelector('.home-people');
+  if (toggle && reduced) toggle.hidden = true;
+  if (toggle) toggle.addEventListener('click', function () {
+    var paused = people.classList.toggle('is-paused');
+    toggle.setAttribute('aria-pressed', paused);
+    toggle.textContent = paused ? 'Play motion' : 'Pause motion';
+  });
 })();
 </script>
-<div class="column-screen home-explore">
-<section id="explore-dude" class="level2 home-explore-inner">
-<h2 data-anchor-id="explore-dude">Explore DuDE</h2>
-<p class="explore-sub">
-Blog posts with research highlights, our events, and the people behind the network.
-</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="category-row">
-<div class="category-column">
-<a href="posts/blog/index.html">
-<img src="images/vectors/book.svg" alt="Blog posts" class="category-image honey-white">
-</a>
-<h4 style="text-align:center;">
-<a class="white" href="posts/blog/index.html">Posts</a>
-</h4>
-</div>
-<div class="category-column">
-<a href="members/universities/index.html">
-<img src="images/vectors/nl.svg" alt="Affiliated universities" class="category-image honey-white">
-</a>
-<h4 style="text-align:center;">
-<a class="white" href="members/universities/index.html">Affiliated Universities</a>
-</h4>
-</div>
-<div class="category-column">
-<a href="events/index.html">
-<img src="images/vectors/events.svg" alt="Events" class="category-image honey-white">
-</a>
-<h4 style="text-align:center;">
-<a class="white" href="events/index.html">Events</a>
-</h4>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
+
 
 
 
 </main> <!-- /main -->
-<footer class="clean-footer">
-    <p>© 2026 Dutch Development Economics Network (DuDE) 🌍</p>
-</footer>
-
 <!-- Contact modal (opened from the navbar "Contact" item) -->
 <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal-title" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -421,13 +805,14 @@ document.addEventListener('DOMContentLoaded', function () {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -770,6 +1155,45 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="./index.html"><img src="./images/logos/logo-full-white.png" class="footer-logo img-fluid" alt="Dutch Development Economics Network"></a></p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./events/index.html">
+<p>Events</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./members/universities/index.html">
+<p>Universities</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./members/members/index.html">
+<p>Members</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./posts/blog/index.html">
+<p>Posts</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./#contact">
+<p>Contact</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>© 2026 Dutch Development Economics Network (DDEN)</p>
+</div>
+  </div>
+</footer>
 
 
 

@@ -2,7 +2,45 @@
   {
     "listing": "/events/index.html",
     "items": [
-      "/events/2025_workshop_tinbergen/index.html"
+      "/events/2027_workshop_wageningen/index.html",
+      "/events/2026_phd_workshop_tinbergen/index.html",
+      "/events/2026_workshop_nijmegen/index.html",
+      "/events/2025_phd_workshop_tinbergen/index.html",
+      "/events/2025_workshop_tinbergen/index.html",
+      "/events/2024_phd_workshop_wageningen/index.html",
+      "/events/2024_workshop_utrecht/index.html",
+      "/events/2023_phd_workshop_utrecht/index.html",
+      "/events/2023_workshop_groningen/index.html",
+      "/events/2022_workshop_maastricht/index.html",
+      "/events/2019_workshop_tinbergen/index.html",
+      "/events/2018_workshop_wageningen/index.html",
+      "/events/2017_workshop_wageningen/index.html",
+      "/events/2016_workshop_tilburg/index.html",
+      "/events/2015_workshop_wageningen/index.html",
+      "/events/2013_workshop_tilburg/index.html",
+      "/events/2010_workshop_tilburg/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/events/2027_workshop_wageningen/index.html",
+      "/events/2026_phd_workshop_tinbergen/index.html",
+      "/events/2026_workshop_nijmegen/index.html",
+      "/events/2025_phd_workshop_tinbergen/index.html",
+      "/events/2025_workshop_tinbergen/index.html",
+      "/events/2024_phd_workshop_wageningen/index.html",
+      "/events/2024_workshop_utrecht/index.html",
+      "/events/2023_phd_workshop_utrecht/index.html",
+      "/events/2023_workshop_groningen/index.html",
+      "/events/2022_workshop_maastricht/index.html",
+      "/events/2019_workshop_tinbergen/index.html",
+      "/events/2018_workshop_wageningen/index.html",
+      "/events/2017_workshop_wageningen/index.html",
+      "/events/2016_workshop_tilburg/index.html",
+      "/events/2015_workshop_wageningen/index.html",
+      "/events/2013_workshop_tilburg/index.html",
+      "/events/2010_workshop_tilburg/index.html"
     ]
   }
 ]
