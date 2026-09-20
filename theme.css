@@ -1403,3 +1403,7 @@ main:has(.future-event) > header {
 .future-replay[hidden] {
   display: none;
 }
+
+.justify {
+  text-align: justify !important
+}
