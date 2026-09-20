@@ -53,11 +53,13 @@ leaflet() %>%
 [2 days]{.event-fact} [9 papers]{.event-fact} [Invited talk]{.event-fact} [6 posters]{.event-fact}
 :::
 
+:::{.justify}
 The 14th Dutch Development Economics Network Workshop was hosted by the Tinbergen Institute, in Amsterdam. Chaired by [Marc Witte](https://www.marcwitte.com/), the event took place on 27 and 28 March 2025 and included various academic and social activities, among which paper presentations, social lunches and dinner, and poster presentations. For a detailed version of the full itinerary, please download the [workshop program](program.pdf).
 
 Nine papers ranged from education after a natural disaster and protectionist FDI rules in Indonesia to legal trade and drug trafficking, mental accounting and cash transfers, youth mental health, drought insurance, how far to trust observational estimates, colonial legacies and fertility, and tax nudges among firms in Kampala. Jonathan Morduch of New York University spoke on selecting experimental sites for external validity, and six researchers presented posters.
 
 The workshop was jointly organized and co-sponsored by the network, the Tinbergen Institute and the participating universities of Groningen, Radboud, Tilburg, UNU-MERIT, Utrecht, the Vrije Universiteit Amsterdam and Wageningen.
+:::
 
 ### Programme
 

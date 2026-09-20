@@ -53,9 +53,11 @@ leaflet() %>%
 [1 day]{.event-fact} [6 papers]{.event-fact}
 :::
 
+:::{.justify}
 The ninth edition was a focused one-day workshop in Impulse, on the Wageningen campus. Six papers — each with its own discussant — took on goals and support groups for microentrepreneurs in Medellín, the origins of violence in Rwanda, barriers to female empowerment in Tanzania, the political economy of school test scores, land markets and agricultural productivity, and how small-scale retailers learn business practices from their peers.
 
 The workshop was co-sponsored by Tilburg University (Department of Economics) and Wageningen University (Development Economics Group and Wageningen School of Social Sciences).
+:::
 
 ### Programme
 

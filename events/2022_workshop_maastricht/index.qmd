@@ -53,9 +53,11 @@ leaflet() %>%
 [2 days]{.event-fact} [10 papers]{.event-fact}
 :::
 
+:::{.justify}
 The first workshop since 2019 met at UNU-MERIT in Maastricht, with Maastricht University joining the Vrije Universiteit Amsterdam, Tilburg and Wageningen as co-organizers. Ten papers over two days put public services and accountability centre stage — free riding in service delivery in India, community service providers in Sierra Leone, social accountability for teachers, community-based monitoring — alongside climate-smart agriculture, seasonal migration loans, menstrual health and schooling in Bangladesh, texting parents about early child development, female admission caps in Iran and the history of pro-birth policies in Congo.
 
 The organizing team was Eleonora Nillesen, Yannick Markhof and Karthika Sujatha, together with Erwin Bulte, Patricio S. Dalton, Wendy Janssens, Menno Pradhan and Maarten Voors. The workshop was co-sponsored by the Vrije Universiteit Amsterdam (School of Business and Economics), Tilburg University (Department of Economics) and Wageningen University (Development Economics Group), with external funding from the Stichting Universiteitsfonds Limburg (SWOL).
+:::
 
 ### Programme
 

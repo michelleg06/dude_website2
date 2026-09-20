@@ -53,11 +53,13 @@ leaflet() %>%
 [2 days]{.event-fact} [9 papers]{.event-fact} [3 early-research talks]{.event-fact}
 :::
 
+:::{.justify}
 The sixth edition moved to Wageningen University, with every session held in room C76 of the Leeuwenborch building. Nine papers spanned national capabilities and competitiveness, civil unrest, weather forecasting in semi-arid India, investment liberalisation in China, how interview modes change measured village networks, malaria insurance in Nigeria, business training in Vietnam, vulnerability lines and redistribution preferences.
 
 Alongside them ran a session of early results from the DFID research programme *Coordinated Country Case Studies – Innovation and Growth: Raising Productivity in Low Income Countries*, with three shorter talks on mobile money, retailers in Jakarta and exporters in South Africa.
 
 The workshop was co-sponsored by Tilburg University (Department of Economics), Wageningen University (Development Economics Group) and the DFID research programme.
+:::
 
 ### Programme
 

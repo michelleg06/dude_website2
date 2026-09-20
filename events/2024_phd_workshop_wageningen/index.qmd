@@ -52,9 +52,11 @@ leaflet() %>%
 [2 days]{.event-fact} [7 papers]{.event-fact} [7 posters]{.event-fact} [Skills sessions]{.event-fact}
 :::
 
+:::{.justify}
 Wageningen University hosted the second PhD workshop over two days. On the first, in the Forum building, seven PhD candidates presented full papers and seven more presented posters, in sessions chaired by Yannick Markhof and Elisa van Dongen. Research ranged from crop insurance and welfare under catastrophic drought to anti-poverty transfers and self-belief, 3G coverage and child marriage, child care subsidies in Egypt, mineral trade and armed conflict in eastern Congo, and a refugee camp's effect on its hosts.
 
 The second day, in the Leeuwenborch, turned to the craft of research: Wageningen faculty ran two rounds of parallel sessions on preparing for the academic job market, the publication process and writing a response letter, moving from a research idea to an empirical strategy and a story, machine learning in economics, research designs with observational data, building a CV and writing a research proposal.
+:::
 
 ### Programme
 

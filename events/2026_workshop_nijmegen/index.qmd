@@ -53,11 +53,13 @@ leaflet() %>%
 [2 days]{.event-fact} [10 papers]{.event-fact} [Roundtable]{.event-fact} [Radboud Special]{.event-fact}
 :::
 
+:::{.justify}
 Radboud University hosted the fifteenth edition in the Elinor Ostromgebouw — a building named for the economist of the commons. After an official opening by Saskia Lavrijssen, ten papers ran from a choice framework for empirical research design and hiring women in Bangladesh to firms facing uncertainty in Uganda, social capital and gender equality, newborn health during Covid-19, structural change in India, colonial institutional transfer, affirmative action and inequality in climate preferences.
 
 Two additions broadened the programme: a *Radboud Special* on heritage diets by Quirijn de Mast of Radboudumc, and a roundtable on the research needs of development practice, with IPA, SNV, HKV, FMO, CARE and IOB. It was also the first workshop with Erasmus University Rotterdam among the co-organizing universities, bringing the network to eight.
 
 The local organizer was Natascha Wagner. The workshop was jointly organized and co-sponsored by the network and its participating universities, represented by their node coordinators: Arjun Bedi (Erasmus), Mark Treurniet (Groningen), Natascha Wagner (Radboud), Patricio Dalton (Tilburg), Eleonora Nillesen (UNU-MERIT), Karlijn Morsink (Utrecht), Marc Witte (Vrije Universiteit Amsterdam) and Francesco Cecchi (Wageningen).
+:::
 
 ### Programme
 

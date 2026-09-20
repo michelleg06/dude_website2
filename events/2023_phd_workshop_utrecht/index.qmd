@@ -52,9 +52,11 @@ leaflet() %>%
 [1 day]{.event-fact} [14 PhD presentations]{.event-fact} [7 universities]{.event-fact}
 :::
 
+:::{.justify}
 The network's first workshop dedicated to PhD students gave the floor entirely to early-career researchers. Fourteen PhD candidates — two from each of the seven participating universities in Amsterdam, Groningen, Maastricht, Nijmegen, Tilburg, Utrecht and Wageningen — presented their work in 25-minute slots over a single day at Utrecht University, and the day ended with dinner.
 
 Child marriage and intimate partner violence, vulnerability within institutions, attitudes towards refugees, pensions and old-age support, crop insurance, parental migration, soft skills in school, Covid-19 and economic mobility, foreign aid, seed access and nutrition, social media and gender norms, and the aftermath of war were among the topics.
+:::
 
 ### Programme
 

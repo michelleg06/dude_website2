@@ -144,6 +144,8 @@ img {
   margin: 0 auto;
   font-size: 1.02rem;
   color: var(--muted);
+  text-align: justify;
+  hyphens: auto;
 }
 
 /*----------------------------------------------*/
@@ -755,3 +757,7 @@ h2.section-title,
 }
 
 /*----------------------------------------------*/
+
+.justify {
+  text-align: justify !important
+}

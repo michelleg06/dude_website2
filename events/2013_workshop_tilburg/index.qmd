@@ -53,11 +53,13 @@ leaflet() %>%
 [2 days]{.event-fact} [8 papers]{.event-fact} [PhD session]{.event-fact}
 :::
 
+:::{.justify}
 The fourth edition returned to Tilburg University, now organized jointly by Tilburg and Wageningen — a partnership that carried the workshop through the years that followed. Over two days in the Dante and Koopmans buildings, eight papers covered market access and internal migration, tariff evasion, financial development, eye disease, resource windfalls, the long shadow of the slave trade, free education in Cambodia and unemployment benefits.
 
 The programme also included a session for PhD students, with three shorter presentations from Tilburg and Wageningen. Among the presenters was Francesco Cecchi, who would later serve as the network's coordinator at Wageningen.
 
 The workshop was organized by Thorsten Beck, Erwin Bulte, Benedikt Goderis and Manuel Oechslin, and sponsored by Tilburg University (Department of Economics and CentER) and Wageningen University.
+:::
 
 ### Programme
 

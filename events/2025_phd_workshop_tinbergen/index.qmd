@@ -53,9 +53,11 @@ leaflet() %>%
 [1 day]{.event-fact} [8 papers]{.event-fact} [8 posters]{.event-fact}
 :::
 
+:::{.justify}
 The third PhD workshop filled a day at the Tinbergen Institute in Amsterdam. Eight PhD candidates presented papers, each paired with a discussant from across the network, and eight more pitched their work in a rapid-fire poster session — seven minutes per poster, with a bell announcing each new round.
 
 Research ranged from Mexico's penal justice reform and intimate partner violence in India to aspirations and child outcomes, eldercare, the dynamics of discrimination, insurance decisions within the household, elites and human capital in Peru, and gendered climate policy. Sessions were chaired by Davide Manzoni, Juan Segnana, Anne Lieke Ebbers and Nicola Mangraviti — Anne Lieke Ebbers having presented at the first PhD workshop in 2023. The day closed with dinner at the Tinbergen Institute.
+:::
 
 ### Programme
 

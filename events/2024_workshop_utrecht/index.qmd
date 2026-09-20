@@ -52,9 +52,11 @@ leaflet() %>%
 [2 days]{.event-fact} [11 papers]{.event-fact}
 :::
 
+:::{.justify}
 Utrecht University hosted the thirteenth edition at Janskerkhof, in the heart of the city. Eleven papers from Warwick, the Stockholm School of Economics, Bocconi, the University of Ghana and across the network took up job loss and job search, mobile internet and structural change in Nigeria, seed markets, incentives in a community health programme in Sierra Leone, culture and competition, female entrepreneurship, early-childhood skills in Roma communities in Bulgaria, temperature and manufacturing in India, mobile salary payments in Afghanistan and child stunting.
 
 The local organizing team was Patricio Dalton and Harry Son. The workshop was jointly organized and co-sponsored by the network and its participating universities, represented by their node coordinators: Wendy Janssens (Vrije Universiteit Amsterdam), Karlijn Morsink (Utrecht), Patricio Dalton (Tilburg), Kristina Czura (Groningen), Natascha Wagner (Nijmegen), Eleonora Nillesen (UNU-MERIT) and Francesco Cecchi (Wageningen).
+:::
 
 ### Programme
 

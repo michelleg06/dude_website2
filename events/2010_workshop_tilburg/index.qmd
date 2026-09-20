@@ -53,11 +53,13 @@ leaflet() %>%
 [2 days]{.event-fact} [7 papers]{.event-fact} [Tilburg]{.event-fact}
 :::
 
+:::{.justify}
 Where it all started. The first edition — then simply called the *Development Economics Workshop* — brought researchers from Tilburg, Wageningen and VU Amsterdam together with guests from Bocconi, Stockholm, Warwick, Göttingen, Lausanne, Bonn and the University of Amsterdam for two days in the Dante building at Tilburg University.
 
 The discussant format that still anchors the workshop was there from the start: each paper had 60 minutes — 40 for the presentation, 10 for an assigned discussant and 10 for general discussion. The programme ranged from relational contracts in Kenya's flower exports and group lending in Chiapas to bank ownership, contract enforcement and the costs of politically motivated aid, with an open discussion moderated by Thorsten Beck.
 
 The workshop was organized by Thorsten Beck and Manuel Oechslin, and sponsored by CentER, the Tilburg School of Economics and Management and the university's Economics Department.
+:::
 
 ### Programme
 

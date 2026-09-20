@@ -53,11 +53,13 @@ leaflet() %>%
 [2 days]{.event-fact} [9 papers]{.event-fact} [3 early-research talks]{.event-fact}
 :::
 
+:::{.justify}
 Back in Tilburg for its seventh edition, the workshop gained a new partner in the University of Lucerne. Finance ran through much of the programme — joint-liability lending against rainwater tanks in Kenya, sharing borrower information, relationship banking and informal debt in China — alongside teacher pay in Indonesia, informal taxation on the Congo river, the roots of conflict and an overpaid public sector.
 
 The DFID early-research session returned with new work on skilled labour and finance among SMEs in Uganda, mobile money adoption in Kenya, and poverty and cognitive function among small retailers in Vietnam.
 
 The organizing team was Thorsten Beck, Erwin Bulte, Patricio S. Dalton, Manuel Oechslin and Burak Uras. The workshop was co-sponsored by Tilburg University, Wageningen University, the University of Lucerne and the DFID research programme on innovation and growth in low-income countries.
+:::
 
 ### Programme
 

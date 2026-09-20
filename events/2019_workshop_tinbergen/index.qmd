@@ -53,11 +53,13 @@ leaflet() %>%
 [2 days]{.event-fact} [9 papers]{.event-fact} [Closing lecture]{.event-fact}
 :::
 
+:::{.justify}
 For its tenth edition the workshop came to Amsterdam, hosted at the Tinbergen Institute, with the Vrije Universiteit Amsterdam joining Tilburg and Wageningen as co-sponsor. Nine papers covered aid fragmentation and conflict, mobile-phone monitoring in Niger, free university tuition in Ecuador, health care during Sierra Leone's Ebola outbreak, payment technology, community natural-resource management in Namibia, crop insurance bundles in Kenya, management consulting in Colombia and schooling for displaced children in Jordan.
 
 The workshop closed with Peter Lanjouw on *How Lives Change: Palanpur, India, and Development Economics*, drawn from the long-running study of a single village in north India. That same afternoon, Jenny Aker also presented at the Tinbergen Institute's labor seminar series.
 
 The workshop was co-sponsored by the Vrije Universiteit Amsterdam (School of Business and Economics), the Tinbergen Institute, Tilburg University (Department of Economics) and Wageningen University (Development Economics Group).
+:::
 
 ### Programme
 
