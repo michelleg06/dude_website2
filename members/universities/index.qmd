@@ -77,7 +77,7 @@ library(htmltools)
 
 <!-- Links Row -->
 <div class="full-icons">
-  <a href="https://research.wur.nl/en/persons/ritika-gupta" target="_blank" title="Website">
+  <a href="https://sites.google.com/virginia.edu/ritikagupta" target="_blank" title="Website">
     <img src="images/icons/website.svg" alt="Website" class="icon-link" />
   </a>
 </div>

@@ -180,7 +180,7 @@ format:
     <img class="member-photo" src="photos/ritika-gupta.jpg" alt="Ritika Gupta" loading="lazy" />
     <h4 class="member-name">Ritika Gupta</h4>
     <p class="member-uni">Wageningen University</p>
-    <a class="member-link" href="https://research.wur.nl/en/persons/ritika-gupta" target="_blank" rel="noopener" title="Personal page" aria-label="Personal page of Ritika Gupta">
+    <a class="member-link" href="https://sites.google.com/virginia.edu/ritikagupta" target="_blank" rel="noopener" title="Personal page" aria-label="Personal page of Ritika Gupta">
       <img src="../universities/images/icons/website.svg" alt="" class="icon-link" /></a>
   </div>
 
