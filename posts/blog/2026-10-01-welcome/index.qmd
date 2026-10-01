@@ -1,0 +1,17 @@
+---
+title: "Welcome!"
+description: "The Dutch Development Economics Network is launching a new website."
+author: "Dutch Development Economics Network"
+date: 2026-10-01
+categories: [News, Community]
+image: welcome.jpg
+image-alt: "Members of the network gathered for a group photo at a workshop"
+---
+
+The Dutch Development Economics Network is launching a new website!
+
+This is where you will find our upcoming and past [events](../../../events/index.qmd), the [universities](../../../members/universities/index.qmd) and [members](../../../members/members/index.qmd) that make up the network and, here on the blog, news and ideas from across our community.
+
+![Members of the network at one of our workshops.](welcome.jpg){fig-alt="Members of the network gathered for a group photo at a workshop"}
+
+We look forward to the many contributions of knowledge and thought from our members. Have something to share? [Get in touch](#contact) and write a post for the blog.

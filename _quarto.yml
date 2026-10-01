@@ -52,18 +52,18 @@ website:
     left: |
       [![](/images/logos/logo-full-white.png){.footer-logo fig-alt="Dutch Development Economics Network"}](/index.qmd)
     center:
-      - text: "Events"
-        href: events/index.qmd
+      - text: "Posts"
+        href: posts/blog/index.qmd
       - text: "Universities"
         href: members/universities/index.qmd
       - text: "Members"
         href: members/members/index.qmd
-      - text: "Posts"
-        href: posts/blog/index.qmd
+      - text: "Events"
+        href: events/index.qmd
       - text: "Contact"
         href: "#contact"
     right: |
-      © 2026 Dutch Development Economics Network (DDEN)
+      © 2026 Dutch Development Economics Network
   announcement:
     icon: info-circle
     dismissable: true

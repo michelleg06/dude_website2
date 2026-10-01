@@ -140,14 +140,15 @@ photo_strip <- function() {
   marquee(items, "marquee-photos", "left")
 }
 
-# A random handful of members, drawn again on every render
+# A random handful of members, drawn again on every render, kept in the
+# members page's order (alphabetical by last name)
 people_strip <- function(n = 14, path = "members/members/index.qmd") {
   txt <- paste(readLines(path, warn = FALSE), collapse = "\n")
   cards <- regmatches(txt, gregexpr('<img class="member-photo" src="photos/[^"]+" alt="[^"]+"', txt))[[1]]
   photo <- sub('.*src="photos/([^"]+)".*', "\\1", cards)
   name <- sub('.*alt="([^"]+)".*', "\\1", cards)
   keep <- !duplicated(photo) & file.exists(file.path("images/people", photo))
-  pick <- sample(which(keep), min(n, sum(keep)))
+  pick <- sort(sample(which(keep), min(n, sum(keep))))
   items <- lapply(pick, function(i) {
     tags$li(tags$img(src = file.path("images/people", photo[i]), alt = "", loading = "lazy"),
             tags$span(name[i]))

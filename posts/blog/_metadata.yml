@@ -1,0 +1,8 @@
+# Every page in this folder, posts and the listing alike: the site's navy
+# title banner, no table of contents (a short post doesn't need one), and a
+# body class that the blog styles in theme.css hang on
+title-block-banner: "#0D2757"
+title-block-banner-color: body
+toc: false
+date-format: "D MMMM YYYY"
+body-classes: blog

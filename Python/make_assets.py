@@ -402,50 +402,6 @@ def build_network_map():
     print(f"  images/network-map.svg  {len(hops)} hops: {' > '.join(hosts)}  (latest: {latest})")
 
 
-
-# --------------------------------------------------------------------------
-# the "event is in the future" card, and its layers for the animation
-# --------------------------------------------------------------------------
-
-def build_future_event():
-    """The card shown on the page of an event that hasn't happened yet.
-
-    Also saved as separate transparent layers (background, 404, rule,
-    headline, subline, logo) that stack into exactly the same image: the
-    page reveals them one by one while the R code beside them is highlighted.
-    """
-    print("future-event card")
-    W, H = 1200, 760
-    big, head, sub = font(260, 0), font(58, FONT_DEMI), font(36, FONT_REGULAR)
-    probe = ImageDraw.Draw(Image.new("RGB", (1, 1)))
-
-    def text_layer(y, text, fnt, fill):
-        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-        x = (W - probe.textlength(text, font=fnt)) / 2
-        ImageDraw.Draw(layer).text((x, y), text, font=fnt, fill=fill)
-        return layer
-
-    rule = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    ImageDraw.Draw(rule).rectangle([W / 2 - 48, 420, W / 2 + 48, 428], fill=ORANGE)
-    logo = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    mark = Image.open(ROOT / "images/logos/logo-mark.png").convert("RGBA")
-    mark = resized(mark, height=70)
-    logo.paste(mark, ((W - mark.width) // 2, 640), mark)
-
-    layers = {
-        "bg": Image.new("RGBA", (W, H), BLUE_50 + (255,)),
-        "404": text_layer(110, "404", big, NAVY),
-        "rule": rule,
-        "headline": text_layer(462, "This event is in the future", head, NAVY),
-        "subline": text_layer(548, "Check back after it has taken place.", sub, MUTED),
-        "logo": logo,
-    }
-    card = Image.new("RGBA", (W, H))
-    for name, layer in layers.items():
-        save(layer, f"events/future-event/{name}.png", optimize=True)
-        card = Image.alpha_composite(card, layer)
-    save(card.convert("RGB"), "events/future-event.png", optimize=True)
-
 if __name__ == "__main__":
     logo_full, symbol = build_logos()
     photo = build_hero()
@@ -453,4 +409,3 @@ if __name__ == "__main__":
     build_event_thumbnails(symbol)
     build_homepage_images()
     build_network_map()
-    build_future_event()
