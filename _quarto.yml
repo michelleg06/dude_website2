@@ -4,13 +4,16 @@ project:
     - "**/*.qmd"
     - "!archive/"
   # Quarto copies the images it finds in src attributes; these two are reached
-  # through srcset and a <link> tag, so they have to be named here
+  # through srcset and a <link> tag, so they have to be named here.
+  # CNAME holds the custom domain: GitHub Pages reads it from the published
+  # branch, so without it every publish would drop dev-econ.nl
   resources:
     - images/hero-workshop@2x.jpg
     - images/apple-touch-icon.png
+    - CNAME
 
 website:
-  site-url: "https://michelleg06.github.io/dude_website2"
+  site-url: "https://dev-econ.nl"
   title: "Dutch Development Economics Network"
   description: "A website to to facilitate knowledge exchange and connections among development economists based in the Netherlands."
   open-graph:
@@ -77,7 +80,7 @@ format:
     include-after-body: _footer.html
     include-in-header:
       - text: |
-          <link rel="apple-touch-icon" sizes="180x180" href="https://michelleg06.github.io/dude_website2/images/apple-touch-icon.png">
+          <link rel="apple-touch-icon" sizes="180x180" href="https://dev-econ.nl/images/apple-touch-icon.png">
     monofont: Fira Code
     highlight-style: arrow
     theme: custom_theme.scss
