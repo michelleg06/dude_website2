@@ -118,8 +118,9 @@ city_of <- function(node) {
 
 # A marquee row: the items twice, the second copy hidden from assistive tech,
 # so the loop is seamless and screen readers hear each item once.
-marquee <- function(items, class, direction = "left") {
+marquee <- function(items, class, direction = "left", duration = NULL) {
   div(class = paste("marquee", class), `data-direction` = direction,
+      style = if (!is.null(duration)) sprintf("--duration: %ds", duration),
       div(class = "marquee-track",
           tags$ul(class = "marquee-group", items),
           tags$ul(class = "marquee-group", `aria-hidden` = "true", items)))
@@ -140,18 +141,20 @@ photo_strip <- function() {
   marquee(items, "marquee-photos", "left")
 }
 
-# A random handful of members, drawn again on every render, kept in the
-# members page's order (alphabetical by last name)
-people_strip <- function(n = 14, path = "members/members/index.qmd") {
+# Every member with a photo, in the members page's order (alphabetical by last
+# name). Portraits are the thumbnails Python/make_assets.py makes in images/people/.
+people_strip <- function(path = "members/members/index.qmd") {
   txt <- paste(readLines(path, warn = FALSE), collapse = "\n")
-  cards <- regmatches(txt, gregexpr('<img class="member-photo" src="photos/[^"]+" alt="[^"]+"', txt))[[1]]
-  photo <- sub('.*src="photos/([^"]+)".*', "\\1", cards)
+  cards <- regmatches(txt, gregexpr('<img class="member-photo" src="[^"]+" alt="[^"]+"', txt))[[1]]
+  src <- sub('.*src="([^"]+)".*', "\\1", cards)
   name <- sub('.*alt="([^"]+)".*', "\\1", cards)
-  keep <- !duplicated(photo) & file.exists(file.path("images/people", photo))
-  pick <- sort(sample(which(keep), min(n, sum(keep))))
-  items <- lapply(pick, function(i) {
-    tags$li(tags$img(src = file.path("images/people", photo[i]), alt = "", loading = "lazy"),
-            tags$span(name[i]))
+  # coordinators' photos live on the universities page: their thumbnail is named after them
+  slug <- gsub("^-|-$", "", gsub("[^a-z0-9]+", "-", tolower(iconv(name, to = "ASCII//TRANSLIT"))))
+  photo <- file.path("images/people", ifelse(startsWith(src, "photos/"), basename(src), paste0(slug, ".jpg")))
+  keep <- which(!duplicated(photo) & file.exists(photo))
+  items <- lapply(keep, function(i) {
+    tags$li(tags$img(src = photo[i], alt = "", loading = "lazy"), tags$span(name[i]))
   })
-  marquee(items, "marquee-people", "right")
+  # about 4s per person, so the pace stays the same as members join
+  marquee(items, "marquee-people", "right", duration = 4 * length(keep))
 }

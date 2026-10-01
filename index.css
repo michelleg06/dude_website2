@@ -669,10 +669,6 @@ h2.section-title,
   box-shadow: 0 8px 20px rgba(13, 39, 87, 0.12);
 }
 
-.marquee-people {
-  --duration: 55s;
-}
-
 .marquee-people li {
   display: flex;
   flex-direction: column;

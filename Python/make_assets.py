@@ -11,6 +11,8 @@ Everything else under images/ (logo variants, favicons, hero crops, social card)
 Note: the social card and the event thumbnail are typeset in Avenir Next, which ships with macOS. On another OS pick a different FONT_PATH below.
 """
 
+import re
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 
@@ -293,15 +295,25 @@ def build_homepage_images():
     print("member portraits")
     people = ROOT / "images/people"
     people.mkdir(parents=True, exist_ok=True)
-    for src in sorted((ROOT / "members/members/photos").glob("*.jpg")):
-        face = Image.open(src).convert("RGB")
+    # every photo on the members page; coordinators' come from the universities
+    # page and are named after the person (people_strip() in R/home.R does the same)
+    page = (ROOT / "members/members/index.qmd").read_text()
+    for src, name in re.findall(r'<img class="member-photo" src="([^"]+)" alt="([^"]+)"', page):
+        out = Path(src).name if src.startswith("photos/") else portrait_name(name)
+        face = Image.open(ROOT / "members/members" / src).convert("RGB")
         side = min(face.size)
         # square crop, biased upwards so faces stay in frame on portrait photos
         top = max(0, int((face.height - side) * 0.3))
         left = (face.width - side) // 2
         face = face.crop((left, top, left + side, top + side)).resize((200, 200), Image.LANCZOS)
-        face.save(people / src.name, quality=82, optimize=True)
+        face.save(people / out, quality=82, optimize=True)
     print(f"  images/people/  {len(list(people.glob('*.jpg')))} portraits, 200x200")
+
+
+def portrait_name(name):
+    """'Eleonora Nillesen' -> 'eleonora-nillesen.jpg'"""
+    ascii_name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-") + ".jpg"
 
 
 # The network's universities: node id, city label, campus coordinates, and

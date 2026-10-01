@@ -128,7 +128,7 @@ network_data(ev, unis)
 ```{r}
 #| echo: false
 photo_strip()
-people_strip(n = 14)
+people_strip()
 ```
 
 ::: {.home-people-foot}
