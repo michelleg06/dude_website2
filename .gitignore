@@ -6,6 +6,9 @@
 
 /_site/
 
+# supporting files left beside a page by previewing it on its own
+index_files/
+
 **/*.quarto_ipynb
 
 # macOS Finder metadata
