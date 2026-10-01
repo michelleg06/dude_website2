@@ -1,6 +1,12 @@
 [
   {
-    "listing": "/events/index.html",
+    "listing": "/posts/blog/index.html",
+    "items": [
+      "/posts/blog/2026-10-01-welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
     "items": [
       "/events/2027_workshop_wageningen/index.html",
       "/events/2026_phd_workshop_tinbergen/index.html",
@@ -22,7 +28,7 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/events/index.html",
     "items": [
       "/events/2027_workshop_wageningen/index.html",
       "/events/2026_phd_workshop_tinbergen/index.html",

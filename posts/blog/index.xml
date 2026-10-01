@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Dutch Development Economics Network</title>
+<link>https://michelleg06.github.io/dude_website2/posts/blog/</link>
+<atom:link href="https://michelleg06.github.io/dude_website2/posts/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>A website to to facilitate knowledge exchange and connections among development economists based in the Netherlands.</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Wed, 30 Sep 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome!</title>
+  <dc:creator>Dutch Development Economics Network</dc:creator>
+  <link>https://michelleg06.github.io/dude_website2/posts/blog/2026-10-01-welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The Dutch Development Economics Network is launching a new website!</p>
+<p>This is where you will find our upcoming and past <a href="../../../events/index.html">events</a>, the <a href="../../../members/universities/index.html">universities</a> and <a href="../../../members/members/index.html">members</a> that make up the network and, here on the blog, news and ideas from across our community.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://michelleg06.github.io/dude_website2/posts/blog/2026-10-01-welcome/welcome.jpg" class="img-fluid figure-img" alt="Members of the network gathered for a group photo at a workshop"></p>
+<figcaption>Members of the network at one of our workshops.</figcaption>
+</figure>
+</div>
+<p>We look forward to the many contributions of knowledge and thought from our members. Have something to share? Get in touch and write a post for the blog.</p>
+
+
+
+ ]]></description>
+  <category>News</category>
+  <category>Community</category>
+  <guid>https://michelleg06.github.io/dude_website2/posts/blog/2026-10-01-welcome/</guid>
+  <pubDate>Wed, 30 Sep 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://michelleg06.github.io/dude_website2/posts/blog/2026-10-01-welcome/welcome.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>
