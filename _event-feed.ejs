@@ -1,15 +1,16 @@
 ```{=html}
 <div class="event-feed">
 <%
-  // Upcoming events first (soonest first), then the most recent past ones,
-  // filling whole rows of three: at least one row, at most two.
+  // The soonest upcoming events plus the most recent past ones, filling whole
+  // rows of three (at least one row, at most two), shown oldest to newest so
+  // the tiles read as one timeline.
   const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   const today = new Date().toISOString().slice(0, 10);
   const byDate = (a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
   const upcoming = items.filter((i) => i.date >= today).sort(byDate).slice(0, 6);
   const recent = items.filter((i) => i.date < today).sort(byDate).reverse();
   const count = Math.max(3, Math.ceil(upcoming.length / 3) * 3);
-  const shown = upcoming.concat(recent).slice(0, count);
+  const shown = upcoming.concat(recent).slice(0, count).sort(byDate);
 
   for (const item of shown) {
     const d = new Date(item.date + "T12:00:00");

@@ -6,7 +6,7 @@ page-layout: article
 image: thumbnail.jpg
 date: 2022-04-21
 categories: ["Workshop"]
-host: "Maastricht University"
+host: "UNU-MERIT"
 event-dates: "21–22 April 2022"
 description: "The eleventh workshop, hosted at UNU-MERIT in Maastricht."
 ---
@@ -20,10 +20,10 @@ description: "The eleventh workshop, hosted at UNU-MERIT in Maastricht."
 
 ::: {.event-side}
 
-<img class="event-badge" src="../logos/maastricht-university.svg" alt="Maastricht University logo" />
+<img class="event-badge" src="../logos/unu-merit.svg" alt="UNU-MERIT logo" />
 
-**Maastricht University**\
-at UNU-MERIT
+**UNU-MERIT**\
+Maastricht
 
 {{< fa calendar >}} **When**\
 21–22 April 2022
@@ -36,7 +36,7 @@ UNU-MERIT, Boschstraat 24, 6211 AX Maastricht
 library(leaflet)
 leaflet() %>%
   addTiles() %>%
-  addMarkers(lng = 5.6907, lat = 50.8543, popup = "UNU-MERIT")
+  addMarkers(lng = 5.6897, lat = 50.8550, popup = "UNU-MERIT")
 ```
 
 [{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
