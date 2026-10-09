@@ -67,12 +67,12 @@ website:
         href: "#contact"
     right: |
       © 2026 Dutch Development Economics Network
-  announcement:
-    icon: info-circle
-    dismissable: true
-    content: "This site is under construction!"
-    type: warning
-    position: below-navbar
+  # announcement:
+  #   icon: info-circle
+  #   dismissable: true
+  #   content: "This site is under construction!"
+  #   type: warning
+  #   position: below-navbar
 
 format:
   html:
