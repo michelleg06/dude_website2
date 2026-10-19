@@ -546,6 +546,11 @@ footer.footer .nav-footer {
   height: 64px;
 }
 
+/* Let the navigation fit narrow screens without widening the page. */
+.nav-footer .footer-items {
+  flex-wrap: wrap;
+}
+
 .nav-footer .footer-items .nav-link {
   padding: 0.25rem 0.75rem;
   color: #fff;
