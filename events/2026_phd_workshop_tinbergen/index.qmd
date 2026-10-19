@@ -1,12 +1,136 @@
 ---
 title: "2026: 4th Dutch Development Economics Network PhD Workshop"
+title-block-banner: "#0D2757"
+title-block-banner-color: body
 page-layout: article
 image: thumbnail.jpg
 date: 2026-11-06
 categories: ["PhD Workshop"]
 host: "Tinbergen Institute"
 event-dates: "6 November 2026"
-description: "The fourth PhD workshop, hosted by the Tinbergen Institute in Amsterdam."
+description: "The final programme for the fourth PhD workshop: seven papers, eight posters and networking at the Tinbergen Institute in Amsterdam on 6 November 2026."
 ---
 
-{{< include ../_future-event.qmd >}}
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/tinbergen-institute.svg" alt="Tinbergen Institute logo" />
+
+**Tinbergen Institute**\
+Amsterdam
+
+{{< fa calendar >}} **When**\
+Friday 6 November 2026\
+Registration from 09:30
+
+{{< fa location-dot >}} **Where**\
+Roeterseiland campus, building E\
+Roetersstraat 11, 1018 WB Amsterdam
+
+[Visitor information and directions](https://tinbergen.nl/contact/)
+
+```{r}
+#| echo: false
+library(leaflet)
+# Roetersstraat 11: coordinates from the PDOK BAG address register.
+leaflet(width = "100%", height = 250, options = leafletOptions(scrollWheelZoom = FALSE)) %>%
+  addTiles() %>%
+  setView(lng = 4.91127888, lat = 52.3638465, zoom = 16) %>%
+  addMarkers(lng = 4.91127888, lat = 52.3638465,
+             popup = "Tinbergen Institute<br>Roeterseiland campus, building E<br>Roetersstraat 11, Amsterdam")
+```
+
+[{{< fa file-pdf >}} Download the programme](program.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[1 day]{.event-fact} [7 papers]{.event-fact} [8 posters]{.event-fact} [Networking]{.event-fact}
+:::
+
+:::{.justify}
+The fourth Dutch Development Economics Network PhD Workshop will bring PhD researchers together at the Tinbergen Institute in Amsterdam on Friday 6 November 2026. The final programme includes seven paper presentations, each with an assigned discussant, and eight posters, alongside a networking activity and time to exchange ideas over coffee and lunch.
+
+Research spans agricultural extension, health insurance, food security, menstrual norms, air pollution, electricity consumption, and schooling and crime. The day will close with dinner at Axum restaurant from 18:00 to 20:00, followed by drinks nearby at participants' own cost.
+:::
+
+### Programme
+
+Friday 6 November 2026. All times are local to Amsterdam.
+
+::: {.programme}
+
+#### Arrival and welcome
+
+- [09:30–09:55]{.session-label} **Walk-in, registration, coffee & tea**
+- [09:55–10:00]{.session-label} **Welcome — Tijmen Henkes**
+
+#### Presentation session 1
+
+Chair: **Alvaro Hopkins Barriga**
+
+- [10:00–10:35]{.session-label} **Stellamaris Aju**, Wageningen University [Making Expertise Visible: Experimental Evidence from Agricultural Extension in Nigeria]{.talk-title} [Discussant: Remco Oostendorp, VU Amsterdam]{.discussant}
+- [10:35–11:10]{.session-label} **Sean Geoffrey Richardson**, Erasmus University Rotterdam – ISS [Health Insurance and Household Financial Decision-Making: Evidence from Rural Kenya]{.talk-title} [Discussant: Kritika Saxena, University of Groningen]{.discussant}
+- [11:10–11:40]{.session-label} **Coffee break**
+
+#### Presentation session 2
+
+Chair: **Juan Segnana**
+
+- [11:40–12:15]{.session-label} **Philipp Schirmer**, VU Amsterdam / Tinbergen Institute [Food security in and around refugee camps]{.talk-title} [Discussant: Calumn Hamilton, Wageningen University]{.discussant}
+- [12:15–12:50]{.session-label} **Alexandra Geis**, University of Groningen [Menstrual Norms: Experimental Evidence from Nepal]{.talk-title} [Discussant: Lisa van Dongen, Radboud University Nijmegen]{.discussant}
+- [12:50–13:35]{.session-label} **Lunch**
+- [13:35–14:15]{.session-label} **Networking activity**
+
+#### Presentation session 3
+
+Chair: **Ebenezer Kontoh**
+
+- [14:15–14:50]{.session-label} **Shashank Misra**, Tilburg University [A Road to Toxic Air: The Golden Quadrilateral Project and Air Pollution]{.talk-title} [Discussant: John Cruzatti, Erasmus University Rotterdam – ISS]{.discussant}
+- [14:50–15:25]{.session-label} **Tiruwork Tadesse**, United Nations University – MERIT [Making electricity consumption visible in multifamily homes: evidence from a field experiment]{.talk-title} [Discussant: Peter Lanjouw, VU Amsterdam]{.discussant}
+- [15:25–15:55]{.session-label} **Coffee break**
+
+#### Poster session
+
+**15:55–16:55** · Chair: **Kaira Gräler**
+
+- **Yutong Jiao**, Wageningen University [Access, Adoption, and Use: E-commerce Engagement and Diets in Rural China]{.talk-title}
+- **Sarah Leuthold**, University of Amsterdam / Tinbergen Institute [Climate Change, Migration and Marriage]{.talk-title}
+- **Jiwei Chen**, Erasmus University Rotterdam – ISS [Revisiting the Renewable Energy-Growth Nexus: Insights from a Meta-Regression Analysis]{.talk-title}
+- **Ade Febriady**, University of Groningen [Poverty amid Progress: The Hidden Cost of a Cold Shock in Mongolia]{.talk-title}
+- **Carla de Oliveira Palacios**, Tilburg University [The Electoral Returns to Public Housing: Evidence from Venezuela]{.talk-title}
+- **Ivan Velasquez Abril**, United Nations University – MERIT [Urban Cable Cars and Higher-Education Choice]{.talk-title}
+- **Annika Brown**, Utrecht University [Sharing the Classroom: The Costs of Expanding Access to School]{.talk-title}
+- **Anne Lieke**, Radboud University Nijmegen [How Serious Is It, and Would Anyone Know? Adolescents’ Own and Perceived Community Views of Child Exploitation in GRACE, a Global Research Study on Child Exploitation]{.talk-title}
+
+#### Presentation session 4
+
+Chair: **Samin Nikkhah Bahrami**
+
+- [16:55–17:30]{.session-label} **Emiliano Galvarriato**, Radboud University Nijmegen [When a Foreign Drug Epidemic Comes to the Sierra: Opium Poppy, Schooling and Crime in Mexico]{.talk-title} [Discussant: Eleonora Nillesen, United Nations University – MERIT]{.discussant}
+
+#### Closing and dinner
+
+- [17:30–17:40]{.session-label} **Closing words — Tijmen Henkes**
+- [17:45]{.session-label} **Departure to the restaurant** — 15-minute walk
+- [18:00–20:00]{.session-label} **Dinner at Axum restaurant** — table booked for 18:00
+- [20:00 onwards]{.session-label} **Drinks nearby** — at participants' own cost
+
+:::
+
+:::
+
+::::
+:::
