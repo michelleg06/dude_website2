@@ -31,6 +31,7 @@ future_event <- function(page = "index.qmd", map = "../../images/network-map.svg
     div(class = "fe-text",
       tags$p(class = "fe-kicker", "Save the date"),
       tags$h1(class = "fe-title", sub("^[0-9]{4}:\\s*", "", meta$title)),
+      if (!is.null(meta$subtitle)) tags$p(class = "fe-subtitle", meta$subtitle),
       div(class = "fe-when",
         # the tile's pages flip from today's month to the event's (see the page script)
         div(class = "fe-cal", `aria-hidden` = "true",
@@ -46,7 +47,8 @@ future_event <- function(page = "index.qmd", map = "../../images/network-map.svg
                  tags$span(class = "fe-count"), " ", tags$span(class = "fe-unit"))
         )
       ),
-      div(class = "fe-details",
+      if (!is.null(meta$`call-for-papers`)) call_for_papers(meta$`call-for-papers`)
+      else div(class = "fe-details",
         tags$p(class = "fe-details-head", "More details to follow",
                tags$span(class = "fe-dots", `aria-hidden` = "true", tags$span(), tags$span(), tags$span())),
         tags$p("The programme, venue and practical details will be posted on this page once they are confirmed."),
@@ -54,6 +56,21 @@ future_event <- function(page = "index.qmd", map = "../../images/network-map.svg
       )
     ),
     if (nrow(host)) div(class = "fe-map", converging_map(map, nodes, node))
+  )
+}
+
+# an open call for papers, from the page's `call-for-papers` front matter
+# (deadline as shown, closes as an ISO time, form URL); the page script marks
+# it closed once the visitor's clock passes `closes`, and the button then goes
+call_for_papers <- function(cfp) {
+  div(class = "fe-details fe-cfp", `data-closes` = cfp$closes,
+    tags$p(class = "fe-details-head fe-cfp-head",
+           tags$span(class = "fe-live", `aria-hidden` = "true"), "Call for papers open"),
+    tags$p(class = "fe-cfp-when", "Submit a full research paper by ",
+           tags$strong(cfp$deadline, .noWS = "outside"), "."),
+    tags$p(class = "fe-actions",
+      tags$a(class = "fe-button", href = cfp$form, target = "_blank", rel = "noopener", "Submit a paper"),
+      tags$a(href = "#call-for-papers", "Read the call"))
   )
 }
 

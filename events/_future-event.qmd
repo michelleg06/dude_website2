@@ -12,6 +12,15 @@ future_event()
 
 ```{=html}
 <script>
+// a call for papers closes on the visitor's clock, not on the day the site was built
+(function () {
+  var cfp = document.querySelector('.fe-cfp');
+  if (!cfp || !(Date.now() > Date.parse(cfp.dataset.closes))) return;
+  cfp.querySelector('.fe-cfp-head').textContent = 'Call for papers closed';
+  cfp.querySelector('.fe-cfp-when').firstChild.textContent = 'Submissions closed on ';
+  cfp.querySelector('.fe-button').remove();
+})();
+
 (function () {
   var root = document.querySelector('.future-event');
   if (!root) return;

@@ -1,12 +1,102 @@
 ---
 title: "2027: 16th Dutch Development Economics Network Workshop"
+subtitle: "Joint international conference with the 2nd Conference of the European Development Economics Group (EDEG)"
 page-layout: article
 image: thumbnail.jpg
-date: 2027-04-21
+date: 2027-04-22
 categories: ["Workshop"]
 host: "Wageningen University"
-event-dates: "21–23 April 2027"
-description: "The sixteenth workshop, hosted by Wageningen University."
+event-dates: "22–23 April 2027"
+description: "Call for papers for the sixteenth workshop, held jointly with the second conference of the European Development Economics Group and hosted by Wageningen University on 22–23 April 2027. Submission deadline: 22 December 2026."
+call-for-papers:
+  deadline: "22 December 2026, 23:59 CET"
+  closes: "2026-12-22T23:59:00+01:00"
+  form: "https://forms.gle/WK913ycRRnY5JG9J9"
 ---
 
 {{< include ../_future-event.qmd >}}
+
+:::{.column-page}
+::::{.paper-layout}
+
+<!-- Side panel -->
+
+::: {.paper-side-column}
+
+::: {.event-side}
+
+<img class="event-badge" src="../logos/wageningen-university.svg" alt="Wageningen University logo" />
+
+**Wageningen University**\
+Wageningen
+
+{{< fa calendar >}} **When**\
+22–23 April 2027\
+Thursday morning to Friday afternoon
+
+{{< fa location-dot >}} **Where**\
+Wageningen University, Wageningen\
+Venue to be announced
+
+{{< fa ticket >}} **Registration**\
+€150 per participant
+
+[{{< fa file-pdf >}} Download the call for papers](call-for-papers.pdf){.event-download}
+
+:::
+
+:::
+
+<!-- Main column -->
+
+:::{.paper-main-column}
+
+::: {.event-facts}
+[2 days]{.event-fact} [15–20 papers]{.event-fact} [Keynote: Christopher B. Barrett]{.event-fact} [A discussant for every paper]{.event-fact}
+:::
+
+:::{.justify}
+The sixteenth Dutch Development Economics Network Workshop is a joint international conference with the second conference of the European Development Economics Group ([EDEG](https://www.ede-group.org/)), hosted by Wageningen University on 22–23 April 2027. With keynote addresses, plenary sessions and contributed papers in parallel sessions, it showcases the latest research in development economics and offers a forum for exchange among academics and practitioners.
+
+The conference brings together a small, curated group of researchers for an intensive exchange of ideas. Because of its workshop-style format, acceptance will be highly selective: 15–20 papers will be selected for the final programme. Submissions from early-career researchers are encouraged.
+:::
+
+### Call for papers {#call-for-papers}
+
+:::{.justify}
+Interested contributors can submit their papers by **22 December 2026, 23:59 CET** through the [online submission form](https://forms.gle/WK913ycRRnY5JG9J9){target="_blank" rel="noopener"}; only full research papers are considered. Authors will be notified of acceptance by the end of January 2027. Each presenter will be assigned a discussant, who reads the paper beforehand and gives structured feedback.
+:::
+
+[{{< fa paper-plane >}} Submit a paper](https://forms.gle/WK913ycRRnY5JG9J9){.event-download target="_blank" rel="noopener"}
+
+### Key dates
+
+::: {.programme}
+
+- [22 December 2026, 23:59 CET]{.session-label} **Submission deadline** for full research papers
+- [End of January 2027]{.session-label} **Notification of acceptance**
+- [Thursday 22 April 2027]{.session-label} **Conference opens** in the morning
+- [Friday 23 April 2027]{.session-label} **Conference closes** in the afternoon
+
+:::
+
+### Keynote speaker
+
+**Christopher B. Barrett**\
+Stephen B. & Janice G. Ashley Professor of Applied Economics and Management\
+Charles H. Dyson School of Applied Economics and Management, Cornell University
+
+### Registration
+
+The registration fee is €150 per participant and includes access to all sessions, refreshments and dinner on the first day.
+
+### Organizers
+
+:::{.justify}
+The local organizers are Ritika Gupta (Wageningen University) and Mark Treurniet (University of Groningen). Funding for this event from the Dutch Development Economics Network institutions is gratefully acknowledged.
+:::
+
+:::
+
+::::
+:::
