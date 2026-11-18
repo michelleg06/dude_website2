@@ -52,7 +52,7 @@ Venue to be announced
 :::{.paper-main-column}
 
 ::: {.event-facts}
-[2 days]{.event-fact} [15–20 papers]{.event-fact} [Keynote: Christopher B. Barrett]{.event-fact} [A discussant for every paper]{.event-fact}
+[2 days]{.event-fact} [15–20 papers]{.event-fact} [Keynote: Christopher B. Barrett]{.event-fact} [Keynote: Sylvie Lambert]{.event-fact} [A discussant for every paper]{.event-fact}
 :::
 
 :::{.justify}
@@ -80,11 +80,14 @@ Interested contributors can submit their papers by **22 December 2026, 23:59 CET
 
 :::
 
-### Keynote speaker
+### Keynote speakers
 
 **Christopher B. Barrett**\
 Stephen B. & Janice G. Ashley Professor of Applied Economics and Management\
 Charles H. Dyson School of Applied Economics and Management, Cornell University
+
+**Sylvie Lambert**\
+Chaired Professor, Paris School of Economics and Senior Researcher, INRAE
 
 ### Registration
 
